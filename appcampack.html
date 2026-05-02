@@ -98,13 +98,15 @@ height:80vh;
 }
 
 .hero-logo{
-max-width:400px;
+max-width:300px;
+margin-bottom:10px;
 }
 
-.profile{
-width:80%;
-margin:auto;
-padding:40px 20px;
+.hero-meta-block{
+display:flex;
+align-items:center;
+gap:15px;
+margin-top:15px;
 }
 
 .hero-sub{
@@ -124,7 +126,7 @@ color:var(--color-accent);
 }
 
 .hero-avatar img{
-width:150px;
+width:120px;
 border-radius:50%;
 border:3px solid white;
 }
@@ -178,21 +180,22 @@ margin-bottom:8px;
 <body>
 
 <!-- HERO -->  
-<section class="hero">
-  <div class="hero-content">
-    <div class="hero-text">
-      <img src="logoCamPack.png" alt="logotipo CamPack" class="hero-logo">
-      <div class="hero-meta">
-        <div class="hero-avatar">
+<div class="hero-text">
+  <img src="logoCamPack.png" alt="logotipo CamPack" class="hero-logo">
+
+  <div class="hero-meta-block">
+    <div class="hero-avatar">
       <img src="avatarPP.jpg" alt="José Vázquez">
     </div>
-        <p><strong>José Vázquez</strong> — UX Designer</p>
-        <p>Jun 2025 – Abr 2026 · Proyecto conceptual</p>
-      </div>
-      <a href="#problema" class="btn">Ver caso</a>
+
+    <div class="hero-meta">
+      <p><strong>José Vázquez</strong> — UX Designer</p>
+      <p>Jun 2025 – Abr 2026 · Proyecto conceptual</p>
     </div>
   </div>
-</section>
+
+  <a href="#problema" class="btn">Ver caso</a>
+</div>
 
 <div class="container">
 
