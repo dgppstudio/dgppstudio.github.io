@@ -170,6 +170,20 @@ margin:20px auto;
 border-radius:12px;
 background:#F4F1E9;
 }
+
+.media-bleed{
+margin-left:-20px;
+margin-right:-20px;
+background:#e9e1d8; /* tu color arena */
+padding:40px 20px;
+border-radius:16px;
+}
+
+.media-inner{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
 </style>
 
 </head>
@@ -291,10 +305,13 @@ Las pruebas revelaron confusión entre acciones de comparar y comprar, dificulta
 <!-- SOLUCIÓN -->
 <section class="section">
 <h2>Solución</h2>
-
-<video autoplay loop muted playsinline class="demo-video">
-  <source src="flujo1CamPack.mp4" type="video/mp4">
-</video>
+<div class="media-bleed">
+  <div class="media-inner">
+    <video autoplay loop muted playsinline class="demo-video">
+      <source src="flujo1CamPack.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
 
 <a href="https://www.figma.com/proto/ByoJIeD93FeVfUErXVToRA/Prototipo-Camping-2?node-id=4048-25&t=vOU64THNp6nZLXVH-1" target="_blank" class="btn">Ver prototipo alta fidelidad</a>
 
