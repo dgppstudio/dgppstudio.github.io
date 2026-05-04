@@ -203,29 +203,29 @@ max-width:320px;
 margin-top:20px;
 }
 
-.compare-block .recompensa{
+.compare-block .recompensa-block{
 display:flex;
 align-items:center;
 gap:40px;
 margin-top:40px;
 }
 
-.compare-text{
+.compare-text .recompensa-text{
 flex:1;
 }
 
-.compare-image{
+.compare-image .recompensa-image{
 flex:1;
 text-align:center;
 }
 
-.compare-image img{
+.compare-image img .recompensa-image img{
 max-width:350px;
 border-radius:12px;
 }
 
 @media(max-width:768px){
-.compare-block{
+.compare-block .recompensa-block{
 flex-direction:column;
 text-align:center;
 }
@@ -400,13 +400,15 @@ Las pruebas revelaron confusión entre acciones de comparar y comprar, dificulta
     </div>
   </div>
 
-<div class="recompensa">
+<div class="recompensa-block">
+   <div class="recompensa-text">
   <h2>Incentivo a la recompra</h2>
   <p>
     Se integró un sistema de recompensas al finalizar la compra, transformando la conversión en una oportunidad de fidelización y fortaleciendo la relación con el usuario.
   </p>
   <div class="reward-box">
     <p class="caption">Este enfoque retoma principios de programas de lealtad aplicados al eCommerce.</p>
+  </div>
     <img src="Recompensa.png" alt="Modal de recompensas">
     <p class="caption">El sistema de puntos refuerza la satisfacción post-compra y fomenta la lealtad.</p>
   </div>
