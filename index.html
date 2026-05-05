@@ -7,27 +7,71 @@
 <title>José Vázquez | UX Designer</title>
 
 <style>
-.home-hero{
-padding:100px 20px;
-background:#F4F1E9;
+/* HEADER */
+.header{
+  position:sticky;
+  top:0;
+  background:white;
+  z-index:1000;
+  border-bottom:1px solid #eee;
 }
 
-.hero-content{
-max-width:1100px;
-margin:auto;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:40px;
+.header-inner{
+  max-width:1200px;
+  margin:auto;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  width:140px;
+}
+
+.header a{
+  margin-left:20px;
+  color:#004488;
+  font-weight:600;
+  font-family:'Poppins', sans-serif;
+}
+
+
+/* HERO */
+.hero-index{
+  background:#F4F1E9;
+  padding:80px 20px;
+}
+
+.hero-index-content{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  gap:60px;
 }
 
 .hero-text{
-max-width:500px;
+  flex:1;
+  max-width:500px;
 }
 
-.hero-visual img{
-max-width:500px;
-width:100%;
+.hero-text h1{
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.hero-text p{
+  font-size:18px;
+}
+
+.hero-image{
+  flex:1;
+}
+
+.hero-image img{
+  width:100%;
+  border-radius:12px;
 }
 
 .projects{
@@ -62,10 +106,15 @@ color:#0077DD;
 }
 
 @media(max-width:768px){
-.hero-content{
-flex-direction:column;
-text-align:center;
-}
+.hero-index-content{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .header-inner{
+    flex-direction:column;
+    gap:10px;
+  }
 }
 </style>
 
@@ -73,22 +122,35 @@ text-align:center;
 
 <body>
 
-<section class="home-hero">
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <img src="logoDGPP.png" alt="DGPP Studio" class="logo">
+    <nav>
+      <a href="#casos">Casos</a>
+      <a href="#about">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
 
-  <div class="hero-content">
+<!-- HERO -->
+<section class="hero-index">
+  <div class="hero-index-content">
 
     <div class="hero-text">
-      <h1>José Vázquez — UX Designer</h1>
-      <p>Diseño experiencias digitales que reducen fricción y mejoran la toma de decisiones.</p>
-      <a href="#proyectos" class="btn">Ver proyectos</a>
+      <h1>Diseño UX enfocado en resultados</h1>
+      <p>
+        Diseño experiencias digitales que reducen fricción, mejoran la toma de decisiones y generan valor para el negocio.
+      </p>
+      <a href="#casos" class="btn">Ver casos</a>
     </div>
 
-    <div class="hero-visual">
-      <img src="before_after.png" alt="Wireframe vs UI final">
+    <div class="hero-image">
+      <img src="hero-dgpp.jpg" alt="DGPP Studio workspace">
     </div>
 
   </div>
-
 </section>
 
   <section class="projects">
