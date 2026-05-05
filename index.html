@@ -36,6 +36,37 @@ color:white;
 text-decoration:none;
 }
 
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+padding:40px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.project-card{
+background:#fff;
+border-radius:12px;
+padding:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.project-card img{
+width:100%;
+border-radius:8px;
+}
+
+.project-card h3{
+margin-top:15px;
+}
+
+.project-card a{
+display:inline-block;
+margin-top:10px;
+color:#0077DD;
+}
+
 /* Tablet */
 @media (max-width: 768px){
   .hero{
@@ -77,25 +108,21 @@ text-decoration:none;
   </div>
 </section>
 
-  <section id="proyectos" style="padding:60px;">
+  <section class="projects">
 
-<h2>Proyectos UX</h2>
-
-<div style="display:flex; gap:20px; flex-wrap:wrap;">
-
-  <div style="width:300px;">
-    <img src="https://via.placeholder.com/300x200" style="width:100%;">
-    <h3>Programa de Lealtad</h3>
-    <p>Optimización de conversión y engagement</p>
+  <div class="project-card">
+    <img src="campack-app.jpg" alt="">
+    <h3>CamPack App</h3>
+    <p>Optimización de búsqueda y decisión en eCommerce</p>
+    <a href="appcampack.html">Ver caso</a>
   </div>
 
-  <div style="width:300px;">
-    <img src="https://via.placeholder.com/300x200" style="width:100%;">
-    <h3>App Mobile</h3>
-    <p>Rediseño de experiencia de usuario</p>
+  <div class="project-card">
+    <img src="campack-web.jpg" alt="">
+    <h3>CamPack Sitio Responsivo</h3>
+    <p>Estructura y navegación adaptada a distintos dispositivos</p>
+    <a href="webcampack.html">Ver caso</a>
   </div>
-
-</div>
 
 </section>
 
