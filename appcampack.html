@@ -216,11 +216,6 @@ max-width:350px;
 border-radius:12px;
 }
 
-.filtros-image img{
-max-width:350px;
-border-radius:12px;
-}
-
 @media(max-width:768px){
 .compare-block {
 flex-direction:column;
@@ -228,14 +223,14 @@ text-align:center;
 }
 }
 
-.reward-box{
+.reward-box .filtros-box{
 padding:40px;
 border-radius:16px;
 text-align:center;
 margin-top:30px;
 }
 
-.reward-box img{
+.reward-box img .filtros-box img{
 max-width:300px;
 }
 
@@ -344,7 +339,9 @@ font-size:16px;
 <section class="section">
 <h2>Decisión de diseño</h2>
 <p>Se diseñó un sistema de filtros adaptado por tipo de usuario para reducir la complejidad en la búsqueda y facilitar la selección de productos relevantes.</p>
-<img src="Filtros.png" alt="Filtros por tipo de usuario" class="filtros-image">
+  <div class="filtros-box">
+    <img src="Filtros.png" alt="Filtros por tipo de usuario">
+  </div>
 </section>
 
 <!-- DECISIÓN CLAVE -->
@@ -412,8 +409,8 @@ font-size:16px;
 <section class="section">
   <h2>Incentivo a la recompra</h2>
   <p>Se integró un sistema de recompensas al finalizar la compra, otorgando puntos que incentivan la recompra y refuerzan la experiencia del usuario.</p>
-  <p class="caption">Este enfoque retoma principios de programas de lealtad aplicados al eCommerce.</p>
   <div class="reward-box">
+    <p class="caption">Este enfoque retoma principios de programas de lealtad aplicados al eCommerce.</p>
     <img src="Recompensa.png" alt="Modal de recompensas">
     <p class="caption">El sistema de puntos refuerza la satisfacción post-compra y fomenta la lealtad.</p>
   </div>
