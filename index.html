@@ -7,20 +7,22 @@
 <title>José Vázquez | UX Designer</title>
 
 <style>
-.hero{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:60px;
+.home-hero{
+padding:100px 20px;
+text-align:center;
+background:#F4F1E9;
 }
 
-.hero-text{
-max-width:500px;
+.home-hero h1{
+font-size:42px;
+max-width:700px;
+margin:auto;
 }
 
-.hero-img img{
-width:400px;
-border-radius:10px;
+.home-hero p{
+margin:20px auto;
+max-width:600px;
+font-size:18px;
 }
 
 .projects{
@@ -53,42 +55,18 @@ display:inline-block;
 margin-top:10px;
 color:#0077DD;
 }
-
-/* Tablet */
-@media (max-width: 768px){
-  .hero{
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-img img{
-    width:100%;
-    margin-top:20px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px){
-  .hero{
-    padding:30px;
-  }
-}
 </style>
 
 </head>
 
 <body>
 
-<section class="hero">
-  <div class="hero-text">
-    <h1>Diseñador UX/UI enfocado en optimizar experiencias digitales</h1>
-    <p>+30 años en diseño digital, especializado en programas de lealtad y productos centrados en el usuario</p>
-    <a href="#" class="btn">Ver proyectos</a>
-  </div>
-
-  <div class="hero-img">
-    <img src="heroBcampack.jpg" alt="Proyecto UX">
-  </div>
+<section class="home-hero">
+  <h1>José Vázquez — UX Designer</h1>
+  <p>
+    Diseño experiencias digitales que reducen fricción y mejoran la toma de decisiones.
+  </p>
+  <a href="#proyectos" class="btn">Ver proyectos</a>
 </section>
 
   <section class="projects">
