@@ -101,6 +101,11 @@
   width:100%;
   height:180px;
   object-fit:cover;
+  transition: transform 0.4s ease;
+}
+
+.case-card:hover img{
+  transform: scale(1.05);
 }
 
 .case-content{
@@ -129,6 +134,17 @@
   gap:30px;
   max-width:900px;
   margin:40px auto 0;
+}
+
+.badge{
+  position:absolute;
+  top:12px;
+  left:12px;
+  background:rgba(0,0,0,0.6);
+  color:#fff;
+  padding:4px 10px;
+  font-size:12px;
+  border-radius:6px;
 }
   
 @media(max-width:768px){
@@ -184,17 +200,12 @@
 </section>
 
   <div class="cases">
-  
   <a href="appcampack.html" class="case-card">
-    <div class="compare-slider">
-  <img src="wireframeApp.jpg" alt="Wireframe" class="img-before">
-  
-  <div class="img-after-wrapper">
-    <img src="ui-finalApp.jpg" alt="UI final">
+    <div style="position:relative;">
+    <span class="badge">Wireframe → UI</span>
+    <img src="..." />
   </div>
-
-  <div class="slider-handle"></div>
-</div>
+    <img src="before-after.png" alt="Wireframe vs interfaz final">
     <div class="case-content">
       <h3>CamPack App</h3>
       <p>Optimización de búsqueda y decisión en eCommerce</p>
@@ -203,15 +214,11 @@
   </a>
 
   <a href="campack-web.html" class="case-card">
-    <div class="compare-slider">
-  <img src="Low.png" alt="Wireframe" class="img-before">
-  
-  <div class="img-after-wrapper">
-    <img src="Hi.png" alt="UI final">
+    <div style="position:relative;">
+    <span class="badge">Wireframe → UI</span>
+    <img src="..." />
   </div>
-
-  <div class="slider-handle"></div>
-</div>
+    <img src="before-after.png" alt="Wireframe vs interfaz final">
     <div class="case-content">
       <h3>CamPack Sitio Responsivo</h3>
       <p>Estructura y navegación adaptada a distintos dispositivos</p>
