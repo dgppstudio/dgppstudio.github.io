@@ -128,6 +128,41 @@ max-width:350px;
 border-radius:12px;
 }
 
+.compare-slider{
+  position:relative;
+  width:100%;
+  max-width:500px;
+  margin:auto;
+  overflow:hidden;
+  border-radius:12px;
+  cursor:ew-resize;
+}
+
+.compare-slider img{
+  width:100%;
+  display:block;
+}
+
+.img-after-wrapper{
+  position:absolute;
+  top:0;
+  left:0;
+  width:50%;
+  height:100%;
+  overflow:hidden;
+}
+
+.slider-handle{
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:2px;
+  height:100%;
+  background:white;
+  box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
 @media(max-width:768px){
 .compare-block {
 flex-direction:column;
@@ -273,6 +308,27 @@ font-size:16px;
 <p>Segmentar la experiencia por tipo de usuario en lugar de mantener un catálogo genérico.</p>
 </section>
 
+<!-- WIREFRAME VS HIFI -->
+<div class="media-bleed">
+  <div class="media-inner">
+
+    <div class="compare-slider">
+      <img src="Low.png" alt="Wireframe">
+
+      <div class="img-after-wrapper">
+        <img src="Hi.png" alt="UI final">
+      </div>
+
+      <div class="slider-handle"></div>
+    </div>
+
+    <p class="media-caption">
+      Evolución de wireframe a interfaz final, enfocada en claridad y toma de decisiones.
+    </p>
+
+  </div>
+</div>
+
 <!-- PROCESO -->
 <section class="section" id="proceso">
 <h2>Proceso</h2>
@@ -367,6 +423,47 @@ font-size:16px;
 </section>
 
 </div>
+<script>
+const slider = document.querySelector('.compare-slider');
+const after = slider.querySelector('.img-after-wrapper');
+const handle = slider.querySelector('.slider-handle');
 
+let isDragging = false;
+
+slider.addEventListener('mousedown', () => isDragging = true);
+window.addEventListener('mouseup', () => isDragging = false);
+
+window.addEventListener('mousemove', (e) => {
+  if(!isDragging) return;
+
+  const rect = slider.getBoundingClientRect();
+  let x = e.clientX - rect.left;
+
+  x = Math.max(0, Math.min(x, rect.width));
+
+  const percent = (x / rect.width) * 100;
+
+  after.style.width = percent + '%';
+  handle.style.left = percent + '%';
+});
+
+// touch
+slider.addEventListener('touchstart', () => isDragging = true);
+window.addEventListener('touchend', () => isDragging = false);
+
+window.addEventListener('touchmove', (e) => {
+  if(!isDragging) return;
+
+  const rect = slider.getBoundingClientRect();
+  let x = e.touches[0].clientX - rect.left;
+
+  x = Math.max(0, Math.min(x, rect.width));
+
+  const percent = (x / rect.width) * 100;
+
+  after.style.width = percent + '%';
+  handle.style.left = percent + '%';
+});
+</script>
 </body>
 </html>
