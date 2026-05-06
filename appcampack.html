@@ -107,40 +107,31 @@ max-width:320px;
 margin-top:20px;
 }
 
-.comparison-slider {
+.comparison-css-only {
   position: relative;
-  width: 100%;
-  max-width: 600px;
-  aspect-ratio: 16 / 10;
   overflow: hidden;
-  border-radius: 12px;
-  cursor: ew-resize;
-  user-select: none;
+  --pos: 50; /* Variable CSS */
 }
 
-.comparison-layer {
+.comparison-css-only .before {
+  clip-path: inset(0 calc((100 - var(--pos)) * 1%) 0 0);
+}
+
+.comparison-css-only .handle {
+  left: calc(var(--pos) * 1%);
+}
+
+/* Input range invisible */
+.comparison-css-only input[type="range"] {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
-}
-
-.comparison-layer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.comparison-layer.after {
-  z-index: 1;
-}
-
-.comparison-layer.before {
-  z-index: 2;
-  /* clip-path: inset(top right bottom left) */
-  /* Shows 50% left of the BEFORE image */
-  clip-path: inset(0 50% 0 0);
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+  z-index: 20;
+  -webkit-appearance: none;
 }
 
 @media(max-width:768px){
@@ -289,23 +280,19 @@ font-size:16px;
 </section>
 
 <!-- WIREFRAME VS HIFI -->
-  <div class="comparison-slider">
-  <!-- Back layer: AFTER image -->
-  <div class="comparison-layer after">
-    <img src="Hi.png" alt="After"/>
-  </div>
+  <div class="comparison-css-only" style="--pos: 50">
+  <div class="layer after"><img src="Hi.png"/></div>
+  <div class="layer before"><img src="Low.png"/></div>
+  <div class="handle"></div>
 
-  <!-- Front layer: BEFORE image (masked) -->
-  <div class="comparison-layer before">
-    <img src="Low.png" alt="Before"/>
-  </div>
-
-  <!-- Draggable handle -->
-  <div class="comparison-handle"></div>
-
-  <!-- Optional labels -->
-  <span class="comparison-label before">Before</span>
-  <span class="comparison-label after">After</span>
+  <!-- Input range invisible -->
+  <input
+    type="range"
+    min="0"
+    max="100"
+    value="50"
+    oninput="this.parentElement.style.setProperty('--pos', this.value)"
+  />
 </div>
 
 <!-- PROCESO -->
