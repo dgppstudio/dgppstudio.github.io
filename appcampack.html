@@ -107,31 +107,41 @@ max-width:320px;
 margin-top:20px;
 }
 
-.comparison-css-only {
+.slider-container {
   position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16/9; /* Match your images */
   overflow: hidden;
-  --pos: 50; /* Variable CSS */
 }
 
-.comparison-css-only .before {
-  clip-path: inset(0 calc((100 - var(--pos)) * 1%) 0 0);
-}
-
-.comparison-css-only .handle {
-  left: calc(var(--pos) * 1%);
-}
-
-/* Input range invisible */
-.comparison-css-only input[type="range"] {
+.img-after, .img-before {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  margin: 0;
-  opacity: 0;
-  cursor: ew-resize;
-  z-index: 20;
-  -webkit-appearance: none;
+}
+
+.img-before {
+  /* This width will be controlled by JS */
+  width: var(--position, 50%);
+  overflow: hidden;
+}
+
+.img-after img, .img-before img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images stay aligned */
+  display: block;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  opacity: 0; /* Hide default range styling but keep interactive */
+  cursor: pointer;
+  z-index: 10;
 }
 
 @media(max-width:768px){
@@ -280,19 +290,15 @@ font-size:16px;
 </section>
 
 <!-- WIREFRAME VS HIFI -->
-  <div class="comparison-css-only" style="--pos: 50">
-  <div class="layer after"><img src="Hi.png"/></div>
-  <div class="layer before"><img src="Low.png"/></div>
-  <div class="handle"></div>
-
-  <!-- Input range invisible -->
-  <input
-    type="range"
-    min="0"
-    max="100"
-    value="50"
-    oninput="this.parentElement.style.setProperty('--pos', this.value)"
-  />
+  <div class="slider-container">
+  <div class="img-after">
+    <img src="appHi.png" alt="After">
+  </div>
+  <div class="img-before">
+    <img src="appLow.png" alt="Before">
+  </div>
+  <input type="range" min="0" max="100" value="50" class="slider" id="slider">
+  <div class="slider-button"></div>
 </div>
 
 <!-- PROCESO -->
@@ -389,5 +395,15 @@ font-size:16px;
 </section>
 
 </div>
+  <script>
+  const slider = document.getElementById('slider');
+const container = document.querySelector('.slider-container');
+
+slider.addEventListener('input', (e) => {
+  const value = e.target.value;
+  // Update the CSS variable on the container
+  container.style.setProperty('--position', `${value}%`);
+});
+  </script>
 </body>
 </html>
