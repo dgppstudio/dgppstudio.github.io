@@ -107,41 +107,65 @@ max-width:320px;
 margin-top:20px;
 }
 
-.slider-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  aspect-ratio: 16/9; /* Match your images */
-  overflow: hidden;
+.slider-mask {
+	width:960px;
+	height:540px;
+	overflow:hidden;
+	margin:0 auto;
 }
-
-.img-after, .img-before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.AB-slidebar {
+	position:relative;
+    width: 967px;
+    height: 540px;
+    right: 4px;
+    overflow:hidden;
 }
-
-.img-before {
-  /* This width will be controlled by JS */
-  width: var(--position, 50%);
-  overflow: hidden;
+.slider-aft, .slider-bef {
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    overflow:hidden;
 }
-
-.img-after img, .img-before img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures images stay aligned */
-  display: block;
+.handle-wrapper {
+    position:relative;
+    width: 8px;
+    height: 540px;
+    left: 952px;
+    z-index:10;
 }
-
-.slider {
-  position: absolute;
-  inset: 0;
-  opacity: 0; /* Hide default range styling but keep interactive */
-  cursor: pointer;
-  z-index: 10;
+.slider-bar {
+    width: 1px;
+    height: 540px;
+    position: absolute;
+    left: 4px;
+    background-color: rgba(255,255,255,.7);
+}
+.slider-handle {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 255px;
+    left: -20px;
+    z-index: 100;
+    opacity: 1;
+}
+.slider-tip{
+	width: 196px;
+	background-color: black;
+	opacity: .6;
+	filter: alpha(opacity=60);
+	position: absolute;
+	margin-top: 215px;
+	margin-left: -94px;
+	padding-top: 6px;
+	padding-bottom:4px;
+	color: white;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 88;	
 }
 
 @media(max-width:768px){
@@ -290,16 +314,20 @@ font-size:16px;
 </section>
 
 <!-- WIREFRAME VS HIFI -->
-  <div class="slider-container">
-  <div class="img-after">
-    <img src="appHi.png" alt="After">
-  </div>
-  <div class="img-before">
-    <img src="appLow.png" alt="Before">
-  </div>
-  <input type="range" min="0" max="100" value="50" class="slider" id="slider">
-  <div class="slider-button"></div>
-</div>
+<div class="slider-mask">
+<div id="container" class="AB-slidebar">
+    <div class="slider-aft">
+      <div style="width: 960px; height: 550px; background: red; background-image:url('https://i.imgur.com/o9Q8Nxj.jpg'); background-size:contain; background-position:center center; background-repeat:none;"></div>
+
+    </div>
+    <div class="slider-bef">
+      <div style="width: 960px; height: 550px; background: blue; background-image:url('https://i.imgur.com/zWoCLiM.jpg'); background-size: contain; background-position:center center; background-repeat:none;"></div>
+    </div>
+    <div class="handle-wrapper">
+        <div class="slider-bar">
+            <img src="https://i.imgur.com/ylG0seD.png"
+            class="slider-handle">
+</div></div></div></div>
 
 <!-- PROCESO -->
 <section class="section" id="proceso">
@@ -396,13 +424,44 @@ font-size:16px;
 
 </div>
   <script>
-  const slider = document.getElementById('slider');
-const container = document.querySelector('.slider-container');
+  jQuery(function () {
+    var before = $('.slider-bef');
+    var after = $('.slider-after');
+    var handle = $('.handle-wrapper');
+    var slider = $('.AB-slidebar');
+	  var tooltip = $('.slider-tip');
+    
+    var currentWidth = $(before).width(); //get current width of top image
+    var newTopWidth = currentWidth * 2/3; //calculate new top width -> 2/3 of current width
+    var slideLeft = newTopWidth * 2/3; //set # of pixels to slide left
+    var slideRight = newTopWidth; //set # of pixels to slide right
+	
+    
+    before.width(newTopWidth); //set top image with new width
+    handle.css('left', newTopWidth); //set left margin for bar
 
-slider.addEventListener('input', (e) => {
-  const value = e.target.value;
-  // Update the CSS variable on the container
-  container.style.setProperty('--position', `${value}%`);
+function slideBar(e) {
+    
+  setTimeout(function () {
+     var newWidth = parseInt($(handle).css('left'));
+     // set width of before img div 
+     before.width(newWidth);
+        }, 30);
+
+     e.stopPropagation();
+    }
+
+
+  handle.draggable({
+        containment: slider,
+        axis: 'x'
+    });
+
+  slider.bind('drag', slideBar).bind('mousedown',     function(){
+    	tooltip.fadeOut(10);
+    });
+    
+
 });
   </script>
 </body>
