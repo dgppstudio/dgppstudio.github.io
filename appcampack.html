@@ -107,65 +107,38 @@ max-width:320px;
 margin-top:20px;
 }
 
-.slider-mask {
-	width:960px;
-	height:540px;
-	overflow:hidden;
-	margin:0 auto;
+.compare-slider{
+  position:relative;
+  width:100%;
+  max-width:500px;
+  margin:auto;
+  overflow:hidden;
+  border-radius:12px;
 }
-.AB-slidebar {
-	position:relative;
-    width: 967px;
-    height: 540px;
-    right: 4px;
-    overflow:hidden;
+
+/* imagen base (wireframe) */
+.img-base{
+  width:100%;
+  display:block;
 }
-.slider-aft, .slider-bef {
-    position: absolute;
-    top: 0px;
-    left: 4px;
-    overflow:hidden;
+
+/* overlay */
+.img-after-wrapper{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  clip-path: inset(0 50% 0 0);
 }
-.handle-wrapper {
-    position:relative;
-    width: 8px;
-    height: 540px;
-    left: 952px;
-    z-index:10;
-}
-.slider-bar {
-    width: 1px;
-    height: 540px;
-    position: absolute;
-    left: 4px;
-    background-color: rgba(255,255,255,.7);
-}
-.slider-handle {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    top: 255px;
-    left: -20px;
-    z-index: 100;
-    opacity: 1;
-}
-.slider-tip{
-	width: 196px;
-	background-color: black;
-	opacity: .6;
-	filter: alpha(opacity=60);
-	position: absolute;
-	margin-top: 215px;
-	margin-left: -94px;
-	padding-top: 6px;
-	padding-bottom:4px;
-	color: white;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	line-height: 12px;
-	text-align: center;
-	text-transform: uppercase;
-	z-index: 88;	
+
+/* imagen frontal (NO debe escalarse) */
+.img-after-wrapper img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 
 @media(max-width:768px){
@@ -314,20 +287,17 @@ font-size:16px;
 </section>
 
 <!-- WIREFRAME VS HIFI -->
-<div class="slider-mask">
-<div id="container" class="AB-slidebar">
-    <div class="slider-aft">
-      <div style="width: 960px; height: 550px; background: red; background-image:url('https://i.imgur.com/o9Q8Nxj.jpg'); background-size:contain; background-position:center center; background-repeat:none;"></div>
+<div class="compare-slider">
+  
+  <img src="appLow.png" class="img-base">
 
-    </div>
-    <div class="slider-bef">
-      <div style="width: 960px; height: 550px; background: blue; background-image:url('https://i.imgur.com/zWoCLiM.jpg'); background-size: contain; background-position:center center; background-repeat:none;"></div>
-    </div>
-    <div class="handle-wrapper">
-        <div class="slider-bar">
-            <img src="https://i.imgur.com/ylG0seD.png"
-            class="slider-handle">
-</div></div></div></div>
+  <div class="img-after-wrapper">
+    <img src="appHi.png">
+  </div>
+
+  <div class="slider-handle"></div>
+
+</div>
 
 <!-- PROCESO -->
 <section class="section" id="proceso">
@@ -423,46 +393,49 @@ font-size:16px;
 </section>
 
 </div>
-  <script>
-  jQuery(function () {
-    var before = $('.slider-bef');
-    var after = $('.slider-after');
-    var handle = $('.handle-wrapper');
-    var slider = $('.AB-slidebar');
-	  var tooltip = $('.slider-tip');
-    
-    var currentWidth = $(before).width(); //get current width of top image
-    var newTopWidth = currentWidth * 2/3; //calculate new top width -> 2/3 of current width
-    var slideLeft = newTopWidth * 2/3; //set # of pixels to slide left
-    var slideRight = newTopWidth; //set # of pixels to slide right
 	
-    
-    before.width(newTopWidth); //set top image with new width
-    handle.css('left', newTopWidth); //set left margin for bar
+<script>
+const slider = document.querySelector('.compare-slider');
+const after = slider.querySelector('.img-after-wrapper');
+const handle = slider.querySelector('.slider-handle');
 
-function slideBar(e) {
-    
-  setTimeout(function () {
-     var newWidth = parseInt($(handle).css('left'));
-     // set width of before img div 
-     before.width(newWidth);
-        }, 30);
+let isDragging = false;
 
-     e.stopPropagation();
-    }
+slider.addEventListener('mousedown', () => isDragging = true);
+window.addEventListener('mouseup', () => isDragging = false);
 
+window.addEventListener('mousemove', (e) => {
+  if(!isDragging) return;
 
-  handle.draggable({
-        containment: slider,
-        axis: 'x'
-    });
+  const rect = slider.getBoundingClientRect();
+  let x = e.clientX - rect.left;
 
-  slider.bind('drag', slideBar).bind('mousedown',     function(){
-    	tooltip.fadeOut(10);
-    });
-    
+  x = Math.max(0, Math.min(x, rect.width));
 
+  const percent = (x / rect.width) * 100;
+
+  after.style.width = percent + '%';
+  handle.style.left = percent + '%';
 });
-  </script>
+
+// touch
+slider.addEventListener('touchstart', () => isDragging = true);
+window.addEventListener('touchend', () => isDragging = false);
+
+window.addEventListener('touchmove', (e) => {
+  if(!isDragging) return;
+
+  const rect = slider.getBoundingClientRect();
+  let x = e.touches[0].clientX - rect.left;
+
+  x = Math.max(0, Math.min(x, rect.width));
+
+  const percent = (x / rect.width) * 100;
+
+  after.style.width = percent + '%';
+  handle.style.left = percent + '%';
+});
+</script>
+	
 </body>
 </html>
