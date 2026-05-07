@@ -146,6 +146,132 @@
   font-size:12px;
   border-radius:6px;
 }
+
+/* ABOUT */
+
+.about-section{
+padding:100px 20px;
+background:#ffffff;
+}
+
+.about-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:80px;
+}
+
+.about-image{
+flex:1;
+}
+
+.about-image img{
+width:100%;
+max-width:420px;
+border-radius:24px;
+display:block;
+}
+
+.about-content{
+flex:1;
+}
+
+.section-label{
+font-size:14px;
+font-weight:600;
+letter-spacing:1px;
+text-transform:uppercase;
+color:#0077DD;
+margin-bottom:10px;
+}
+
+.about-content h2{
+font-size:42px;
+line-height:1.2;
+margin-bottom:25px;
+max-width:600px;
+}
+
+.about-text{
+font-size:17px;
+line-height:1.8;
+color:#555;
+margin-bottom:20px;
+max-width:600px;
+}
+
+.about-highlights{
+display:flex;
+gap:40px;
+margin:40px 0;
+flex-wrap:wrap;
+}
+
+.highlight h3{
+font-size:28px;
+margin-bottom:5px;
+color:#0077DD;
+}
+
+.highlight p{
+font-size:14px;
+color:#666;
+margin:0;
+}
+
+.tools{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:30px;
+}
+
+.tools span{
+padding:10px 16px;
+background:#F4F1E9;
+border-radius:999px;
+font-size:14px;
+color:#004488;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.about-container{
+flex-direction:column;
+gap:50px;
+}
+
+.about-content h2{
+font-size:34px;
+}
+
+.about-image img{
+max-width:320px;
+margin:auto;
+}
+
+.about-content{
+text-align:center;
+}
+
+.about-text,
+.about-content h2{
+margin-left:auto;
+margin-right:auto;
+}
+
+.about-highlights{
+justify-content:center;
+}
+
+.tools{
+justify-content:center;
+}
+
+}
   
 @media(max-width:768px){
 .hero-index-content{
@@ -198,6 +324,8 @@
 
   </div>
 </section>
+
+<!-- CASOS -->
 <section id="casos">
   <div class="cases">
   <a href="appcampack.html" class="case-card">
@@ -224,6 +352,49 @@
     </div>
   </a>
 </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section class="about-section" id="sobre-mi">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="jose-vazquez.jpg" alt="José Vázquez">
+    </div>
+    <div class="about-content">
+      <p class="section-label">Sobre mí</p>
+      <h2>
+        Diseño experiencias digitales enfocadas en claridad, usabilidad y negocio.
+      </h2>
+      <p class="about-text">
+        Soy diseñador UX/UI y desarrollador web con más de 30 años de experiencia en diseño digital, eCommerce y programas de lealtad.
+      </p>
+      <p class="about-text">
+        Me especializo en transformar procesos complejos en experiencias claras, funcionales y centradas en el usuario.
+      </p>
+      <div class="about-highlights">
+        <div class="highlight">
+          <h3>30+</h3>
+          <p>Años de experiencia</p>
+        </div>
+        <div class="highlight">
+          <h3>UX/UI</h3>
+          <p>eCommerce & Loyalty</p>
+        </div>
+        <div class="highlight">
+          <h3>Remote</h3>
+          <p>Disponible para colaborar</p>
+        </div>
+      </div>
+      <div class="tools">
+        <span>Figma</span>
+        <span>HTML/CSS</span>
+        <span>UX Research</span>
+        <span>Wireframing</span>
+        <span>Prototyping</span>
+        <span>IA Creativa</span>
+      </div>
+    </div>
+  </div>
 </section>
 
 </body>
