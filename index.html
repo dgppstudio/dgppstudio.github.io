@@ -11,7 +11,8 @@
 .header{
   position:sticky;
   top:0;
-  background:white;
+  backdrop-filter:blur(10px);
+  background:rgba(255,255,255,.9);
   z-index:1000;
   border-bottom:1px solid #eee;
 }
@@ -42,7 +43,7 @@ text-decoration:none;
   
 .hero-index{
 background:#F4F1E9;
-padding:50px 20px;
+padding:20px 20px 10px;
 }
 
 .hero-index-content{
@@ -61,7 +62,8 @@ max-width:520px;
 
 .hero-text h1{
 font-size:58px;
-line-height:1.05;
+line-height:1.1;
+letter-spacing:-1px;
 margin-bottom:24px;
 }
 
@@ -125,7 +127,7 @@ transition:transform .3s ease;
 }
 
 .case-card:hover img{
-transform:scale(1.03);
+transform:scale(1.05) translateY(-2px);
 }
 
 .case-content{
@@ -174,7 +176,7 @@ letter-spacing:.3px;
 /* ABOUT */
 
 .about-section{
-padding:70px 20px 100px;
+padding:70px 20px;
 background:#fff;
 }
 
