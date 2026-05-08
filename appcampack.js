@@ -1,4 +1,4 @@
-const slider = document.querySelector('.app-compare-slider');
+const slider = document.querySelector('.compare-slider');
 const after = slider.querySelector('.img-after-wrapper');
 const handle = slider.querySelector('.slider-handle');
 
