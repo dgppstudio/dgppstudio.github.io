@@ -440,6 +440,252 @@ flex-direction:column;
 text-align:center;
 }
 }
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:1024px){
+
+.hero-index-content{
+gap:40px;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
+.about-content h2,
+.contact-container h2{
+font-size:40px;
+}
+
+.hero-image img{
+max-width:520px;
+}
+
+.case-card img{
+height:220px;
+}
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+/* HEADER */
+
+.header{
+position:relative;
+}
+
+.header-inner{
+flex-direction:column;
+gap:14px;
+padding:16px 20px;
+}
+
+.logo{
+width:110px;
+}
+
+nav{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.header a{
+margin:0;
+font-size:15px;
+}
+
+
+/* HERO */
+
+.hero-index{
+padding:20px 20px 40px;
+}
+
+.hero-index-content{
+flex-direction:column;
+text-align:center;
+gap:30px;
+}
+
+.hero-text{
+max-width:100%;
+}
+
+.hero-text h1{
+font-size:34px;
+line-height:1.12;
+margin-bottom:18px;
+}
+
+.hero-text p{
+font-size:16px;
+line-height:1.7;
+margin:0 auto 24px;
+}
+
+.hero-image{
+justify-content:center;
+}
+
+.hero-image img{
+max-width:100%;
+border-radius:18px;
+}
+
+
+/* CASES */
+
+#casos{
+padding:10px 20px 10px;
+}
+
+.cases{
+grid-template-columns:1fr;
+gap:24px;
+}
+
+.case-card{
+border-radius:18px;
+}
+
+.case-card img{
+height:200px;
+padding-top:6px;
+}
+
+.case-content{
+padding:22px;
+}
+
+.case-content h3{
+font-size:26px;
+}
+
+.case-content p{
+font-size:15px;
+line-height:1.6;
+}
+
+
+/* ABOUT */
+
+.about-section{
+padding:60px 20px;
+}
+
+.about-container{
+flex-direction:column;
+gap:40px;
+text-align:center;
+}
+
+.about-image img{
+max-width:300px;
+margin:auto;
+}
+
+.about-content h2{
+font-size:34px;
+line-height:1.12;
+margin-left:auto;
+margin-right:auto;
+}
+
+.about-text{
+font-size:16px;
+line-height:1.8;
+margin-left:auto;
+margin-right:auto;
+}
+
+.about-highlights{
+justify-content:center;
+gap:30px;
+margin:35px 0;
+}
+
+.highlight h3{
+font-size:30px;
+}
+
+.tools{
+justify-content:center;
+}
+
+
+/* CONTACTO */
+
+.contact-section{
+padding:70px 20px;
+}
+
+.contact-container h2{
+font-size:34px;
+line-height:1.12;
+}
+
+.contact-text{
+font-size:16px;
+line-height:1.7;
+}
+
+.contact-links{
+flex-direction:column;
+gap:16px;
+}
+
+
+/* FOOTER */
+
+.footer{
+padding:24px 20px;
+}
+
+.footer-inner{
+flex-direction:column;
+text-align:center;
+gap:10px;
+}
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media(max-width:480px){
+
+.hero-text h1,
+.about-content h2,
+.contact-container h2{
+font-size:30px;
+}
+
+.case-content h3{
+font-size:24px;
+}
+
+.case-card img{
+height:180px;
+}
+
+.about-image img{
+max-width:260px;
+}
+
+}
 </style>
 
 </head>
