@@ -263,6 +263,79 @@ font-size:14px;
 color:#004488;
 }
 
+/* CONTACTO */
+
+.contact-section{
+padding:100px 20px 80px;
+background:#F4F1E9;
+margin-top:40px;
+}
+
+.contact-container{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.contact-container h2{
+font-size:58px;
+line-height:1.05;
+max-width:800px;
+margin:0 auto 30px;
+}
+
+.contact-text{
+font-size:18px;
+line-height:1.8;
+max-width:700px;
+margin:0 auto 40px;
+color:#555;
+}
+
+.contact-links{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.contact-links a{
+font-size:18px;
+font-weight:600;
+color:#004488;
+text-decoration:none;
+transition:.3s ease;
+}
+
+.contact-links a:hover{
+opacity:.7;
+}
+
+
+/* FOOTER */
+
+.footer{
+padding:30px 20px;
+background:#ffffff;
+border-top:1px solid #eee;
+}
+
+.footer-inner{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.footer p{
+font-size:14px;
+color:#777;
+margin:0;
+}
+
 /* RESPONSIVE */
 
 @media(max-width:900px){
@@ -356,6 +429,20 @@ height:200px;
 .cases-grid{
     grid-template-columns: repeat(2, 1fr);
   }
+
+.contact-container h2{
+font-size:38px;
+}
+
+.contact-links{
+flex-direction:column;
+gap:16px;
+}
+
+.footer-inner{
+flex-direction:column;
+text-align:center;
+}
 }
 </style>
 
@@ -465,6 +552,36 @@ height:200px;
     </div>
   </div>
 </section>
+
+<!-- CONTACTO -->
+<section class="contact-section" id="contacto">
+  <div class="contact-container">
+    <p class="section-label">Contacto</p>
+    <h2>
+      ¿Buscas mejorar la experiencia de tus productos digitales?
+    </h2>
+    <p class="contact-text">
+      Estoy disponible para colaborar en proyectos de UX/UI, eCommerce y experiencias digitales centradas en el usuario.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:tuemail@correo.com">tuemail@correo.com</a>
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="https://www.behance.net/" target="_blank">Behance</a>
+    </div>
+  </div>
+</section>
+  
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p>
+      © 2026 José Vázquez — UX/UI Designer
+    </p>
+    <p>
+      Diseñado y desarrollado en HTML/CSS
+    </p>
+  </div>
+</footer>
 
 </body>
 </html>
