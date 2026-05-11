@@ -1,6 +1,6 @@
 .site-hero{
 padding:100px 20px;
-background:#F4F1E9;
+background:#F4F4F4;
 overflow:hidden;
 }
 
@@ -109,7 +109,7 @@ align-items:start;
 }
 
 .device-card{
-background:#FAFAF8;
+background:#F4F4F4;
 border-radius:28px;
 padding:40px 30px;
 text-align:center;
