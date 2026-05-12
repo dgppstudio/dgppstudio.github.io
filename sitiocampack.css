@@ -195,6 +195,43 @@ line-height:1.8;
 color:#666;
 }
 
+.wireframe-section{
+padding:120px 20px;
+background:#fff;
+}
+
+.wireframe-grid{
+max-width:1300px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
+}
+
+.wireframe-text h2{
+font-size:52px;
+line-height:1.05;
+letter-spacing:-1.5px;
+margin-bottom:28px;
+max-width:580px;
+}
+
+.wireframe-text p{
+font-size:18px;
+line-height:1.9;
+color:#555;
+margin-bottom:22px;
+max-width:620px;
+}
+
+.wireframe-visual img{
+width:100%;
+max-width:700px;
+display:block;
+margin:auto;
+}
+
 @media(max-width:1024px){
 .site-hero-content{
 flex-direction:column;
@@ -241,6 +278,22 @@ margin-right:auto;
 }
 
 .responsive-text p{
+margin-left:auto;
+margin-right:auto;
+}
+
+.wireframe-grid{
+grid-template-columns:1fr;
+gap:50px;
+text-align:center;
+}
+
+.wireframe-text h2{
+font-size:42px;
+margin:auto auto 24px;
+}
+
+.wireframe-text p{
 margin-left:auto;
 margin-right:auto;
 }
@@ -312,5 +365,19 @@ padding:28px;
 
 .point-card h3{
 font-size:24px;
+}
+
+.wireframe-section{
+padding:80px 20px;
+}
+
+.wireframe-text h2{
+font-size:34px;
+line-height:1.1;
+}
+
+.wireframe-text p{
+font-size:16px;
+line-height:1.8;
 }
 }
