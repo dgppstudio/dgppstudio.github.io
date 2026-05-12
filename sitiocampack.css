@@ -232,6 +232,32 @@ display:block;
 margin:auto;
 }
 
+.ux-decision{
+padding:110px 20px;
+background:#F8F8F6;
+}
+
+.ux-decision-content{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.ux-decision-content h2{
+font-size:52px;
+line-height:1.05;
+letter-spacing:-1.5px;
+margin-bottom:30px;
+}
+
+.ux-decision-content p{
+font-size:18px;
+line-height:1.9;
+color:#555;
+max-width:760px;
+margin:0 auto 24px;
+}
+
 @media(max-width:1024px){
 .site-hero-content{
 flex-direction:column;
@@ -377,6 +403,20 @@ line-height:1.1;
 }
 
 .wireframe-text p{
+font-size:16px;
+line-height:1.8;
+}
+
+.ux-decision{
+padding:80px 20px;
+}
+
+.ux-decision-content h2{
+font-size:34px;
+line-height:1.1;
+}
+
+.ux-decision-content p{
 font-size:16px;
 line-height:1.8;
 }
