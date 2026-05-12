@@ -141,6 +141,60 @@ max-width:320px;
 margin:auto;
 }
 
+.responsive-strategy{
+padding:120px 20px;
+background:#F8F8F6;
+}
+
+.responsive-grid{
+max-width:1300px;
+margin:auto;
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:80px;
+align-items:start;
+}
+
+.responsive-text h2{
+font-size:52px;
+line-height:1.05;
+letter-spacing:-1.5px;
+margin-bottom:30px;
+max-width:620px;
+}
+
+.responsive-text p{
+font-size:18px;
+line-height:1.9;
+color:#555;
+margin-bottom:24px;
+max-width:680px;
+}
+
+.responsive-points{
+display:flex;
+flex-direction:column;
+gap:24px;
+}
+
+.point-card{
+background:#fff;
+padding:34px;
+border-radius:24px;
+box-shadow:0 10px 30px rgba(0,0,0,0.04);
+}
+
+.point-card h3{
+font-size:28px;
+margin-bottom:14px;
+}
+
+.point-card p{
+font-size:16px;
+line-height:1.8;
+color:#666;
+}
+
 @media(max-width:1024px){
 .site-hero-content{
 flex-direction:column;
@@ -169,6 +223,26 @@ max-width:700px;
 
 .multi-device-header h2{
 font-size:42px;
+}
+
+.responsive-grid{
+grid-template-columns:1fr;
+gap:50px;
+}
+
+.responsive-text{
+text-align:center;
+}
+
+.responsive-text h2{
+font-size:42px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.responsive-text p{
+margin-left:auto;
+margin-right:auto;
 }
 }
 
@@ -215,6 +289,28 @@ padding:34px 24px;
 }
 
 .device-card h3{
+font-size:24px;
+}
+
+.responsive-strategy{
+padding:80px 20px;
+}
+
+.responsive-text h2{
+font-size:34px;
+line-height:1.1;
+}
+
+.responsive-text p{
+font-size:16px;
+line-height:1.8;
+}
+
+.point-card{
+padding:28px;
+}
+
+.point-card h3{
 font-size:24px;
 }
 }
