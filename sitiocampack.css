@@ -258,6 +258,70 @@ max-width:760px;
 margin:0 auto 24px;
 }
 
+.design-system-section{
+padding:120px 20px;
+background:#fff;
+}
+
+.design-system-header{
+max-width:900px;
+margin:0 auto 70px;
+text-align:center;
+}
+
+.design-system-header h2{
+font-size:52px;
+line-height:1.05;
+letter-spacing:-1.5px;
+margin-bottom:24px;
+}
+
+.design-system-intro{
+font-size:18px;
+line-height:1.9;
+color:#666;
+max-width:760px;
+margin:auto;
+}
+
+.design-system-grid{
+max-width:1300px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3, 1fr);
+gap:30px;
+}
+
+.system-card{
+background:#FAFAF8;
+border-radius:28px;
+padding:34px;
+transition:.3s ease;
+}
+
+.system-card:hover{
+transform:translateY(-6px);
+box-shadow:0 20px 50px rgba(0,0,0,0.05);
+}
+
+.system-card img{
+width:100%;
+border-radius:18px;
+margin-bottom:26px;
+display:block;
+}
+
+.system-card h3{
+font-size:28px;
+margin-bottom:14px;
+}
+
+.system-card p{
+font-size:16px;
+line-height:1.8;
+color:#666;
+}
+
 @media(max-width:1024px){
 .site-hero-content{
 flex-direction:column;
@@ -322,6 +386,15 @@ margin:auto auto 24px;
 .wireframe-text p{
 margin-left:auto;
 margin-right:auto;
+}
+
+.design-system-grid{
+grid-template-columns:1fr;
+max-width:700px;
+}
+
+.design-system-header h2{
+font-size:42px;
 }
 }
 
@@ -419,5 +492,31 @@ line-height:1.1;
 .ux-decision-content p{
 font-size:16px;
 line-height:1.8;
+}
+
+.design-system-section{
+padding:80px 20px;
+}
+
+.design-system-header{
+margin-bottom:50px;
+}
+
+.design-system-header h2{
+font-size:34px;
+line-height:1.1;
+}
+
+.design-system-intro{
+font-size:16px;
+line-height:1.8;
+}
+
+.system-card{
+padding:28px;
+}
+
+.system-card h3{
+font-size:24px;
 }
 }
