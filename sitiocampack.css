@@ -1,6 +1,6 @@
 .site-hero{
 padding:100px 20px;
-background:#F8F8F6;
+background:#F4F4F4;
 overflow:hidden;
 }
 
@@ -109,7 +109,7 @@ align-items:start;
 }
 
 .device-card{
-background:#F8F8F6;
+background:#FAFAFA;
 border-radius:28px;
 padding:40px 30px;
 text-align:center;
@@ -143,7 +143,7 @@ margin:auto;
 
 .responsive-strategy{
 padding:120px 20px;
-background:#F8F8F6;
+background:#F4F4F4;
 }
 
 .responsive-grid{
@@ -234,7 +234,7 @@ margin:auto;
 
 .ux-decision{
 padding:110px 20px;
-background:#F8F8F6;
+background:#F4F4F4;
 }
 
 .ux-decision-content{
@@ -293,7 +293,7 @@ gap:30px;
 }
 
 .system-card{
-background:#FAFAF8;
+background:#FAFAFA;
 border-radius:28px;
 padding:34px;
 transition:.3s ease;
@@ -324,7 +324,7 @@ color:#666;
 
 .usability-section{
 padding:120px 20px;
-background:#F8F8F6;
+background:#F4F4F4;
 }
 
 .usability-grid{
@@ -404,8 +404,6 @@ margin:auto;
 .final-showcase img{
 width:100%;
 display:block;
-border-radius:32px;
-box-shadow:0 30px 70px rgba(0,0,0,0.08);
 }
 
 @media(max-width:1024px){
