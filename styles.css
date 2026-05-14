@@ -165,3 +165,21 @@ img{
   font-size:14px;
   color:rgba(255,255,255,.5);
 }
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+/* FOOTER */
+
+.footer{
+padding:24px 20px;
+}
+
+.footer-inner{
+flex-direction:column;
+text-align:center;
+gap:10px;
+}
+}
