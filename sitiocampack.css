@@ -618,6 +618,14 @@ grid-template-columns:1fr;
 .results-container h2{
 font-size:42px;
 }
+
+.learnings-grid{
+grid-template-columns:1fr;
+}
+
+.learnings-container h2{
+font-size:42px;
+}
 }
 
 @media(max-width:768px){
@@ -799,6 +807,29 @@ padding:30px 26px;
 }
 
 .result-card h3{
+font-size:24px;
+}
+
+.learnings-section{
+padding:80px 20px;
+}
+
+.learnings-container h2{
+font-size:34px;
+line-height:1.1;
+}
+
+.learnings-intro{
+font-size:16px;
+line-height:1.8;
+margin-bottom:50px;
+}
+
+.learning-card{
+padding:30px 26px;
+}
+
+.learning-card h3{
 font-size:24px;
 }
 }
