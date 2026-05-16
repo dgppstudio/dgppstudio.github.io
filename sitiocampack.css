@@ -530,9 +530,12 @@ display:flex;
 gap:12px;
 flex-wrap:wrap;
 margin-top:10px;
-justify-content: center;
 }
 
+.final-solution-section.prototype-links{
+justify-content: center;
+}
+  
 .prototype-links a{
 padding:10px 16px;
 background:#F4F1E9;
