@@ -112,7 +112,7 @@ align-items:start;
 .device-card{
 background:#FAFAFA;
 border-radius:28px;
-padding:40px 30px;
+padding:20px;
 text-align:center;
 transition:.3s ease;
 }
@@ -127,6 +127,8 @@ width:100%;
 max-width:320px;
 margin:0 auto 30px;
 display:block;
+height:200px;
+object-fit:cover;
 }
 
 .device-card h3{
