@@ -517,11 +517,19 @@ line-height:1.8;
 color:#666;
 }
 
+.prototype-label{
+margin-top:28px;
+margin-bottom:14px;
+font-size:14px;
+font-weight:600;
+color:#666;
+}
+
 .prototype-links{
 display:flex;
 gap:12px;
 flex-wrap:wrap;
-margin-top:24px;
+margin-top:10px;
 }
 
 .prototype-links a{
