@@ -550,6 +550,28 @@ color:#fff;
 transform:translateY(-2px);
 }
 
+.point-card{
+background:#fff;
+padding:28px;
+border-radius:22px;
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+display:flex;
+flex-direction:column;
+gap:14px;
+transition:.3s ease;
+}
+
+.point-card:hover{
+transform:translateY(-4px);
+box-shadow:0 18px 40px rgba(0,0,0,.08);
+}
+
+.point-icon{
+width:34px;
+height:34px;
+object-fit:contain;
+}
+
 @media(max-width:1024px){
 .site-hero-content{
 flex-direction:column;
