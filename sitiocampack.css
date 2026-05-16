@@ -572,6 +572,12 @@ height:34px;
 object-fit:contain;
 }
 
+.point-icon{
+font-size:34px;
+color:#004488;
+margin-bottom:4px;
+}
+
 @media(max-width:1024px){
 .site-hero-content{
 flex-direction:column;
