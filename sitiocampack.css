@@ -115,6 +115,9 @@ border-radius:28px;
 padding:20px;
 text-align:center;
 transition:.3s ease;
+display:flex;
+flex-direction:column;
+height:100%;
 }
 
 .device-card:hover{
@@ -125,10 +128,10 @@ box-shadow:0 20px 50px rgba(0,0,0,0.06);
 .device-card img{
 width:100%;
 max-width:320px;
-margin:0 auto 30px;
+margin:0 auto 20px;
 display:block;
-height:200px;
-object-fit:cover;
+height:220px;
+object-fit:contain;
 }
 
 .device-card h3{
@@ -138,7 +141,7 @@ margin-bottom:14px;
 
 .device-card p{
 font-size:16px;
-line-height:1.8;
+line-height:1.7;
 color:#666;
 max-width:320px;
 margin:auto;
