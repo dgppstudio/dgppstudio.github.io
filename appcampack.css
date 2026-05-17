@@ -8,7 +8,6 @@ background-size:contain;
 padding:100px 20px 80px;
 display:flex;
 align-items:center;
-position:relative;
 }
 
 .hero-content{
@@ -48,7 +47,7 @@ border:3px solid white;
 }
 
 .hero-text{
-max-width:500px;
+width:1200px;
 }
 
 .hero-meta p{
