@@ -419,7 +419,7 @@ background:#fff;
 
 .final-solution-header{
 max-width:900px;
-margin:0 auto 70px;
+margin:0 auto 50px;
 text-align:center;
 }
 
@@ -446,6 +446,8 @@ margin:auto;
 .final-showcase img{
 width:100%;
 display:block;
+max-width:1200px;
+margin:auto;
 }
 
 .results-section{
