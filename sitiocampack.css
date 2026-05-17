@@ -383,12 +383,18 @@ color:#004488;
 margin-bottom:6px;
 }
 
-.usability-visual img{
+.affinity-box{
+margin-top:32px;
+border-radius:20px;
+overflow:hidden;
+background:#F4F1E9;
+padding:20px;
+}
+
+.affinity-box img{
 width:100%;
-max-width:700px;
 display:block;
-margin:auto;
-border-radius:24px;
+border-radius:12px;
 }
 
 .final-solution-section{
