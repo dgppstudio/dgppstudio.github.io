@@ -333,18 +333,35 @@ line-height:1.8;
 color:#666;
 }
 
+.usability-section{
+padding:100px 20px;
+background:#F8F8F8;
+}
+
 .usability-header{
 max-width:900px;
 margin:0 auto 60px;
 text-align:center;
 }
 
+.usability-header h2{
+font-size:52px;
+line-height:1.05;
+letter-spacing:-1px;
+margin-bottom:22px;
+}
+
 .usability-intro{
-max-width:720px;
-margin:20px auto 0;
+max-width:760px;
+margin:0 auto;
+font-size:18px;
+line-height:1.8;
+color:#555;
 }
 
 .usability-grid{
+max-width:1200px;
+margin:auto;
 display:grid;
 grid-template-columns:1fr 1.1fr;
 gap:60px;
@@ -358,30 +375,40 @@ gap:28px;
 }
 
 .finding-item{
-padding-left:18px;
+padding-left:20px;
 border-left:3px solid #A8C66C;
 }
 
 .finding-item h3{
-font-size:22px;
+font-size:24px;
+line-height:1.2;
 margin-bottom:8px;
-color:var(--color-primary);
+color:#004488;
 }
 
 .finding-item p{
 margin:0;
+font-size:16px;
+line-height:1.7;
+color:#555;
 }
 
-.usability-visual img{
-width:100%;
-border-radius:16px;
-display:block;
+.usability-visual{
+display:flex;
+flex-direction:column;
 }
 
 .diagram-caption{
 font-size:14px;
 color:#666;
-margin-bottom:16px;
+margin-bottom:14px;
+}
+
+.usability-visual img{
+width:100%;
+display:block;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,0.06);
 }
 
 .final-solution-section{
@@ -702,17 +729,12 @@ max-width:700px;
 font-size:42px;
 }
 
+.usability-header h2{
+font-size:42px;
+}
+
 .usability-grid{
-grid-template-columns:1fr;
 gap:40px;
-}
-
-.usability-header{
-text-align:left;
-}
-
-.usability-intro{
-margin-left:0;
 }
 
 .results-grid{
@@ -729,6 +751,37 @@ grid-template-columns:1fr;
 
 .learnings-container h2{
 font-size:42px;
+}
+}
+
+@media(max-width:900px){
+.usability-section{
+padding:70px 20px;
+}
+
+.usability-header{
+text-align:left;
+margin-bottom:40px;
+}
+
+.usability-header h2{
+font-size:36px;
+line-height:1.1;
+}
+
+.usability-intro{
+margin-left:0;
+font-size:16px;
+line-height:1.7;
+}
+
+.usability-grid{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+.finding-item h3{
+font-size:20px;
 }
 }
 
@@ -935,5 +988,11 @@ padding:30px 26px;
 
 .learning-card h3{
 font-size:24px;
+}
+}
+
+@media(max-width:480px){
+.usability-header h2{
+font-size:30px;
 }
 }
