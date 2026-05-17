@@ -69,7 +69,7 @@ border-radius:12px;
 
 .media-bleed{
 margin:60px -20px;
-background:#F4F1E9;
+background:#F4F4F4;
 border-radius:28px;
 padding:80px 20px;
 }
@@ -209,7 +209,7 @@ text-align:center;
 transition:all .2s ease;
 }
 
-.compare-slider:hover .slider-handle{
+.slider-handle{
   box-shadow:0 6px 18px rgba(0,0,0,0.28);
 }
 
@@ -233,8 +233,13 @@ text-align:center;
 margin-top:20px;
 }
 
+.rewards-box p{
+  width:100%;
+  margin: 0 auto;
+}
+
 .filtros-box, .reward-box{
-background: #F4F1E9;
+background: #f4f4f4;
 }
 
 .reward-box img, .filtros-box img, .compare-image img{
@@ -271,7 +276,6 @@ transition:.3s ease;
 
 .persona:hover{
 transform:translateY(-4px);
-box-shadow:0 10px 24px rgba(0,0,0,.05);
 }
 
 .persona img{
