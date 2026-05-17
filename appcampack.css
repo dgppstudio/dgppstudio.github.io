@@ -4,10 +4,11 @@ background:#F4F1E9;
 background-image:url('imageHero.webp');
 background-repeat:no-repeat;
 background-position:right center;
-background-size:cover;
+background-size:contain;
 padding:100px 20px 80px;
 display:flex;
 align-items:center;
+position:relative;
 }
 
 .hero-content{
