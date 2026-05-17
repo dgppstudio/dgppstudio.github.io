@@ -365,7 +365,7 @@ margin:auto;
 display:grid;
 grid-template-columns:1fr 1.1fr;
 gap:60px;
-align-items:start;
+align-items:center;
 }
 
 .usability-findings{
@@ -409,6 +409,7 @@ width:100%;
 display:block;
 border-radius:18px;
 box-shadow:0 10px 30px rgba(0,0,0,0.06);
+margin:0;
 }
 
 .final-solution-section{
