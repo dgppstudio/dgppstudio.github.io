@@ -301,8 +301,11 @@ gap:30px;
 .system-card{
 background:#FAFAFA;
 border-radius:28px;
-padding:34px;
+padding:24px;
 transition:.3s ease;
+display:flex;
+flex-direction:column;
+height:100%;
 }
 
 .system-card:hover{
@@ -313,13 +316,15 @@ box-shadow:0 20px 50px rgba(0,0,0,0.05);
 .system-card img{
 width:100%;
 border-radius:18px;
-margin-bottom:26px;
+margin-bottom:20px;
 display:block;
+height:180px;
+object-fit:contain;
 }
 
 .system-card h3{
 font-size:28px;
-margin-bottom:14px;
+margin-bottom:10px;
 }
 
 .system-card p{
