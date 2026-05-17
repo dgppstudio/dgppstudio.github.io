@@ -1,6 +1,6 @@
 .hero{
 min-height:70vh;
-background:#F4F1E9;
+background:#F4F4F4;
 background-image:url('imageHero.webp');
 background-repeat:no-repeat;
 background-position:right center;
@@ -262,16 +262,16 @@ flex-wrap:wrap;
 
 .persona{
 text-align:center;
-background:#fff;
+background:#F4F4F4;
 padding:24px 18px;
 border-radius:20px;
-box-shadow:0 10px 24px rgba(0,0,0,.05);
 min-width:180px;
 transition:.3s ease;
 }
 
 .persona:hover{
 transform:translateY(-4px);
+box-shadow:0 10px 24px rgba(0,0,0,.05);
 }
 
 .persona img{
