@@ -72,6 +72,8 @@ img{
 width:100%;
 border-radius:8px;
 margin:20px 0;
+user-select:none;
+-webkit-user-drag:none;
 }
 
 .meta{
@@ -89,14 +91,6 @@ display:inline-block;
 padding-bottom:5px;
 }
 
-ul{
-padding-left:20px;
-}
-
-li{
-margin-bottom:8px;
-}
-
 .btn,
 .case-card,
 .tools span,
@@ -107,11 +101,6 @@ margin-bottom:8px;
 .btn:hover{
   transform:translateY(-2px);
   box-shadow:0 10px 20px rgba(0,0,0,.12);
-}
-
-img{
-  user-select:none;
-  -webkit-user-drag:none;
 }
 
 /* FOOTER */
@@ -175,11 +164,5 @@ img{
 
 .footer{
 padding:24px 20px;
-}
-
-.footer-inner{
-flex-direction:column;
-text-align:center;
-gap:10px;
 }
 }
