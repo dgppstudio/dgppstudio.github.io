@@ -596,6 +596,29 @@ line-height:1.7;
 color:#555;
 }
 
+.menu-icons-row{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:28px;
+
+margin:28px 0 22px;
+flex-wrap:wrap;
+}
+
+.menu-icons-row img{
+width:34px;
+height:34px;
+
+opacity:.85;
+transition:.25s ease;
+}
+
+.menu-icons-row img:hover{
+transform:translateY(-2px);
+opacity:1;
+}
+
 @media(max-width:1024px){
 .site-hero-content{
 flex-direction:column;
