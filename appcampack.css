@@ -5,7 +5,7 @@ background-image:url('imageHero.webp');
 background-repeat:no-repeat;
 background-position:right center;
 background-size:contain;
-padding:100px 20px 80px;
+padding:60px 20px;
 display:flex;
 align-items:center;
 }
