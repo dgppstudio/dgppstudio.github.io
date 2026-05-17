@@ -22,9 +22,9 @@ overflow-x:hidden;
 }
 
 .container{
-max-width:900px;
+max-width:1100px;
 margin:auto;
-padding:40px 20px;
+padding:60px 24px;
 }
 
 h1,h2,h3{
@@ -34,13 +34,15 @@ margin:0 0 10px 0;
 }
 
 h1{
-font-size:40px;
+font-size:52px;
 font-weight:700;
+line-height:1.05;
+letter-spacing:-1.5px;
 }
 
 h2{
-font-size:28px;
-font-weight:600;
+font-size:34px;
+line-height:1.15;
 }
 
 h3{
@@ -83,6 +85,7 @@ margin-bottom:20px;
 
 .section{
 margin-bottom:100px;
+position:relative;
 }
 
 .section:last-child{
@@ -90,9 +93,14 @@ margin-bottom:40px;
 }
 
 .section h2{
+margin-bottom:18px;
 border-bottom:2px solid var(--color-accent);
 display:inline-block;
 padding-bottom:5px;
+}
+
+.section p{
+max-width:760px;
 }
 
 .btn,
