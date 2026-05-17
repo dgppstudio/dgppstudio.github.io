@@ -55,6 +55,14 @@ color:var(--color-accent);
 text-decoration:none;
 }
 
+ul{
+padding-left:20px;
+}
+
+li{
+margin-bottom:8px;
+}
+
 .btn{
 display:inline-block;
 padding:12px 24px;
