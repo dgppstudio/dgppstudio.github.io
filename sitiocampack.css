@@ -363,14 +363,24 @@ margin-bottom:30px;
 }
 
 .usability-list{
-padding-left:20px;
+margin-top:28px;
+padding:0;
+list-style:none;
 }
 
 .usability-list li{
+padding-left:20px;
+border-left:3px solid #A6C96A;
 font-size:17px;
-line-height:1.9;
-margin-bottom:14px;
-color:#444;
+line-height:1.7;
+margin-bottom:22px;
+color:#555;
+}
+
+.usability-list strong{
+display:block;
+color:#004488;
+margin-bottom:6px;
 }
 
 .usability-visual img{
