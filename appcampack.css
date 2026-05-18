@@ -232,6 +232,11 @@ text-align:center;
 margin-top:20px;
 }
 
+.reward-box .caption{
+  width:100%;
+  margin:20px auto;
+}
+
 .filtros-box, .reward-box{
 background: #f4f4f4;
 }
