@@ -54,13 +54,22 @@ width:1200px;
 margin:2px 0;
 }
 
+video{
+border:none;
+outline:none;
+box-shadow:none;
+display:block;
+}
+
 .demo-video{
 width:100%;
 max-width:420px;
 height:auto;
 display:block;
 margin:20px auto;
-border-radius:12px;
+border:none;
+outline:none;
+box-shadow:none;
 }
 
 .media-bleed{
