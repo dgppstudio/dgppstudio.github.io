@@ -22,7 +22,7 @@ overflow-x:hidden;
 }
 
 .container{
-max-width:1100px;
+max-width:1000px;
 margin:auto;
 padding:60px 24px;
 }
@@ -105,10 +105,6 @@ margin-bottom:18px;
 border-bottom:2px solid var(--color-accent);
 display:inline-block;
 padding-bottom:5px;
-}
-
-.section p{
-max-width:760px;
 }
 
 .btn,
