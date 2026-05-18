@@ -80,36 +80,6 @@ border-radius:20px;
 display:block;
 }
 
-.hero-social{
-display:flex;
-align-items:center;
-gap:14px;
-margin-top:22px;
-}
-
-.hero-social a{
-width:42px;
-height:42px;
-border-radius:50%;
-background:#fff;
-display:flex;
-align-items:center;
-justify-content:center;
-transition:.25s ease;
-box-shadow:0 6px 18px rgba(0,0,0,.08);
-}
-
-.hero-social a:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 24px rgba(0,0,0,.12);
-}
-
-.hero-social img{
-width:20px;
-height:20px;
-display:block;
-}
-
 /* CASOS */
 
 #casos{
