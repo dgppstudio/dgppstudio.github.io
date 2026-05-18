@@ -315,8 +315,9 @@ color:#555;
 .contact-links{
 display:flex;
 justify-content:center;
-gap:60px;
+gap:24px;
 flex-wrap:wrap;
+margin-top:24px;
 }
 
 .contact-links a{
@@ -324,34 +325,10 @@ font-size:18px;
 font-weight:600;
 color:#0077DD;
 text-decoration:none;
-transition:.3s ease;
-display:inline-flex;
-align-items:center;
-gap:8px;
-}
-
-.contact-links a:hover{
-opacity:.7;
-}
-
-.contact-links{
-display:flex;
-gap:24px;
-flex-wrap:wrap;
-margin-top:24px;
-}
-
-.contact-links a{
+transition:.25s ease;
 display:flex;
 align-items:center;
 gap:10px;
-
-text-decoration:none;
-
-font-weight:600;
-color:#0077DD;
-
-transition:.25s ease;
 }
 
 .contact-links a:hover{
