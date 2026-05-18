@@ -334,6 +334,35 @@ gap:8px;
 opacity:.7;
 }
 
+.contact-links{
+display:flex;
+gap:24px;
+flex-wrap:wrap;
+margin-top:24px;
+}
+
+.contact-links a{
+display:flex;
+align-items:center;
+gap:10px;
+
+text-decoration:none;
+
+font-weight:600;
+color:#0077DD;
+
+transition:.25s ease;
+}
+
+.contact-links a:hover{
+color:#004488;
+transform:translateY(-2px);
+}
+
+.contact-links i{
+font-size:22px;
+}
+
 /* RESPONSIVE */
 
 @media(max-width:1100px){
