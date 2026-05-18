@@ -70,6 +70,8 @@ margin:20px auto;
 border:none;
 outline:none;
 box-shadow:none;
+overflow:hidden;
+background:#F4F4F4;
 }
 
 .media-bleed{
