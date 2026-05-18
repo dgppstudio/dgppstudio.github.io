@@ -629,8 +629,9 @@ gap:10px;
 
 .hero-text h1,
 .about-content h2,
-.contact-container h2{
-font-size:30px;
+.contact-container h2,
+.section-heading h2{
+font-size:28px;
 }
 
 .case-content h3{
