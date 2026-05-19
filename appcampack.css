@@ -1,13 +1,10 @@
 .hero{
 min-height:70vh;
 background:#F4F4F4;
-background-image:url('imageHero.webp');
-background-repeat:no-repeat;
-background-position:right center;
-background-size:contain;
-padding:60px 20px;
+padding:80px 20px;
 display:flex;
 align-items:center;
+overflow:hidden;
 }
 
 .hero-content{
@@ -16,7 +13,7 @@ margin:auto;
 display:flex;
 align-items:center;
 justify-content:space-between;
-gap:40px;
+gap:60px;
 }
 
 .hero-logo{
@@ -47,7 +44,20 @@ border:3px solid white;
 }
 
 .hero-text{
-width:1200px;
+flex:1;
+max-width:500px;
+}
+
+.hero-visual{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-visual img{
+width:100%;
+max-width:520px;
+display:block;
 }
 
 .hero-meta p{
@@ -290,5 +300,28 @@ text-align:center;
 
 .results-grid{
 grid-template-columns:1fr;
+}
+
+.hero-content{
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+.hero-text{
+max-width:100%;
+}
+
+.hero-meta-block{
+justify-content:center;
+}
+
+.hero-logo{
+margin-left:auto;
+margin-right:auto;
+}
+
+.hero-visual img{
+max-width:320px;
 }
 }
