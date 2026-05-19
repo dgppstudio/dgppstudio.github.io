@@ -56,7 +56,7 @@ justify-content:center;
 
 .hero-visual img{
 width:100%;
-max-width:520px;
+max-width:400px;
 display:block;
 }
 
@@ -66,7 +66,7 @@ margin:2px 0;
 
 .demo-video{
 width:100%;
-max-width:420px;
+max-width:400px;
 height:auto;
 display:block;
 margin:20px auto;
@@ -100,7 +100,7 @@ text-align:center;
 }
 
 .media-inner img{
-max-width:320px;
+max-width:300px;
 }
 
 .media-btn{
@@ -322,6 +322,6 @@ margin-right:auto;
 }
 
 .hero-visual img{
-max-width:320px;
+max-width:300px;
 }
 }
