@@ -618,7 +618,7 @@ flex-wrap:wrap;
 margin-top:10px;
 }
 
-.final-solution-section .prototype-links{
+.final-solution-section .prototype-links {
 justify-content: center;
 }
   
@@ -751,6 +751,10 @@ margin-right:auto;
 .responsive-text p{
 margin-left:auto;
 margin-right:auto;
+}
+
+.wireframe-section .prototype-links{
+justify-content: center;
 }
 
 .wireframe-grid{
