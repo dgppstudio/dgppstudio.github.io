@@ -1,4 +1,5 @@
 .hero{
+  min-height:80vh;
   padding:50px 20px 70px;
   background:#FAFAF8;
   overflow:hidden;
@@ -183,6 +184,11 @@
   border:1px solid rgba(47,52,55,.08);
   font-weight:600;
   color:#2F3437;
+}
+
+.section.product-intro{
+    padding-top:80px;
+    padding-bottom:60px;
 }
 
 @media(max-width:1024px){
