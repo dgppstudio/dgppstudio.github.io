@@ -1,5 +1,5 @@
 .hero{
-  padding:80px 20px;
+  padding:50px 20px 70px;
   background:#FAFAF8;
   overflow:hidden;
 }
@@ -7,12 +7,10 @@
 .hero-content{
   max-width:1300px;
   margin:auto;
-
   display:flex;
   align-items:center;
   justify-content:space-between;
-
-  gap:60px;
+  gap:30px;
 }
 
 .hero-text{
@@ -26,56 +24,46 @@
 
   letter-spacing:1px;
   text-transform:uppercase;
-
   color:#4875B0;
-
   margin-bottom:20px;
 }
 
 .hero h1{
-  font-size:72px;
+  font-size:80px;
   line-height:.95;
-
   letter-spacing:-2px;
-
   margin-bottom:16px;
 }
 
 .hero-tagline{
   font-family:'Nunito', sans-serif;
-
   font-size:28px;
   font-weight:600;
-
   color:#2F3437;
-
   margin-bottom:28px;
 }
 
 .hero-description{
   font-size:18px;
   line-height:1.9;
-
   color:#555;
-
   margin-bottom:36px;
 }
 
 .hero-meta{
   display:flex;
   align-items:center;
-
   gap:16px;
-
   margin-bottom:40px;
 }
 
 .hero-avatar img{
   width:72px;
   height:72px;
-
   border-radius:50%;
   object-fit:cover;
+  border:2px solid white;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 
 .hero-meta p{
@@ -85,7 +73,6 @@
 
 .hero-image{
   flex:1;
-
   display:flex;
   justify-content:center;
 }
@@ -93,12 +80,10 @@
 .hero-image img{
   width:100%;
   max-width:700px;
-
   display:block;
 }
 
 @media(max-width:1024px){
-
 .hero-content{
   flex-direction:column;
   text-align:center;
@@ -116,11 +101,9 @@
 .hero-meta{
   justify-content:center;
 }
-
 }
 
 @media(max-width:768px){
-
 .hero{
   padding:60px 20px;
 }
@@ -146,5 +129,4 @@
 .hero-image img{
   max-width:500px;
 }
-
 }
