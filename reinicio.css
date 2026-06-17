@@ -108,10 +108,11 @@
   line-height:1.05;
   letter-spacing:-2px;
   margin: 0 auto 24px;
+  max-width:780px;
 }
 
 .section-intro{
-  max-width:760px;
+  max-width:780px;
   margin:auto;
   font-size:18px;
   line-height:1.9;
