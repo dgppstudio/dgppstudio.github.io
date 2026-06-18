@@ -118,6 +118,9 @@
   color:#555;
 }
 
+.investigacion{
+  background:#FAFAF8;
+}
 .research-grid{
   max-width:1200px;
   margin:auto;
@@ -189,8 +192,8 @@
 }
 
 .section.product-intro{
-    padding-top:50px;
-    padding-bottom:30px;
+padding-top:50px;
+padding-bottom:30px;
 }
 
 .ia-section{
