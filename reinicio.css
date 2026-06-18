@@ -157,6 +157,10 @@
   background:#FAFAF8;
 }
 
+.journey-section.section-header{
+  padding-bottom:0;
+}
+
 .journey-image{
   max-width:1200px;
   margin:0 auto 50px;
