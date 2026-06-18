@@ -152,7 +152,7 @@
 }
 
 .journey-section{
-  padding:70px 20px 50px;
+  padding:50px 20px 30px;
   background:#FAFAF8;
 }
 
@@ -195,22 +195,8 @@
 }
 
 .ia-section{
-padding:120px 20px;
+padding:50px 20px;
 background:#FAFAF8;
-}
-
-.ia-header{
-max-width:850px;
-margin:0 auto 70px;
-text-align:center;
-}
-
-.ia-header h2{
-font-size:56px;
-line-height:1.05;
-letter-spacing:-1.5px;
-color:#0B4D95;
-margin-bottom:24px;
 }
 
 .ia-intro{
