@@ -104,15 +104,13 @@
 }
 
 .section-header h2{
-  font-size:56px;
-  line-height:1.05;
-  letter-spacing:-2px;
+  font-size:34px;
   margin: 0 auto 24px;
-  max-width:780px;
+  max-width:700px;
 }
 
 .section-intro{
-  max-width:780px;
+  max-width:900px;
   margin:auto;
   font-size:18px;
   line-height:1.9;
