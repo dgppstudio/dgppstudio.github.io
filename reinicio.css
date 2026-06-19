@@ -494,6 +494,14 @@ display:block;
     line-height:1.6;
 }
 
+.learning-icon{
+    width:56px;
+    height:56px;
+    object-fit:contain;
+    display:block;
+    margin:0 auto 24px;
+}
+
 .closing-section{
     padding:60px 20px 100px;
     text-align:center;
