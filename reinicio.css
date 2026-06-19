@@ -46,7 +46,7 @@
 
 .hero-description{
   font-size:18px;
-  line-height:1.9;
+  line-height:1.6;
   color:#555;
   margin-bottom:36px;
 }
@@ -93,6 +93,7 @@
     margin: auto;
   font-size:18px;
   color:#555;
+  line-height:1.6;
 }
 
 .section-header{
@@ -126,7 +127,7 @@
   max-width:760px;
   margin:auto;
   font-size:18px;
-  line-height:1.9;
+  line-height:1.6;
   color:#555;
 }
 
@@ -196,12 +197,6 @@
   width:100%;
   display:block;
   border-radius:24px;
-}
-
-.journey-image img,
-.wireframe-visual img,
-.final-showcase img{
-    box-shadow:0 16px 40px rgba(0,0,0,.06);
 }
 
 .ia-section{
@@ -290,7 +285,7 @@ align-items:center;
 
 .wireframe-text p{
 font-size:18px;
-line-height:1.9;
+line-height:1.6;
 color:#5A5A5A;
 margin-bottom:22px;
 max-width:620px;
@@ -315,7 +310,7 @@ text-align:center;
 
 .final-intro{
 font-size:18px;
-line-height:1.9;
+line-height:1.6;
 color:#5A5A5A;
 max-width:760px;
 margin:0 auto 32px;
@@ -402,7 +397,7 @@ display:block;
     max-width:760px;
     margin:0 auto 70px;
     font-size:18px;
-    line-height:1.9;
+    line-height:1.6;
     color:#5A5A5A;
 }
 
@@ -450,7 +445,7 @@ display:block;
 .learnings-intro{
     max-width:760px;
     font-size:18px;
-    line-height:1.9;
+    line-height:1.6;
     color:#5A5A5A;
     margin-bottom:70px;
 }
