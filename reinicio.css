@@ -1,5 +1,5 @@
 .hero{
-  min-height:80vh;
+  min-height:70vh;
   padding:50px 20px 70px;
   background:#FAFAF8;
   overflow:hidden;
@@ -88,6 +88,11 @@
  padding:50px 20px 30px;
 }
 
+.texto-largo{
+    max-width: 680px;
+    margin: auto;
+}
+
 .section-header{
   max-width:900px;
   margin:0 auto 50px;
@@ -103,15 +108,20 @@
   margin-bottom:16px;
 }
 
-.section-header h2{
-  font-size:34px;
-  margin: 0 auto 24px;
-  max-width:700px;
-  border-bottom: 2px solid var(--color-accent);
+.section-header h2,
+.wireframe-text h2,
+.final-header h2,
+.design-system-header h2,
+.results-container h2,
+.learnings-container h2{
+    font-size:34px;
+    line-height:1.15;
+    color:#0B4D95;
+    margin-bottom:24px;
 }
 
 .section-intro{
-  max-width:900px;
+  max-width:760px;
   margin:auto;
   font-size:18px;
   line-height:1.9;
@@ -154,6 +164,19 @@
   color:#666;
 }
 
+.research-card,
+.result-card,
+.learning-item{
+    transition:.3s ease;
+}
+
+.research-card:hover,
+.result-card:hover,
+.learning-item:hover{
+    transform:translateY(-4px);
+    box-shadow:0 16px 32px rgba(0,0,0,.05);
+}
+
 .journey-section{
   padding:50px 20px 30px;
 }
@@ -173,29 +196,6 @@
   border-radius:24px;
 }
 
-.journey-stages{
-  max-width:900px;
-  margin:auto;
-  display:flex;
-  justify-content:center;
-  gap:16px;
-  flex-wrap:wrap;
-}
-
-.stage-chip{
-  padding:12px 20px;
-  border-radius:999px;
-  background:white;
-  border:1px solid rgba(47,52,55,.08);
-  font-weight:600;
-  color:#2F3437;
-}
-
-.section.product-intro{
-padding-top:50px;
-padding-bottom:30px;
-}
-
 .ia-section{
 padding:50px 20px;
 background:#FAFAF8;
@@ -204,7 +204,7 @@ background:#FAFAF8;
 .ia-intro{
 font-size:18px;
 color:#5A5A5A;
-max-width:700px;
+max-width:760px;
 margin:auto;
 }
 
@@ -280,12 +280,6 @@ gap:80px;
 align-items:center;
 }
 
-.wireframe-text h2{
-font-size:34px;
-color:#0B4D95;
-margin-bottom:28px;
-}
-
 .wireframe-text p{
 font-size:18px;
 line-height:1.9;
@@ -309,12 +303,6 @@ background:#FAFAF8;
 max-width:900px;
 margin:0 auto 60px;
 text-align:center;
-}
-
-.final-header h2{
-font-size:34px;
-color:#0B4D95;
-margin-bottom:24px;
 }
 
 .final-intro{
@@ -344,12 +332,6 @@ display:block;
     max-width:900px;
     margin:0 auto 70px;
     text-align:center;
-}
-
-.design-system-header h2{
-    font-size:34px;
-    color:#0B4D95;
-    margin-bottom:24px;
 }
 
 .design-system-intro{
@@ -408,15 +390,6 @@ display:block;
     text-align:center;
 }
 
-.results-container h2{
-    max-width:820px;
-    margin:0 auto 24px;
-    font-size:56px;
-    line-height:1.05;
-    letter-spacing:-1.5px;
-    color:#0B4D95;
-}
-
 .results-intro{
     max-width:760px;
     margin:0 auto 70px;
@@ -464,15 +437,6 @@ display:block;
 .learnings-container{
     max-width:1200px;
     margin:auto;
-}
-
-.learnings-container h2{
-    max-width:720px;
-    font-size:34px;
-    line-height:1.05;
-    letter-spacing:-1.5px;
-    color:#0B4D95;
-    margin-bottom:24px;
 }
 
 .learnings-intro{
@@ -584,7 +548,7 @@ display:none;
 
 @media(max-width:768px){
 .hero{
-  padding:60px 20px;
+  padding:50px 20px;
 }
 
 .hero h1{
