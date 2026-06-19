@@ -303,7 +303,7 @@ border-radius:28px;
 }
 
 .final-section{
-padding:120px 20px;
+padding:80px 20px 30px;
 background:#FAFAF8;
 }
 
@@ -353,7 +353,7 @@ display:block;
     max-width:1300px;
     margin:auto;
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
     gap:24px;
 }
 
@@ -420,7 +420,7 @@ display:block;
 }
 
 .result-card span{
-    font-size:42px;
+    font-size:34px;
     display:block;
     margin-bottom:18px;
 }
@@ -473,7 +473,7 @@ display:block;
     font-size:14px;
     font-weight:700;
     letter-spacing:2px;
-    color:#7FAE5D;
+    color:#4875B0;
 }
 
 .learning-item h3{
@@ -487,6 +487,22 @@ display:block;
     margin:0;
     color:#5A5A5A;
     line-height:1.6;
+}
+
+.closing-section{
+    padding:60px 20px 100px;
+    text-align:center;
+}
+
+.closing-section blockquote{
+    max-width:720px;
+    margin:auto;
+
+    font-family:'Nunito',sans-serif;
+    font-size:28px;
+    line-height:1.4;
+    color:#4875B0;
+    font-style:italic;
 }
 
 @media(max-width:1024px){
