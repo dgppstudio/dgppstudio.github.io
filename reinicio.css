@@ -198,6 +198,12 @@
   border-radius:24px;
 }
 
+.journey-image img,
+.wireframe-visual img,
+.final-showcase img{
+    box-shadow:0 16px 40px rgba(0,0,0,.06);
+}
+
 .ia-section{
 padding:50px 20px;
 background:#FAFAF8;
