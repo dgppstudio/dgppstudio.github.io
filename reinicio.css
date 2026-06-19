@@ -96,6 +96,11 @@
   line-height:1.6;
 }
 
+.subtitulo-largo{
+  max-width: 760px;
+  margin: auto;
+}
+
 .section-header{
   max-width:900px;
   margin:0 auto 50px;
@@ -257,7 +262,7 @@ margin-bottom:14px;
 
 .ia-card p{
 font-size:16px;
-line-height:1.7;
+line-height:1.6;
 color:#5A5A5A;
 margin:0;
 }
@@ -379,7 +384,7 @@ display:block;
 .system-card p{
     margin:0;
     color:#5A5A5A;
-    line-height:1.7;
+    line-height:1.6;
 }
 
 .results-section{
@@ -429,7 +434,7 @@ display:block;
 .result-card p{
     margin:0;
     color:#5A5A5A;
-    line-height:1.7;
+    line-height:1.6;
 }
 
 .learnings-section{
@@ -475,12 +480,13 @@ display:block;
     font-size:26px;
     color:#0B4D95;
     margin-bottom:14px;
+  line-height:1.6;
 }
 
 .learning-item p{
     margin:0;
     color:#5A5A5A;
-    line-height:1.8;
+    line-height:1.6;
 }
 
 @media(max-width:1024px){
@@ -570,7 +576,7 @@ display:none;
 
 .hero-description{
   font-size:16px;
-  line-height:1.8;
+  line-height:1.6;
 }
 
 .hero-avatar img{
@@ -592,7 +598,7 @@ display:none;
 
 .section-intro{
   font-size:16px;
-  line-height:1.8;
+  line-height:1.6;
 }
 
 .research-grid{
@@ -617,7 +623,7 @@ font-size:34px;
 
 .ia-intro{
 font-size:16px;
-line-height:1.8;
+line-height:1.6;
 }
 
 .ia-card{
@@ -635,7 +641,7 @@ font-size:34px;
 
 .wireframe-text p{
 font-size:16px;
-line-height:1.8;
+line-height:1.6;
 }
 .final-section{
 padding:80px 20px;
@@ -651,7 +657,7 @@ font-size:34px;
 
 .final-intro{
 font-size:16px;
-line-height:1.8;
+line-height:1.6;
 }
 
 .design-system-section{
@@ -668,7 +674,7 @@ font-size:34px;
 
 .design-system-intro{
 font-size:16px;
-line-height:1.8;
+line-height:1.6;
 }
 
 .design-system-grid{
@@ -688,7 +694,7 @@ grid-template-columns:1fr;
 .results-intro,
 .learnings-intro{
     font-size:16px;
-    line-height:1.8;
+    line-height:1.6;
     margin-bottom:50px;
 }
 }
