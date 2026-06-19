@@ -376,7 +376,7 @@ gap:28px;
 
 .finding-item{
 padding-left:20px;
-border-left:3px solid #A8C66C;
+border-left:3px solid #4875B0;
 }
 
 .finding-item h3{
@@ -578,15 +578,11 @@ padding-top:10px;
 
 .learning-item span{
 display:block;
-
 font-size:14px;
 font-weight:700;
-
 letter-spacing:2px;
 text-transform:uppercase;
-
-color:#A8C66C;
-
+color:#4875B0;
 margin-bottom:18px;
 }
 
