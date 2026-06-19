@@ -90,8 +90,8 @@ background: linear-gradient(0deg,rgba(244, 244, 244, 1) 0%, rgba(255, 255, 255, 
 
 .cases{
 display:grid;
-grid-template-columns:repeat(2, 1fr);
-gap:30px;
+grid-template-columns:repeat(3, 1fr);
+gap:24px;
 margin:0 auto;
 max-width:1200px;
 }
