@@ -16,7 +16,7 @@
 
 .hero-text{
   flex:1;
-  max-width:520px;
+  max-width:530px;
 }
 
 .hero-label{
@@ -118,7 +118,7 @@
 .results-container h2,
 .learnings-container h2{
     font-size:34px;
-    line-height:1.15;
+    line-height:1.2;
     color:#0B4D95;
     margin-bottom:24px;
 }
@@ -454,6 +454,12 @@ display:block;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:40px;
+}
+
+.learning-item{
+  background:#FAFAF8;
+    padding:24px;
+    border-radius:24px;
 }
 
 .learning-item span{
