@@ -603,6 +603,7 @@ line-height:1.7;
 .contact-links{
 flex-direction:column;
 gap:16px;
+align-content: center;
 }
 
 /* FOOTER */
