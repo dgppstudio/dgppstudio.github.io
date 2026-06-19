@@ -618,7 +618,8 @@ display:none;
 }
 
 .section{
-  padding:80px 20px;
+  padding:50px 20px;
+  margin-bottom:0;
 }
 
 .section-header h2{
@@ -661,7 +662,7 @@ max-width:420px;
 }
 
 .wireframe-section{
-padding:80px 20px;
+padding:50px 20px;
 }
 
 .wireframe-text h2{
