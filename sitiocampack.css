@@ -163,7 +163,7 @@ align-items:start;
 font-size:50px;
 line-height:1.05;
 margin-bottom:30px;
-max-width:620px;
+max-width:540px;
 }
 
 .responsive-text p{
@@ -171,7 +171,7 @@ font-size:18px;
 line-height:1.9;
 color:#555;
 margin-bottom:24px;
-max-width:680px;
+max-width:600px;
 }
 
 .responsive-points{
@@ -216,7 +216,7 @@ align-items:center;
 font-size:50px;
 line-height:1.05;
 margin-bottom:28px;
-max-width:580px;
+max-width:540px;
 }
 
 .wireframe-text p{
@@ -224,7 +224,7 @@ font-size:18px;
 line-height:1.9;
 color:#555;
 margin-bottom:22px;
-max-width:620px;
+max-width:580px;
 }
 
 .wireframe-visual img{
