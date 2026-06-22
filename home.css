@@ -281,6 +281,14 @@ font-size:14px;
 color:#004488;
 }
 
+.photo-quote{
+    margin-top:16px;
+    text-align:center;
+    font-size:0.95rem;
+    font-style:italic;
+    color:#666;
+}
+
 /* CONTACTO */
 
 .contact-section{
