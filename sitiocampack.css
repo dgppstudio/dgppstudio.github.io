@@ -447,7 +447,7 @@ padding:120px 20px;
 background:#FAFAFA;
 }
 
-.results-container{
+.results-container, .thanks-container{
 max-width:1200px;
 margin:auto;
 text-align:center;
