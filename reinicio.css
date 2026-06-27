@@ -586,6 +586,10 @@ display:block;
     color:#004488;
 }
 
+.thanks-intro{
+  max-width:800px;
+}
+
 @media(max-width:1024px){
 .wireframe-grid{
 grid-template-columns:1fr;
