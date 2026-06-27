@@ -689,6 +689,87 @@ transform:translateY(-2px);
 opacity:1;
 }
 
+/* =========================================
+   AGRADECIMIENTO
+========================================= */
+
+.thanks-section{
+    padding:100px 20px;
+    background:#fff;
+}
+
+.thanks-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.note{
+    max-width:760px;
+    margin:16px auto 0;
+    font-size:14px;
+    color:#777;
+    line-height:1.6;
+    text-align:center;
+    font-style:italic;
+}
+
+.participants-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-top:50px;
+}
+
+.participant-card{
+    background:#FAFAFA;
+    border-radius:22px;
+    padding:32px;
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+    transition:all .3s ease;
+}
+
+.participant-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 22px 50px rgba(0,0,0,.10);
+}
+
+.participant-card h3{
+    font-size:24px;
+    margin-bottom:8px;
+}
+
+.participant-meta{
+    font-size:14px;
+    color:#777;
+    margin-bottom:22px;
+}
+
+.participant-comment{
+    margin:0;
+    font-size:17px;
+    line-height:1.8;
+    color:#555;
+    font-style:italic;
+}
+
+.thanks-message{
+    max-width:760px;
+    margin:60px auto 0;
+    padding-top:35px;
+    border-top:1px solid #ECECEC;
+    text-align:center;
+}
+
+.thanks-message p{
+    font-size:18px;
+    line-height:1.8;
+    margin:0;
+}
+
+.thanks-message strong{
+    color:#004488;
+}
+
 @media(max-width:1024px){
 .site-hero-content{
 flex-direction:column;
@@ -1044,6 +1125,31 @@ font-size:30px;
 
 .learning-item h3{
 font-size:20px;
+}
+
+.thanks-section{
+    padding:70px 20px;
+}
+
+.participants-grid{
+    grid-template-columns:1fr;
+    gap:24px;
+}
+
+.participant-card{
+    padding:26px;
+}
+
+.participant-card h3{
+    font-size:22px;
+}
+
+.participant-comment{
+    font-size:16px;
+}
+
+.thanks-message{
+    margin-top:45px;
 }
 }
 
