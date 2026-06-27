@@ -442,7 +442,7 @@ max-width:1200px;
 margin:auto;
 }
 
-.results-section{
+.results-section, .participants-section{
 padding:120px 20px;
 background:#FAFAFA;
 }
@@ -453,7 +453,7 @@ margin:auto;
 text-align:center;
 }
 
-.results-container h2{
+.results-container h2, .participants-section h2{
 font-size:50px;
 line-height:1.05;
 margin-bottom:24px;
@@ -462,7 +462,7 @@ margin-left:auto;
 margin-right:auto;
 }
 
-.results-intro{
+.results-intro, .section-intro{
 font-size:18px;
 line-height:1.9;
 color:#666;
