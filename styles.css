@@ -99,7 +99,7 @@ position:relative;
 margin-bottom:40px;
 }
 
-.section h2{
+.section h2, .thanks-section h2{
 margin-bottom:18px;
 border-bottom:2px solid var(--color-accent);
 display:inline-block;
