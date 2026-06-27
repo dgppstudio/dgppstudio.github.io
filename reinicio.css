@@ -121,7 +121,8 @@
 .final-header h2,
 .design-system-header h2,
 .results-container h2,
-.learnings-container h2{
+.learnings-container h2,
+.participants-section h2{
     font-size:34px;
     line-height:1.2;
     color:#0B4D95;
