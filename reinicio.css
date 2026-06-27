@@ -122,7 +122,7 @@
 .design-system-header h2,
 .results-container h2,
 .learnings-container h2,
-.participants-section h2{
+.thanks-section h2{
     font-size:34px;
     line-height:1.2;
     color:#0B4D95;
@@ -392,12 +392,12 @@ display:block;
     line-height:1.6;
 }
 
-.results-section{
+.results-section, .thanks-section{
     padding:120px 20px;
     background:#FAFAF8;
 }
 
-.results-container{
+.results-container, .thanks-container{
     max-width:1200px;
     margin:auto;
     text-align:center;
