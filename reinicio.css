@@ -403,12 +403,16 @@ display:block;
     text-align:center;
 }
 
-.results-intro{
+.results-intro, .thanks-intro{
     max-width:760px;
     margin:0 auto 70px;
     font-size:18px;
     line-height:1.6;
     color:#5A5A5A;
+}
+
+.thanks-intro{
+  max-width:800px;
 }
 
 .results-grid{
@@ -584,10 +588,6 @@ display:block;
 
 .thanks-message strong{
     color:#004488;
-}
-
-.thanks-intro{
-  max-width:800px;
 }
 
 @media(max-width:1024px){
