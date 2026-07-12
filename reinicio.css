@@ -599,6 +599,7 @@ display:block;
     font-weight:400;
     padding-top:20px;
     z-index:2;
+    text-align: left;
 }
 
 .testimonial-text::before{
