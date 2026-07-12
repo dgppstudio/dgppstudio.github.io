@@ -532,7 +532,7 @@ display:block;
 .participants-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:30px;
+    gap:50px;
     margin-top:50px;
 }
 
@@ -592,7 +592,7 @@ display:block;
 
 .testimonial-text{
     position: relative;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     color:#555;
     font-style: normal;
