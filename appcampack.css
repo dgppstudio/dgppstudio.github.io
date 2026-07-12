@@ -372,6 +372,35 @@ font-size:16px;
     color:#004488;
 }
 
+.testimonial-card{
+    position: relative;
+}
+
+.testimonial-text{
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color:#555;
+    font-style: normal;
+    font-weight:400;
+    padding-top:20px;
+    z-index:2;
+    text-align: left;
+}
+
+.testimonial-text::before{
+    content:"“";
+    position:absolute;
+    top:-28px;
+    left:-8px;
+    font-family: Georgia, serif;
+    font-size:120px;
+    color:#0057B8;
+    opacity:.08;
+    line-height:1;
+    pointer-events:none;
+}
+
 @media(max-width:1100px){
 .media-bleed{
 margin:50px 20px;
