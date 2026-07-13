@@ -87,6 +87,10 @@ background: #F4F4F4;
 background: linear-gradient(0deg,rgba(244, 244, 244, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
+#experiencia{
+padding:30px;
+}
+
 .cases{
 display:grid;
 grid-template-columns:repeat(3, 1fr);
@@ -163,7 +167,7 @@ letter-spacing:.3px;
 color:#004488;
 }
 
-.cases-section{
+.cases-section, .cases-experiencia{
   padding:100px 20px;
 }
 
@@ -186,7 +190,8 @@ color:#004488;
 
 #casos,
 #about,
-#contacto{
+#contacto,
+#experiencia{
   scroll-margin-top:120px;
 }
 
