@@ -1,6 +1,6 @@
 .hero{
   min-height:70vh;
-  padding:50px 20px 70px;
+  padding:50px 20px;
   background:#FAFAF8;
   overflow:hidden;
 }
@@ -85,7 +85,8 @@
 }
 
 .section{
- padding:50px 20px 30px;
+ padding:50px 20px;
+ margin:0;
 }
 
 .texto-largo{
@@ -139,6 +140,7 @@
 
 #investigacion{
   background:#FAFAF8;
+  margin:0;
 }
 .research-grid{
   max-width:1200px;
@@ -198,7 +200,7 @@
 
 .journey-image{
   max-width:1200px;
-  margin:0 auto 50px;
+  margin:0 auto;
 }
 
 .journey-image img{
@@ -279,7 +281,7 @@ color:#4875B0;
 }
 
 .wireframe-section{
-padding:120px 20px;
+padding:70px 20px;
 background:#ffffff;
 }
 
@@ -307,7 +309,7 @@ border-radius:28px;
 }
 
 .final-section{
-padding:80px 20px 30px;
+padding:70px 20px 30px;
 background:#FAFAF8;
 }
 
@@ -336,7 +338,7 @@ display:block;
 }
 
 .design-system-section{
-    padding:120px 20px;
+    padding:70px 20px;
     background:#ffffff;
 }
 
@@ -393,7 +395,7 @@ display:block;
 }
 
 .results-section, .thanks-section{
-    padding:120px 20px;
+    padding:50px 20px;
     background:#FAFAF8;
 }
 
@@ -444,7 +446,7 @@ display:block;
 }
 
 .learnings-section{
-    padding:120px 20px;
+    padding:70px 20px;
     background:#ffffff;
 }
 
@@ -504,7 +506,7 @@ display:block;
 }
 
 .closing-section{
-    padding:60px 20px 100px;
+    padding:20px 20px 70px;
     text-align:center;
 }
 
@@ -533,7 +535,7 @@ display:block;
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:50px;
-    margin-top:50px;
+    margin:50px 20px;
 }
 
 .participant-card{
