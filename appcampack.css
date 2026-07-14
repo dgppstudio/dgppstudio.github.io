@@ -322,39 +322,7 @@ font-size:16px;
     margin:50px 0;
 }
 
-.participant-card{
-    border-radius:22px;
-    padding:32px;
-    box-shadow:0 12px 30px rgba(0,0,0,.06);
-    transition:all .3s ease;
-}
-
-.participant-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 22px 50px rgba(0,0,0,.10);
-}
-
-.participant-card h3{
-    font-size:24px;
-    margin-bottom:8px;
-    text-align:center;
-}
-
-.participant-meta{
-    font-size:14px;
-    color:#777;
-    margin-bottom:22px;
-}
-
-.participant-comment{
-    margin:0;
-    font-size:17px;
-    line-height:1.8;
-    color:#555;
-    font-style:italic;
-}
-
-.testimonial-role{
+.testimonial-role, .participants-grid h3, .thanks-message{
   text-align:center;
 }
 
