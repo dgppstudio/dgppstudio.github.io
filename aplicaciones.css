@@ -89,11 +89,18 @@
 }
 
 .section-divider{
-    width:180px;
+    width:240px;
     height:1px;
-    margin:0 auto 90px;
+    margin:50 auto;
     border:none;
-    background:#E8E8E8;
+    background:#ECECEC;
+}
+
+.highlight-divider{
+    width:1px;
+    height:55px;
+    background:#ECECEC;
+    align-self:center;
 }
 
 @media (max-width:768px){
@@ -113,5 +120,9 @@
 
 .apps-hero-image img{
     max-width:100%;
+}
+
+.highlight-divider{
+    display:none;
 }
 }
