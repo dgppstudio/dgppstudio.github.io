@@ -48,7 +48,7 @@
 
 .apps-hero-image img{
     width:100%;
-    max-width:980px;
+    max-width:1200px;
     height:auto;
 }
 
@@ -63,7 +63,7 @@
 .highlights-grid{
     display:flex;
     justify-content:center;
-    gap:80px;
+    gap:60px;
     flex-wrap:wrap;
 }
 
