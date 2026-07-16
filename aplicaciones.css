@@ -3,7 +3,7 @@
 =====================================*/
 
 .apps-hero{
-    padding:70px 30px;
+    padding:50px 30px;
     background:#fff;
 }
 
@@ -57,7 +57,7 @@
 =====================================*/
 
 .apps-highlights{
-    padding:30px 0 60px;
+    padding:50px 30px;
 }
 
 .highlights-grid{
@@ -108,7 +108,7 @@ GRILL UP
 ==========================================*/
 
 .app-case{
-    padding:70px 0;
+    padding:50px 30px;
 }
 
 .app-grid{
@@ -124,7 +124,6 @@ GRILL UP
 
 .app-image img{
     width:100%;
-    max-width:420px;
 }
 
 .case-tag{
