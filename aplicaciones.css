@@ -209,6 +209,11 @@ GRILL UP
     background:#F8FAFD;
 }
 
+contribution .container{
+    max-width:1200px;
+    padding:0 30px;
+}
+
 .contribution .section-title{
     max-width:760px;
     margin:0 auto 70px;
