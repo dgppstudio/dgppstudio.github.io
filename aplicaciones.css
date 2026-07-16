@@ -111,6 +111,11 @@ GRILL UP
     padding:50px 30px;
 }
 
+.app-case .container{
+    max-width:1200px;
+    padding:0 30px;
+}
+
 .app-grid{
     display:grid;
     grid-template-columns:480px 1fr;
