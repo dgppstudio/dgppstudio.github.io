@@ -257,6 +257,41 @@ GRILL UP
     margin-top: 10px;
 }
 
+/* ==========================================
+   RESPONSIVE - APP PROJECT
+========================================== */
+
+@media (max-width: 992px){
+    .app-project-image img{
+        width:230px;
+    }
+    .app-project .container{
+        grid-template-columns:1fr;
+        gap:50px;
+        text-align:center;
+    }
+    .app-project-image{
+        order:1;
+    }
+    .app-project-content{
+        order:2;
+    }
+    .app-project-content p{
+        max-width:700px;
+        margin:0 auto 30px;
+    }
+    .app-project-info{
+        justify-content:center;
+    }
+    .app-project-links{
+        justify-content:center;
+    }
+
+    .project-contribution-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
 @media (max-width:768px){
 .apps-hero{
     padding:110px 0 70px;
@@ -279,4 +314,55 @@ GRILL UP
 .highlight-divider{
     display:none;
 }
+
+.app-project{
+        padding:80px 20px;
+    }
+
+    .app-project-image img{
+        width:220px;
+    }
+
+    .app-project-info{
+        gap:18px;
+        justify-content:center;
+    }
+
+    .app-project-links{
+        flex-direction:column;
+        gap:18px;
+    }
+
+    .project-contribution{
+        padding:80px 20px;
+    }
+
+    .project-contribution-grid{
+        grid-template-columns:1fr;
+        gap:24px;
+    }
+
+    .contribution-card{
+        padding:40px 30px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .app-project-image img{
+        width:190px;
+    }
+
+    .app-project-info{
+        flex-direction:column;
+        align-items:center;
+        gap:14px;
+    }
+    .contribution-card{
+        padding:35px 24px;
+    }
+
+    .contribution-card i{
+        font-size:38px;
+    }
 }
