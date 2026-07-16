@@ -107,13 +107,13 @@
 GRILL UP
 ==========================================*/
 
-.app-case{
-    padding:70px 30px;
+.container{
+    max-width:1200px;
+    padding: 30px 20px;
 }
 
-.app-case .container{
-    max-width:1200px;
-    padding:0 30px;
+.app-case{
+    padding:70px 30px;
 }
 
 .app-grid{
@@ -207,11 +207,6 @@ GRILL UP
 .contribution{
     padding:70px 30px;
     background:#F8FAFD;
-}
-
-.contribution .container{
-    max-width:1200px;
-    padding:0 30px;
 }
 
 .contribution .section-title{
