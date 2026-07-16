@@ -293,6 +293,35 @@ GRILL UP
     color:#004488;
 }
 
+.gallery-card h3{
+    font-size:1.45rem;
+    font-weight:600;
+    color:#004488;
+    text-align:center;
+    margin-bottom:18px;
+    position:relative;
+}
+
+.gallery-card h3::after{
+    content:"";
+    display:block;
+    width:48px;
+    height:2px;
+    background:#0077DD;
+    opacity:.20;
+    margin:12px auto 0;
+    border-radius:2px;
+}
+
+.gallery-card span{
+    display:block;
+    margin-top:6px;
+    font-size:.75rem;
+    letter-spacing:2px;
+    color:#8A8F98;
+    text-transform:uppercase;
+}
+
 .app-support{
     padding:70px 30px;
     background:#F8FAFD;
