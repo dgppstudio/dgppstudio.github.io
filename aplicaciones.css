@@ -103,6 +103,103 @@
     align-self:center;
 }
 
+/*==========================================
+GRILL UP
+==========================================*/
+
+.app-case{
+    padding:120px 0;
+}
+
+.app-grid{
+    display:grid;
+    grid-template-columns:480px 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+.app-image{
+    text-align:center;
+}
+
+.app-image img{
+    width:100%;
+    max-width:420px;
+}
+
+.case-tag{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:50px;
+    background:#EEF5FF;
+    color:#0077DD;
+    font-size:.85rem;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+}
+
+.app-content h2{
+    margin:22px 0 18px;
+    font-size:3rem;
+    line-height:1.1;
+    color:#004488;
+}
+
+.case-description{
+    max-width:640px;
+    color:#666;
+    font-size:1.1rem;
+    line-height:1.9;
+    margin-bottom:45px;
+}
+
+.case-data{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:22px;
+    margin-bottom:45px;
+}
+
+.data-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.data-item i{
+    font-size:1.4rem;
+    color:#0077DD;
+}
+
+.data-item span{
+    color:#555;
+    font-weight:500;
+}
+
+.divider{
+    width:1px;
+    height:28px;
+    background:#DDD;
+}
+
+.case-links{
+    display:flex;
+    gap:40px;
+}
+
+.case-links a{
+    color:#0077DD;
+    font-weight:600;
+    text-decoration:none;
+    transition:.25s;
+}
+
+.case-links a:hover{
+    opacity:.7;
+}
+
 @media (max-width:768px){
 .apps-hero{
     padding:110px 0 70px;
