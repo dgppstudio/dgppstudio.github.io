@@ -120,7 +120,6 @@ GRILL UP
     display:grid;
     grid-template-columns:480px 1fr;
     gap:80px;
-    align-items:center;
 }
 
 .app-image{
@@ -129,6 +128,7 @@ GRILL UP
 
 .app-image img{
     width:100%;
+    margin:0;
 }
 
 .case-tag{
