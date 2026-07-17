@@ -323,7 +323,7 @@ GRILL UP
 }
 
 .app-support{
-    padding:70px 30px;
+    padding:70px 30px 0;
     background:#F8FAFD;
 }
 
@@ -371,7 +371,8 @@ GRILL UP
 }
 
 .app-download{
-    padding:70px 30px;
+    padding:0 30px 50px;
+    background:#F8FAFD;
 }
 
 .store-buttons{
