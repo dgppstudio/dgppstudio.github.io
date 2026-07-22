@@ -822,21 +822,47 @@
   </div>
 </footer>
 
-<!-- Navegación de proyectos -->
+<!-- ========================================
+     PROJECT NAVIGATION
+======================================== -->
 <div class="project-nav">
-    <button class="project-nav-toggle">
-        <i class="ph ph-squares-four"></i>
+    <button
+        class="project-nav-toggle"
+        aria-label="Abrir lista de proyectos"
+        aria-expanded="false"
+        aria-controls="project-nav-menu">
+        <i class="ph ph-list-bullets"></i>
     </button>
-    <nav class="project-nav-menu">
-        <h3>Apps</h3>
-        <a href="#grillup">Grill Up</a>
-        <a href="#cliente-excelente">Cliente Excelente</a>
-        <a href="#iqos-club">IQOS Club</a>
-        <a href="#interpass">InterPass</a>
+    <nav id="project-nav-menu" class="project-nav-menu">
+        <h3 class="project-nav-title">
+            Apps
+        </h3>
+        <ul class="project-nav-list">
+            <li>
+                <a href="#grillup" data-section="grillup">
+                    Grill Up
+                </a>
+            </li>
+            <li>
+                <a href="#cliente-excelente" data-section="cliente-excelente">
+                    Cliente Excelente
+                </a>
+            </li>
+            <li>
+                <a href="#iqos-club" data-section="iqos-club">
+                    IQOS Club
+                </a>
+            </li>
+            <li>
+                <a href="#interpass" data-section="interpass">
+                    InterPass
+                </a>
+            </li>
+        </ul>
     </nav>
 </div>
 
-<script src="aplicaciones.js"></script>
+<script src="project-navigation.js"></script>
     
 </body>
 </html>
