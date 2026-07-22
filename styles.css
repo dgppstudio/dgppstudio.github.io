@@ -171,38 +171,6 @@ padding-bottom:5px;
 }
 
 /* =========================================
-   MENÚ FLOTANTE
-========================================= */
-
-.project-nav{
-    position:fixed;
-    right:24px;
-    bottom:24px;
-    z-index:999;
-}
-
-.project-nav-toggle{
-    width:56px;
-    height:56px;
-    border:none;
-    border-radius:50%;
-    background:#ffffff;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-    cursor:pointer;
-}
-
-.project-nav-menu{
-    position:absolute;
-    bottom:72px;
-    right:0;
-    width:230px;
-    background:white;
-    border-radius:16px;
-    padding:20px;
-    box-shadow:0 10px 35px rgba(0,0,0,.18);
-}
-
-/* =========================================
    MOBILE
 ========================================= */
 
