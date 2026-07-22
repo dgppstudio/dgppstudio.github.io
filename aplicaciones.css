@@ -421,29 +421,28 @@ GRILL UP
 .app-project-image img{
     width:230px;
 }
-.app-project .container{
+.app-grid{
     grid-template-columns:1fr;
     gap:50px;
-    text-align:center;
 }
-.app-project-image{
+.app-image{
     order:1;
 }
-.app-project-content{
+.app-content{
     order:2;
 }
 .app-project-content p{
     max-width:700px;
     margin:0 auto 30px;
 }
-.app-project-info{
+.case-data{
     justify-content:center;
 }
-.app-project-links{
+.case-links{
     justify-content:center;
 }
 
-.project-contribution-grid{
+.contribution-grid{
     grid-template-columns:repeat(2,1fr);
 }
 
@@ -479,7 +478,7 @@ GRILL UP
     display:none;
 }
 
-.app-project{
+.app-case{
     padding:80px 20px;
 }
 
@@ -487,21 +486,21 @@ GRILL UP
     width:220px;
 }
 
-.app-project-info{
+.case-data{
     gap:18px;
     justify-content:center;
 }
 
-.app-project-links{
+.case-links{
     flex-direction:column;
     gap:18px;
 }
 
-.project-contribution{
+.contribution{
     padding:80px 20px;
 }
 
-.project-contribution-grid{
+.contribution-grid{
     grid-template-columns:1fr;
     gap:24px;
 }
@@ -545,15 +544,36 @@ GRILL UP
 }
 
 @media (max-width: 480px){
-.app-project-image img{
+.app-image img{
     width:190px;
 }
 
-.app-project-info{
+.case-data{
     flex-direction:column;
     align-items:center;
     gap:14px;
+    justify-content:center;
 }
+
+.case-links{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.divider{
+    display:none;
+}
+    
+.app-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+    text-align:center;
+}
+
+.case-description{
+    max-width:100%;
+}
+    
 .contribution-card{
     padding:35px 24px;
 }
