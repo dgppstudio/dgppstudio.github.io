@@ -417,6 +417,16 @@ GRILL UP
    RESPONSIVE - APP PROJECT
 ========================================== */
 
+@media (max-width: 1024px){
+.app-grid {
+    grid-template-columns: 400px 1fr;
+}
+}
+
+/* ==========================================
+   RESPONSIVE - APP PROJECT
+========================================== */
+
 @media (max-width: 992px){
 .app-project-image img{
     width:230px;
