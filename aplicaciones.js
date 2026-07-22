@@ -1,1 +1,0 @@
-menu.classList.toggle("open");
