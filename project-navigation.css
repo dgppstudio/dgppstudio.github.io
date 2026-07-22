@@ -1,0 +1,96 @@
+/* ========================================
+   PROJECT NAVIGATION
+======================================== */
+.project-nav{
+    position:fixed;
+    right:24px;
+    bottom:24px;
+    z-index:9999;
+}
+
+.project-nav-toggle{
+    width:56px;
+    height:56px;
+    border:none;
+    border-radius:50%;
+    background:#ffffff;
+    color:#004488;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+    transition:.25s;
+}
+
+.project-nav-toggle:hover{
+    transform:translateY(-2px);
+    box-shadow:0 16px 36px rgba(0,0,0,.20);
+}
+
+.project-nav-toggle i{
+    font-size:26px;
+}
+
+.project-nav-menu{
+    position:absolute;
+    bottom:72px;
+    right:0;
+    width:240px;
+    padding:20px;
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+    transition:.25s;
+}
+
+.project-nav.open .project-nav-menu{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+.project-nav-title{
+    margin-bottom:18px;
+    font-size:18px;
+    color:#004488;
+}
+
+.project-nav-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.project-nav-list li{
+    margin-bottom:10px;
+}
+
+.project-nav-list a{
+    text-decoration:none;
+    color:#555;
+    transition:.2s;
+}
+
+.project-nav-list a:hover{
+    color:#0077DD;
+}
+
+.project-nav-list a.active{
+    color:#0077DD;
+    font-weight:600;
+}
+
+@media (max-width:768px){
+.project-nav{
+    right:16px;
+    bottom:16px;
+}
+
+.project-nav-menu{
+    width:220px;
+}
+}
