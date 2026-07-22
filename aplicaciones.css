@@ -457,17 +457,17 @@ GRILL UP
 
 @media (max-width:768px){
 .apps-hero{
-    padding:110px 0 70px;
+    padding:50px 0 30px;
 }
 
 .apps-title{
     font-size:42px;
 }
 
-.apps-description{
-    font-size:18px;
-    line-height:1.7;
-    margin:25px auto 50px;
+.apps-description, .case-description{
+    font-size:16px;
+    line-height:1.5;
+    margin:25px auto 30px;
 }
 
 .apps-hero-image img{
@@ -479,7 +479,7 @@ GRILL UP
 }
 
 .app-case{
-    padding:80px 20px;
+    padding:50px 20px 30px;
 }
 
 .app-project-image img{
@@ -497,7 +497,7 @@ GRILL UP
 }
 
 .contribution{
-    padding:80px 20px;
+    padding:50px 20px 30px;
 }
 
 .contribution-grid{
@@ -510,7 +510,7 @@ GRILL UP
 }
 
 .app-gallery{
-    padding:80px 20px;
+    padding:50px 20px 30px;
 }
     
 .gallery-grid{
@@ -518,7 +518,7 @@ GRILL UP
 }
     
 .app-support{
-    padding:50px 20px;
+    padding:50px 20px 30px;
 }
 
 .support-image{
@@ -530,7 +530,7 @@ GRILL UP
 }
 
 .app-download{
-    padding:80px 20px;
+    padding:50px 20px 30px;
 }
 
 .store-card{
