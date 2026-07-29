@@ -14,6 +14,6 @@ function loadComponent(containerId, componentPath, callback) {
 
 loadComponent("header-container", "components/header/header.html", initHeader);
 
-loadComponent("footer-container", "components/footer/footer.html");
+loadComponent("footer-container", "components/footer/footer.html", initFooter);
 
 loadComponent("floating-menu-container", "components/floating-menu/menu.html", initFloatingMenu);

@@ -11,10 +11,10 @@ box-sizing:border-box;
 html{
 scroll-behavior:smooth;
 }
-  
+
 body{
 margin:0;
-font-family:'Open Sans', sans-serif;
+font-family:'Open Sans',sans-serif;
 color:var(--color-text);
 background:var(--color-bg);
 line-height:1.6;
@@ -28,7 +28,7 @@ padding:60px 24px;
 }
 
 h1,h2,h3{
-font-family:'Poppins', sans-serif;
+font-family:'Poppins',sans-serif;
 color:var(--color-text);
 margin:0 0 10px 0;
 }
@@ -66,10 +66,10 @@ margin-bottom:8px;
 display:inline-block;
 padding:12px 24px;
 background:#0077DD;
-color:white;
+color:#fff;
 border-radius:6px;
 margin-top:20px;
-box-shadow:0 4px 10px rgba(0,0,0,0.15);
+box-shadow:0 4px 10px rgba(0,0,0,.15);
 }
 
 p{
@@ -99,7 +99,8 @@ position:relative;
 margin-bottom:40px;
 }
 
-.section h2, .thanks-section h2{
+.section h2,
+.thanks-section h2{
 margin-bottom:18px;
 border-bottom:2px solid var(--color-accent);
 display:inline-block;
@@ -108,76 +109,15 @@ padding-bottom:5px;
 
 .btn,
 .case-card,
-.tools span,
-.footer-links a{
-  transition:all .3s ease;
+.tools span{
+transition:all .3s ease;
 }
 
 .btn:hover{
-  transform:translateY(-2px);
-  box-shadow:0 10px 20px rgba(0,0,0,.12);
+transform:translateY(-2px);
+box-shadow:0 10px 20px rgba(0,0,0,.12);
 }
-
-/* FOOTER */
-
-.footer{
-  background:#1F3F68;
-  color:#fff;
-  padding:60px 20px;
-}
-
-.footer-content{
-  max-width:1200px;
-  margin:auto;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-  gap:20px;
-}
-
-.footer-logo{
-  width:120px;
-  filter:brightness(0) invert(1);
-  border-radius: 0;
-}
-
-.footer p{
-  max-width:500px;
-  color:rgba(255,255,255,.75);
-  line-height:1.7;
-}
-
-.footer-links{
-  display:flex;
-  gap:24px;
-  flex-wrap:wrap;
-  justify-content: center;
-}
-
-.footer-links a{
-  color:#fff;
-  font-weight:600;
-  transition:.3s;
-}
-
-.footer-links a:hover{
-  opacity:.8;
-}
-
-.footer-copy{
-  font-size:14px;
-  color:rgba(255,255,255,.5);
-}
-
-/* =========================================
-   MOBILE
-========================================= */
 
 @media(max-width:768px){
-/* FOOTER */
 
-.footer{
-padding:24px 20px;
-}
 }
