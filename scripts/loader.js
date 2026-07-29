@@ -1,13 +1,29 @@
-const headerContainer = document.querySelector("#header-container");
+function loadComponent(containerId, componentPath, callback) {
+    const container = document.querySelector(`#${containerId}`);
 
-fetch("components/header/header.html")
-    .then(response => {
+    fetch(componentPath)
+        .then(response => response.text())
+        .then(data => {
+            container.innerHTML = data;
 
-        return response.text();
+            if (callback) {
+                callback();
+            }
+        });
+}
 
-    })
-    .then(data => {
+loadComponent(
+    "header-container",
+    "components/header/header.html"
+);
 
-        headerContainer.innerHTML = data;
+loadComponent(
+    "footer-container",
+    "components/footer/footer.html"
+);
 
-    });
+loadComponent(
+    "floating-menu-container",
+    "components/floating-menu/menu.html",
+    initFloatingMenu
+);

@@ -8,8 +8,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="home.css">
-<!-- Temporal para desarrollar el Header -->
 <link rel="stylesheet" href="components/header/header.css">
+<link rel="stylesheet" href="components/floating-menu/menu.css">
 <meta name="description" content="Portafolio UX/UI de José Vázquez. Diseño de experiencias digitales enfocadas en usabilidad, eCommerce y toma de decisiones.">
 <meta property="og:title" content="José Vázquez | UX/UI Designer">
 <meta property="og:description" content="Portafolio UX/UI enfocado en experiencias digitales, eCommerce y diseño centrado en el usuario.">
@@ -194,25 +194,14 @@
     </div>
   </div>
 </section>
-  
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-content">
-    <img src="logoDGPP.svg" alt="DGPP Studio" class="footer-logo">
-    <p>
-      Diseño UX/UI enfocado en claridad, usabilidad y resultados.
-    </p>
-    <div class="footer-links">
-      <a href="#casos">Casos</a>
-      <a href="#about">Sobre mí</a>
-      <a href="#contacto">Contacto</a>
-    </div>
-    <span class="footer-copy">
-      © 2026 José Vázquez • DGPP Studio
-    </span>
-  </div>
-</footer>
 
+<!-- FOOTER -->
+<div id="footer-container"></div>
+
+<!-- MENÚ FLOTANTE -->
+<div id="floating-menu-container"></div>
+
+<script src="components/floating-menu/menu.js"></script>
 <script src="scripts/loader.js"></script>
 </body>
 </html>
