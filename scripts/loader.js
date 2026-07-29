@@ -12,18 +12,8 @@ function loadComponent(containerId, componentPath, callback) {
         });
 }
 
-loadComponent(
-    "header-container",
-    "components/header/header.html"
-);
+loadComponent("header-container", "components/header/header.html", initHeader);
 
-loadComponent(
-    "footer-container",
-    "components/footer/footer.html"
-);
+loadComponent("footer-container", "components/footer/footer.html");
 
-loadComponent(
-    "floating-menu-container",
-    "components/floating-menu/menu.html",
-    initFloatingMenu
-);
+loadComponent("floating-menu-container", "components/floating-menu/menu.html", initFloatingMenu);

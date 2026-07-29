@@ -12,6 +12,7 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
+    position:relative;
 }
 
 .brand{
@@ -34,6 +35,13 @@
 
 .nav-list a{
     font-size:16px;
+    text-decoration:none;
+    color:#004488;
+    transition:color .2s ease;
+}
+
+.nav-list a:hover{
+    color:#0077DD;
 }
 
 .menu-toggle{
@@ -56,10 +64,36 @@
     background-color:#0077DD;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px){
 
     .main-navigation{
         display:none;
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#FFFFFF;
+        border-top:1px solid #E5E7EB;
+        box-shadow:0 8px 20px rgba(0,0,0,.08);
+    }
+
+    .main-navigation.open{
+        display:block;
+    }
+
+    .nav-list{
+        flex-direction:column;
+        gap:0;
+        padding:24px;
+    }
+
+    .nav-list li{
+        border-bottom:1px solid #F1F5F9;
+    }
+
+    .nav-list a{
+        display:block;
+        padding:16px 0;
     }
 
     .menu-toggle{
