@@ -12,6 +12,8 @@ function loadComponent(containerId, componentPath, callback) {
         });
 }
 
+
+
 loadComponent("header-container", "components/header/header.html", initHeader);
 
 loadComponent("footer-container", "components/footer/footer.html", initFooter);
