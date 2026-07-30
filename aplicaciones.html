@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="aplicaciones.css">
-<link rel="stylesheet" href="project-navigation.css">
-<meta name="description" content="Portafolio UX/UI de José Vázquez. Diseño de experiencias digitales enfocadas en usabilidad, eCommerce y toma de decisiones.">
-<meta property="og:title" content="José Vázquez | UX/UI Designer">
-<meta property="og:description" content="Portafolio UX/UI enfocado en experiencias digitales, eCommerce y diseño centrado en el usuario.">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aplicaciones | Portafolio UX/UI | José Vázquez</title>
+
+<meta name="description" content="Selección de aplicaciones móviles y productos digitales en los que participé como UX/UI Designer, mostrando proyectos enfocados en experiencia de usuario, diseño de interfaces y desarrollo de productos digitales.">
+<meta property="og:title" content="Aplicaciones | Portafolio UX/UI de José Vázquez">
+<meta property="og:description" content="Explora una selección de aplicaciones y productos digitales desarrollados para diferentes empresas, con enfoque en UX, UI y experiencia del usuario.">
 <meta property="og:image" content="https://dgppstudio.github.io/preview.webp">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apps Publicadas | Productos Digitales | José Vázquez</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="components/header/header.css">
+<link rel="stylesheet" href="components/footer/footer.css">
+<link rel="stylesheet" href="components/floating-menu/menu.css">
+<link rel="stylesheet" href="aplicaciones.css">
+
+<script src="https://unpkg.com/phosphor-icons"></script>
 
 </head>
 <body data-page="aplicaciones">
 
+<main>
 <!-- HEADER -->
 <div id="header-container" data-component="header"></div>
 
@@ -796,77 +805,18 @@
         </div>
     </div>
 </section>
+</main>
 
 <!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-content">
-    <img src="logoDGPP.svg"
-         alt="DGPP Studio"
-         class="footer-logo">
-    <p>
-      Diseño UX/UI enfocado en claridad, usabilidad y experiencias digitales centradas en el usuario.
-    </p>
-    <div class="footer-links">
-      <a href="index.html">
-        ← Volver al portfolio
-      </a>
-      <a href="#top">
-        ↑ Volver arriba
-      </a>
-      <a href="appcampack.html">
-        ← Caso App
-      </a>
-      <a href="sitiocampack.html">
-        Caso Responsive →
-      </a>
-    </div>
-    <span class="footer-copy">
-      © 2026 José Vázquez • DGPP Studio
-    </span>
-  </div>
-</footer>
+<div id="footer-container"></div>
 
-<!-- ========================================
-     PROJECT NAVIGATION
-======================================== -->
-<div class="project-nav">
-    <button
-        class="project-nav-toggle"
-        aria-label="Abrir lista de proyectos"
-        aria-expanded="false"
-        aria-controls="project-nav-menu">
-        <i class="ph ph-list-bullets"></i>
-    </button>
-    <nav id="project-nav-menu" class="project-nav-menu">
-        <h3 class="project-nav-title">
-            Apps
-        </h3>
-        <ul class="project-nav-list">
-            <li>
-                <a href="#grillup" data-section="grillup">
-                    Grill Up
-                </a>
-            </li>
-            <li>
-                <a href="#cliente-excelente" data-section="cliente-excelente">
-                    Cliente Excelente
-                </a>
-            </li>
-            <li>
-                <a href="#iqos-club" data-section="iqos-club">
-                    IQOS Club
-                </a>
-            </li>
-            <li>
-                <a href="#interpass" data-section="interpass">
-                    InterPass
-                </a>
-            </li>
-        </ul>
-    </nav>
-</div>
+<!-- MENÚ FLOTANTE -->
+<div id="floating-menu-container"></div>
 
-<script src="project-navigation.js"></script>
-    
+<script src="scripts/navigation.js"></script>
+<script src="components/header/header.js"></script>
+<script src="components/footer/footer.js"></script>
+<script src="components/floating-menu/menu.js"></script>
+<script src="scripts/loader.js"></script>
 </body>
 </html>

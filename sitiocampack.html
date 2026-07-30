@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<script src="https://unpkg.com/phosphor-icons"></script>
-<link rel="icon" type="image/png" sizes="32x32" href="favicon32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="sitiocampack.css">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-<meta name="description" content="Portafolio UX/UI de José Vázquez. Diseño de experiencias digitales enfocadas en usabilidad, eCommerce y toma de decisiones.">
-<meta property="og:title" content="José Vázquez | UX/UI Designer">
-<meta property="og:description" content="Portafolio UX/UI enfocado en experiencias digitales, eCommerce y diseño centrado en el usuario.">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sitio CamPack | Caso de estudio UX | José Vázquez</title>
+
+<meta name="description" content="Caso de estudio UX/UI del sitio web responsivo de CamPack. Un proyecto enfocado en mejorar la experiencia de compra de equipo para camping mediante una navegación clara, filtros inteligentes y una arquitectura de información centrada en el usuario.">
+<meta property="og:title" content="Sitio CamPack | Caso de estudio UX">
+<meta property="og:description" content="Conoce el proceso de investigación, arquitectura de información, diseño responsivo y prototipado del sitio web de CamPack.">
 <meta property="og:image" content="https://dgppstudio.github.io/preview.webp">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sitio CamPack | Caso UX</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="components/header/header.css">
+<link rel="stylesheet" href="components/footer/footer.css">
+<link rel="stylesheet" href="components/floating-menu/menu.css">
+<link rel="stylesheet" href="sitiocampack.css">
+
+<script src="https://unpkg.com/phosphor-icons"></script>
 
 </head>
 
 <body data-page="sitiocampack">
 
+<main>
 <!-- HEADER -->
 <div id="header-container" data-component="header"></div>
 
@@ -425,35 +435,18 @@
         </div>
   </div>
 </section> -->
+</main>
 
 <!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-content">
-    <img src="logoDGPP.svg"
-         alt="DGPP Studio"
-         class="footer-logo">
-    <p>
-      Diseño UX/UI enfocado en claridad, usabilidad y experiencias digitales centradas en el usuario.
-    </p>
-    <div class="footer-links">
-      <a href="index.html">
-        ← Volver al portfolio
-      </a>
-      <a href="reinicio50.html">
-        ← Reinicio 50+
-      </a>
-      <a href="appcampack.html">
-        ← Caso App
-      </a>
-      <a href="#top">
-        ↑ Volver arriba
-      </a>
-    </div>
-    <span class="footer-copy">
-      © 2026 José Vázquez • DGPP Studio
-    </span>
-  </div>
-</footer>
-  
+<div id="footer-container"></div>
+
+<!-- MENÚ FLOTANTE -->
+<div id="floating-menu-container"></div>
+
+<script src="scripts/navigation.js"></script>
+<script src="components/header/header.js"></script>
+<script src="components/footer/footer.js"></script>
+<script src="components/floating-menu/menu.js"></script>
+<script src="scripts/loader.js"></script>
 </body>
 </html>
