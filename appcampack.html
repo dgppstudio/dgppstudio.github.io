@@ -60,31 +60,31 @@
 <div class="container">
 
 <!-- PRODUCTO -->
-<section class="section">
+<section class="section" id="producto">
 <h1>CamPack — Diseño UX para mejorar la decisión de compra en eCommerce</h1>
 <p class="meta">Diseño UX enfocado en facilitar la búsqueda, comparación y compra de productos de camping.</p>
 </section>
 
 <!-- PROBLEMA -->
-<section class="section">
+<section class="section" id="problema">
 <h2>Problema</h2>
 <p>Los usuarios tienen dificultades para encontrar productos adecuados a sus necesidades, lo que genera confusión y dificulta la decisión de compra.</p>
 </section>
 
 <!-- OBJETIVO -->
-<section class="section">
+<section class="section" id="objetivo">
 <h2>Objetivo</h2>
 <p>Diseñar una experiencia más clara y simple que facilite la búsqueda, comparación y selección de productos.</p>
 </section>
 
 <!-- INSIGHT -->
-<section class="section">
+<section class="section" id="insight">
 <h2>Insight</h2>
 <p>Cada tipo de usuario busca cosas distintas, por lo que un catálogo genérico no facilita la decisión de compra.</p>
 </section>
 
 <!-- INVESTIGACIÓN -->
-<section class="section">
+<section class="section" id="investigacion">
 <h2>Investigación</h2>
 <p>Se identificaron 4 perfiles principales con diferentes necesidades de espacio, comodidad y portabilidad.</p>
 <div class="personas">
@@ -108,7 +108,7 @@
 </section>
 
 <!-- DECISIÓN -->
-<section class="section">
+<section class="section" id="decision-diseno">
 <h2>Decisión de diseño</h2>
 <p>Se creó un sistema de filtros por tipo de usuario para facilitar la búsqueda y mostrar productos más relevantes.</p>
   <div class="filtros-box">
@@ -117,13 +117,13 @@
 </section>
 
 <!-- DECISIÓN CLAVE -->
-<section class="section">
+<section class="section" id="decision-clave">
 <h2>Decisión clave</h2>
 <p>Segmentar la experiencia por tipo de usuario en lugar de mantener un catálogo genérico.</p>
 </section>
 
 <!-- WIREFRAME VS HIFI -->
-<section class="section">
+<section class="section" id="evolucion-visual">
   <h2>Evolución visual</h2>
 <p class="media-caption">Wireframe → Interfaz final</p>
   <div class="compare-slider"> 
@@ -154,7 +154,7 @@ Proceso visual desde la estructura inicial hasta la interfaz final.
 </section>
 
 <!-- USABILIDAD -->
-<section class="section">
+<section class="section" id="usabilidad">
 <h2>Hallazgos de usabilidad</h2>
 <p>Las pruebas mostraron confusión al comparar productos, dificultad con los filtros y problemas de navegación. Se simplificó la interfaz y se mejoró la organización del contenido.</p>
 <div class="usabilidad-box">
@@ -168,7 +168,7 @@ Proceso visual desde la estructura inicial hasta la interfaz final.
 </section>
 
 <!-- SOLUCIÓN -->
-<section class="section">
+<section class="section" id="solucion">
 <h2>Solución</h2>
   <p>Se mejoró la navegación, los filtros y la organización de la información para facilitar la elección de productos.</p>
 <div class="media-bleed">
@@ -183,7 +183,7 @@ Proceso visual desde la estructura inicial hasta la interfaz final.
 </section>
 
   <!-- COMPARAR -->
-  <section class="section">
+  <section class="section" id="comparacion">
   <div class="compare-block">
     <div class="compare-text">
       <h2>Comparación de productos</h2>
@@ -202,7 +202,7 @@ Proceso visual desde la estructura inicial hasta la interfaz final.
 </section>
 
 <!-- REWARDS -->
-<section class="section">
+<section class="section" id="recompensas">
   <h2>Incentivo a la recompra</h2>
   <p>Se agregó un sistema de puntos para incentivar futuras compras y mejorar la experiencia después de la compra.</p>
   <div class="reward-box">
@@ -213,7 +213,7 @@ Proceso visual desde la estructura inicial hasta la interfaz final.
 </section>
 
 <!-- RESULTADO -->
-<section class="section">
+<section class="section" id="resultado">
 <h2>Resultado</h2>
 <p>La solución convirtió un catálogo genérico en una experiencia más clara y fácil de usar.</p>
 <p>Los usuarios pueden buscar, filtrar y comparar productos de forma más rápida y sencilla.</p>
@@ -226,13 +226,13 @@ Proceso visual desde la estructura inicial hasta la interfaz final.
 </section>
 
 <!-- APRENDIZAJES -->
-<section class="section">
+<section class="section" id="aprendizajes">
 <h2>Aprendizajes</h2>
 <p>Entender las necesidades reales de los usuarios ayudó a crear una experiencia más clara, simple y fácil de usar.</p>
 </section>
 
 <!-- AGRADECIMIENTO -->
-<section class="thanks-section">
+<section class="thanks-section" id="participantes">
     <div class="thanks-container">
         <div class="section-heading">
             <h2>Agradecimientos</h2>
@@ -279,10 +279,18 @@ Proceso visual desde la estructura inicial hasta la interfaz final.
 <!-- MENÚ FLOTANTE -->
 <div id="floating-menu-container"></div>
 
+<!-- Scripts globales -->
 <script src="scripts/navigation.js"></script>
+
+<!-- Componentes -->
 <script src="components/header/header.js"></script>
 <script src="components/footer/footer.js"></script>
 <script src="components/floating-menu/menu.js"></script>
+
+<!-- Scripts específicos de esta página -->
+<script src="scripts/comparison-slider.js"></script>
+
+<!-- Inicialización / carga de componentes -->
 <script src="scripts/loader.js"></script>
 </body>
 </html>

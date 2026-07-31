@@ -470,14 +470,6 @@ padding:16px 20px;
 width:110px;
 }
 
-nav{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-justify-content:center;
-margin-bottom:10px;
-}
-
 .header a{
 margin:0;
 font-size:15px;
