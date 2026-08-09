@@ -88,14 +88,6 @@
     margin:0;
 }
 
-.section-divider{
-    width:240px;
-    height:1px;
-    margin:50px auto;
-    border:none;
-    background:#ECECEC;
-}
-
 .highlight-divider{
     width:1px;
     height:55px;
@@ -104,7 +96,7 @@
 }
 
 /*==========================================
-RECOMPENSAS COACA-COLA
+RECOMPENSAS COCA-COLA
 ==========================================*/
 
 .container{
