@@ -178,5 +178,49 @@ label:"InterPass",
 id:"interpass"
 }
 ]
+},
+
+{
+id: "sitios",
+title: "Sitios",
+url: "sitios.html",
+sections: [
+{
+    label: "Recompensas",
+    id: "recompensas"
+},
+{
+    label: "Más por Ti",
+    id: "mas-por-ti"
+},
+{
+    label: "Instala y Gana",
+    id: "instala-y-gana"
+},
+{
+    label: "Punto Abordo",
+    id: "punto-abordo"
+}
+]
+},
+
+{
+id: "identidad",
+title: "Identidad",
+url: "identidad.html",
+sections: [
+{
+    label: "Comunicación visual",
+    id: "comunicacion-visual"
+},
+{
+    label: "Motion Graphics",
+    id: "motion-graphics"
+},
+{
+    label: "Experiencias digitales",
+    id: "experiencias-digitales"
+}
+]
 }
 ]

@@ -494,7 +494,7 @@ GRILL UP
 }
 
 .app-case{
-    padding:50px 20px 30px;
+    padding:50px 0 30px;
 }
 
 .app-project-image img{
@@ -525,7 +525,7 @@ GRILL UP
 }
 
 .app-gallery{
-    padding:50px 20px 30px;
+    padding:50px 0 30px;
 }
 
 .gallery-card img {
@@ -564,6 +564,14 @@ GRILL UP
 
 .store-card span{
     font-size:1.4rem;
+}
+
+.apps-hero .container {
+    padding: 0;
+}
+
+.container {
+    padding: 0;
 }
 }
 

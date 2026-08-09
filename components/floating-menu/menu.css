@@ -76,3 +76,20 @@
 .menu-items a.active {
     color: #0077DD;
 }
+
+
+/* Laptop */
+@media (max-width:1439px){
+    .floating-toolbar{
+        right:1.2rem;
+        bottom:7rem;
+    }
+}
+
+/* Móvil */
+@media (max-width:768px){
+    .floating-toolbar{
+        right:1.2rem;
+        bottom:1.2rem;
+    }
+}

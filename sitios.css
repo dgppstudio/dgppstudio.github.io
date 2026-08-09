@@ -1,0 +1,690 @@
+/*=====================================
+=            HERO SITIOS WEB         =
+=====================================*/
+
+.sitios-hero{
+    padding:70px 30px;
+    background:#fff;
+}
+
+.sitios-hero .container{
+    max-width:1200px;
+    margin:auto;
+    text-align:center;
+    padding:0 30px;
+}
+
+.section-label{
+    display:block;
+    margin-bottom:18px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#0077DD;
+}
+
+.sitios-title{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    font-size:64px;
+    font-weight:700;
+    color:#004488;
+}
+
+.sitios-description{
+    max-width:760px;
+    margin:50px auto;
+    font-family:'Open Sans',sans-serif;
+    font-size:20px;
+    line-height:1.6;
+    color:#666;
+}
+
+.sitios-hero-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.sitios-hero-image img{
+    width:100%;
+    max-width:1200px;
+    height:auto;
+}
+
+/*=====================================
+=         SITIOS HIGHLIGHTS             =
+=====================================*/
+
+.sitios-highlights{
+    padding:50px 30px 20px;
+}
+
+.highlights-grid{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.highlight-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.highlight-item i{
+   font-size:34px;
+    color:#0077DD;
+    margin-bottom:14px;
+}
+
+.highlight-item h3{
+    font-size:16px;
+    font-weight:600;
+    line-height:1.4;
+    color:#666;
+    margin:0;
+}
+
+.section-divider{
+    width:240px;
+    height:1px;
+    margin:50px auto;
+    border:none;
+    background:#ECECEC;
+}
+
+.highlight-divider{
+    width:1px;
+    height:55px;
+    background:#ECECEC;
+    align-self:center;
+}
+
+/*==========================================
+RECOMPENSAS COACA-COLA
+==========================================*/
+
+.container{
+    max-width:1200px;
+    padding: 0;
+}
+
+.sitios-case{
+    padding:70px 30px;
+}
+
+.sitios-grid{
+    display:grid;
+    grid-template-columns:480px 1fr;
+    gap:80px;
+}
+
+.sitios-image{
+    text-align:center;
+    display: flex;
+    align-items: center;
+}
+
+.sitios-image img{
+    width:100%;
+    margin:0;
+}
+
+.case-tag{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:50px;
+    background:#EEF5FF;
+    color:#0077DD;
+    font-size:.85rem;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+}
+
+.sitios-content h2{
+    margin:22px 0 18px;
+    font-size:3rem;
+    line-height:1.1;
+    color:#004488;
+}
+
+.sitios-content h2 span{
+    display:block;
+}
+
+.case-description{
+    max-width:640px;
+    color:#666;
+    font-size:1.1rem;
+    line-height:1.9;
+    margin-bottom:45px;
+}
+
+.case-data{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:22px;
+    margin-bottom:45px;
+}
+
+.data-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.data-item i{
+    font-size:1.4rem;
+    color:#0077DD;
+}
+
+.data-item span{
+    color:#555;
+    font-weight:500;
+}
+
+.divider{
+    width:1px;
+    height:28px;
+    background:#DDD;
+}
+
+.case-links{
+    display:flex;
+    gap:60px;
+}
+
+.case-links a{
+    color:#0077DD;
+    font-weight:600;
+    text-decoration:none;
+    transition:.25s;
+}
+
+.case-links a:hover{
+    opacity:.7;
+}
+
+/*=     MI PARTICIPACIÓN     =*/
+.contribution{
+    padding:70px 30px;
+    background:#F8FAFD;
+}
+
+.contribution .section-title{
+    max-width:700px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.contribution-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.contribution-card{
+    background:#FFF;
+    border-radius:20px;
+    padding:45px 35px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.contribution-card:hover{
+    transform:translateY(-6px);
+}
+
+.contribution-card i{
+    font-size:2.6rem;
+    color:#0077DD;
+    margin-bottom:20px;
+}
+
+.contribution-card h3{
+    color:#004488;
+    font-size:1.35rem;
+    line-height:1.5;
+}
+
+.contribution-card p{
+    color:#666;
+    line-height:1.6;
+    margin-top: 10px;
+}
+
+/*=     GALERÍA     =*/
+.sitios-gallery{
+    padding:70px 30px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+    margin-top:70px;
+}
+
+.gallery-card{
+    background:#FFF;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.06);
+    transition:.3s;
+    padding: 30px 0 10px;
+}
+
+.gallery-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 45px rgba(0,0,0,.10);
+}
+
+.gallery-card img{
+    display:block;
+    width:100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.gallery-image-wide img{
+    max-width: 380px;
+}
+
+.gallery-card figcaption{
+    padding:20px;
+    text-align:center;
+    font-weight:600;
+    color:#004488;
+}
+
+.gallery-card h3{
+    font-size:20px;
+    line-height:1.4;
+    font-weight:600;
+    color:#004488;
+    text-align:center;
+    margin-bottom:18px;
+    position:relative;
+}
+
+.gallery-card h3::after{
+    content:"";
+    display:block;
+    width:48px;
+    height:2px;
+    background:#0077DD;
+    opacity:.20;
+    margin:12px auto 0;
+    border-radius:2px;
+}
+
+.gallery-card span{
+    display:block;
+    margin-top:6px;
+    font-size:.75rem;
+    letter-spacing:2px;
+    color:#8A8F98;
+    text-transform:uppercase;
+}
+
+/*=     IMPRESOS     =*/
+.sitios-support{
+    padding:70px 30px 0;
+    background:#F8FAFD;
+}
+
+.support-image{
+    margin-top:50px;
+}
+
+.support-image img{
+    width:100%;
+    display:block;
+    border-radius:22px;
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+}
+
+.support-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+    margin-top:70px;
+}
+
+.support-card{
+    background:#FFF;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.support-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 45px rgba(0,0,0,.10);
+}
+
+.support-card img{
+    width:100%;
+    display:block;
+}
+
+.support-card figcaption{
+    padding:20px;
+    text-align:center;
+    color:#004488;
+    font-weight:600;
+}
+
+/*=     DOWNLOAD     =*/
+.sitios-download{
+    padding:0 30px 50px;
+    background:#F8FAFD;
+}
+
+.store-buttons{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:70px;
+    flex-wrap:wrap;
+}
+
+.store-card{
+    width:320px;
+    height:92px;
+    border:2px solid #E3E8EF;
+    border-radius:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    text-decoration:none;
+    transition:.3s;
+    background:#FFF;
+}
+
+.store-card:hover{
+    transform:translateY(-5px);
+    border-color:#0077DD;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.store-card img{
+    width:42px;
+}
+
+.store-card span{
+    font-size:1.8rem;
+    font-weight:600;
+    color:#111;
+}
+
+/* ==========================================
+   RESPONSIVE - 1024PX
+========================================== */
+
+@media (max-width:1024px){
+
+.contribution-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+}
+
+.contribution-card{
+    padding:36px 28px;
+}
+
+.sitios-grid{
+    grid-template-columns:1fr;
+    gap:50px;
+}
+
+.sitios-image{
+    justify-content:center;
+}
+
+.sitios-image img{
+    max-width:650px;
+}
+
+.sitios-content{
+    max-width:720px;
+    margin:auto;
+}
+
+.sitios-content h2{
+    font-size:2.6rem;
+}
+
+.sitios-content h2 span{
+    display:inline;
+}
+
+.case-description{
+    max-width:100%;
+}
+
+.case-data{
+    gap:16px;
+}
+
+.data-item span{
+    font-size:.95rem;
+}
+
+.sitios-image img{
+    width:100%;
+    max-width:700px;
+}
+
+}
+
+/* ==========================================
+   RESPONSIVE - 768PX
+========================================== */
+
+@media (max-width:768px){
+
+.sitios-hero{
+    padding:50px 0 30px;
+}
+
+.sitios-hero .container{
+    padding:0;
+}
+
+.sitios-title{
+    font-size:42px;
+    line-height:1.15;
+}
+
+.sitios-description{
+    margin:30px auto;
+    font-size:18px;
+}
+
+/*=     Highlights     =*/
+.highlights-grid{
+    gap:35px;
+}
+
+.highlight-divider{
+    display:none;
+}
+
+.highlight-item{
+    width:calc(50% - 20px);
+}
+
+/*=     Cada Proyecto     =*/
+.sitios-case{
+    padding:60px 0;
+}
+
+.sitios-grid{
+    grid-template-columns:1fr;
+    gap:45px;
+}
+
+.sitios-image{
+    order:1;
+}
+
+.sitios-image img{
+    max-width:580px;
+}
+
+.sitios-content{
+    max-width:650px;
+    margin:auto;
+    text-align:left;
+    order:2;
+}
+
+.sitios-content h2{
+    font-size:30px;
+}
+
+.case-description{
+    font-size:1rem;
+}
+
+.case-data{
+    gap:16px;
+}
+
+.divider{
+    display:none;
+}
+
+/*=     Mi participación     =*/
+.contribution{
+    padding:50px 0;
+}
+
+.contribution-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/*=     Galería     =*/
+.sitios-gallery{
+    padding:60px 20px;
+}
+
+.gallery-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.gallery-card img{
+    max-width:320px;
+}
+
+.gallery-image-wide img{
+    max-width:420px;
+}
+
+/*=     Ecosistema     =*/
+.sitios-support{
+    padding:60px 20px 0;
+}
+
+/*=     Botón final     =*/
+.sitios-download{
+    padding:0 20px 50px;
+}
+
+.store-card{
+    width:100%;
+    max-width:320px;
+}
+
+.support-image img {
+    border-radius: 8px;
+}
+}
+
+/* ==========================================
+   RESPONSIVE - 500PX
+========================================== */
+
+@media (max-width:500px){
+
+.contribution-grid,
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
+.contribution-card{
+    padding:35px 28px;
+}
+
+.sitios-content h2 span{
+    display:block;
+}
+
+.sitios-image img{
+    max-width:360px;
+}
+
+.gallery-card{
+    padding:24px 0 8px;
+}
+
+.sitios-title{
+    font-size:30px;
+}
+
+.sitios-description{
+    font-size:18px;
+    margin:30px auto;
+}
+
+.data-item{
+    width:100%;
+    justify-content:center;
+}
+
+.highlights-grid{
+    gap:40px 20px;
+}
+
+.highlight-item i{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.highlight-item h3{
+    font-size:15px;
+    line-height:1.3;
+}
+
+.sitios-highlights{
+    margin-top:20px;
+    padding:0 20px 10px;
+}
+
+.highlight-divider{
+    display:none;
+}
+
+.case-data{
+    gap:18px;
+}
+
+.data-item i{
+    font-size:1.2rem;
+}
+
+.data-item span{
+    font-size:1rem;
+}
+
+}

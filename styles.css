@@ -22,9 +22,8 @@ overflow-x:hidden;
 }
 
 .container{
-max-width:1000px;
-margin:auto;
-padding:60px 24px;
+width:min(1200px, calc(100% - 40px));
+margin:0 auto;
 }
 
 h1,h2,h3{
@@ -119,5 +118,7 @@ box-shadow:0 10px 20px rgba(0,0,0,.12);
 }
 
 @media(max-width:768px){
-
+    h2{
+    font-size:28px;
+    }
 }

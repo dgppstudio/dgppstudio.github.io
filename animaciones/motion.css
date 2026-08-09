@@ -1,0 +1,153 @@
+.grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+
+}
+
+.card{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#fff;
+    border-radius:18px;
+    padding:20px;
+
+}
+
+.viewer{
+
+    position:relative;
+    width:220px;
+    height:220px;
+    overflow:hidden;
+    border-radius:16px;
+    border:1px solid #009ee2;
+
+}
+
+.title{
+
+    margin-top: 24px;
+    text-align: center;
+    color: #004488;
+    letter-spacing: .6px;
+    font-size: .8rem;
+    font-weight: 500;
+
+}
+
+.stage{
+
+    position:absolute;
+    left:50%;
+    top:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transform:translate(-50%,-50%);
+    transform-origin:center center;
+
+}
+
+@media (max-width:1024px){
+
+    .grid{
+
+    gap:20px;
+
+    }
+
+    .card{
+
+        max-width:260px;
+        margin:auto;
+
+    }
+
+    .viewer{
+
+        transform:scale(.85);
+        transform-origin:center;
+
+    }
+
+    .title {
+    margin-top: 16px;
+    }
+
+
+}
+
+@media (max-width:768px){
+
+    .grid{
+
+        gap:16px;
+
+    }
+
+    .card{
+
+        max-width:200px;
+        margin:auto;
+        padding:12px;
+
+    }
+
+    .viewer{
+
+        transform:scale(.75);
+
+    }
+
+    .card h3{
+
+        font-size:0.9rem;
+
+    }
+
+    .title {
+    margin-top: 8px;
+    }
+
+}
+
+@media (max-width:500px){
+    
+    .grid{
+
+    grid-template-columns:repeat(2,1fr);
+    gap:8px;
+
+    }
+
+    .viewer{
+
+        transform:scale(.7);
+
+    }
+
+    .card {
+        max-width: 180px;
+        padding: 8px;
+    }
+}
+
+@media (max-width:375px){
+    
+    .grid{
+
+    grid-template-columns:1fr;
+
+    }
+
+    .viewer{
+
+        transform:scale(.9);
+
+    }
+}
