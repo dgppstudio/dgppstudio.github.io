@@ -5,6 +5,7 @@ padding:80px 20px;
 display:flex;
 align-items:center;
 overflow:hidden;
+margin-bottom: 70px;
 }
 
 .hero-content{
@@ -229,9 +230,10 @@ transition:all .2s ease;
 }
 
 .compare-slider img{
-  pointer-events:none;
-  user-drag:none;
-  -webkit-user-drag:none;
+    pointer-events:none;
+    -webkit-user-drag:none;
+    user-select:none;
+    -webkit-user-select:none;
 }
 
 .reward-box, .filtros-box, .usabilidad-box{
