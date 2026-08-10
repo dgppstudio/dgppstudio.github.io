@@ -23,12 +23,24 @@
 }
 
 .identidad-description{
-    max-width:760px;
+    max-width:800px;
     margin:50px auto;
     font-family:'Open Sans',sans-serif;
     font-size:20px;
-    line-height:1.6;
+    line-height:1.5;
     color:#666;
+}
+
+.identidad-hero-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.identidad-hero-image img{
+    width:100%;
+    max-width:1000px;
+    height:auto;
 }
 
 /*=====================================
@@ -246,6 +258,14 @@
 =====================================*/
 @media (max-width:1024px){
 
+.identidad-image{
+    justify-content:center;
+}
+
+.identidad-image img{
+    max-width:650px;
+}
+
 .visual-gallery{
     padding:50px 30px;
 }
@@ -286,6 +306,14 @@
 
 .identidad-hero .container{
     padding:0;
+}
+
+.identidad-image{
+    order:1;
+}
+
+.identidad-image img{
+    max-width:580px;
 }
 
 .identidad-title{
@@ -350,6 +378,10 @@
 =====================================*/
 @media (max-width:500px){
 
+.identidad-image img{
+    max-width:360px;
+}
+
 .highlights-grid{
     gap:40px 20px;
 }
@@ -405,10 +437,6 @@
 
     max-width:240px;
 
-}
-
-.eyebrow{
-    font-size:15px;
 }
 
 h2 {
