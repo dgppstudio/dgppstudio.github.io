@@ -208,12 +208,6 @@ RECOMPENSAS COCA-COLA
     background:#F8FAFD;
 }
 
-.contribution .section-title{
-    max-width:700px;
-    margin:0 auto 70px;
-    text-align:center;
-}
-
 .contribution-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);

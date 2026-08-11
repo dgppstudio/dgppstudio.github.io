@@ -89,23 +89,9 @@
  margin:0;
 }
 
-.texto-largo{
-    max-width: 760px;
-    margin: auto;
-  font-size:18px;
-  color:#555;
-  line-height:1.6;
-}
-
 .subtitulo-largo{
   max-width: 760px;
   margin: auto;
-}
-
-.section-header{
-  max-width:900px;
-  margin:0 auto 50px;
-  text-align:center;
 }
 
 .section-label{
@@ -128,14 +114,6 @@
     line-height:1.2;
     color:#0B4D95;
     margin-bottom:24px;
-}
-
-.section-intro{
-  max-width:760px;
-  margin:auto;
-  font-size:18px;
-  line-height:1.6;
-  color:#555;
 }
 
 #investigacion{
@@ -705,11 +683,6 @@ display:none;
 
 .section-header h2{
   font-size:34px;
-}
-
-.section-intro{
-  font-size:16px;
-  line-height:1.6;
 }
 
 .research-grid{
