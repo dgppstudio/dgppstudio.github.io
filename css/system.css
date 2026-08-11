@@ -1,0 +1,1334 @@
+/*==================================================
+
+PORTAFOLIO DESIGN SYSTEM
+José Vázquez
+
+Versión: 1.0
+
+ÍNDICE
+
+1. Tokens
+2. Reset
+3. Base
+4. Layout
+5. Typography
+6. Components
+7. Compositions
+8. Utilities
+9. Responsive
+
+==================================================*/
+
+
+/*==================================================
+1. TOKENS
+====================================================
+
+Responsabilidad
+Definir los valores globales del sistema.
+
+Incluye
+
+• Colores
+• Tipografía
+• Escala tipográfica
+• Font Weight
+• Espaciados
+• Bordes
+• Sombras
+• Layout
+
+No debe
+
+• Estilizar componentes.
+• Contener reglas CSS.
+• Definir layouts.
+
+==================================================*/
+
+:root{
+
+    /*========== Colores ==========*/
+
+    --color-primary:#004488;
+    --color-accent:#0077DD;
+
+    --color-text:#333333;
+    --color-text-light:#555555;
+    --color-text-muted:#666666;
+
+    --color-bg:#FFFFFF;
+    --color-surface:#F8FAFD;
+
+    --color-border:#E4EAF2;
+
+    /*========== Tipografía ==========*/
+
+    --font-heading:'Poppins',sans-serif;
+    --font-body:'Open Sans',sans-serif;
+
+    /*========== Escala tipográfica ==========*/
+
+    --fs-h1:48px;
+    --fs-h2:34px;
+    --fs-h3:20px;
+
+    --fs-body:16px;
+    --fs-intro:18px;
+    --fs-label:13px;
+
+    /*========== Font Weight ==========*/
+
+    --fw-regular:400;
+    --fw-medium:500;
+    --fw-semibold:600;
+    --fw-bold:700;
+
+    /*========== Espaciado ==========*/
+
+    --space-xs:8px;
+    --space-sm:16px;
+    --space-md:24px;
+    --space-lg:40px;
+    --space-xl:60px;
+    --space-2xl:100px;
+
+    /*========== Bordes ==========*/
+
+    --radius-sm:12px;
+    --radius-md:20px;
+    --radius-lg:28px;
+
+    /*========== Sombras ==========*/
+
+    --shadow-sm:0 4px 12px rgba(0,0,0,.08);
+    --shadow-md:0 10px 30px rgba(0,0,0,.12);
+
+    /*========== Layout ==========*/
+
+    --container-width:1200px;
+    --content-width:900px;
+    --reading-width:760px;
+
+    /* Line Height */
+
+    --lh-title:1.2;
+    --lh-body:1.6;
+
+    /* Transition */
+
+    --transition:.3s ease;
+
+    /* Z-index */
+
+    --z-header:1000;
+    --z-menu:1100;
+    --z-modal:2000;
+
+}
+
+/*==================================================
+2. RESET
+====================================================
+
+Responsabilidad
+
+Eliminar diferencias entre navegadores y establecer
+una base consistente.
+
+Incluye
+
+• Box sizing
+• Márgenes
+• Listas
+• Links
+• Imágenes
+• Formularios
+
+No debe
+
+• Aplicar estilos visuales.
+• Definir layouts.
+
+==================================================*/
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+ul,
+ol{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+button,
+input,
+textarea,
+select{
+    font:inherit;
+}
+
+picture{
+    display:block;
+}
+
+/*==================================================
+3. BASE
+====================================================
+
+Responsabilidad
+
+Definir los estilos base del sitio.
+
+Incluye
+
+• Body
+• Main
+• Section
+• SVG
+• Imágenes
+• Tipografía base
+
+No debe
+
+• Contener componentes.
+• Resolver layouts.
+
+==================================================*/
+
+body{
+    font-family:var(--font-body);
+    font-size:var(--fs-body);
+    color:var(--color-text);
+    background:var(--color-bg);
+    line-height:1.6;
+}
+
+main{
+    overflow:hidden;
+}
+
+section{
+    position:relative;
+}
+
+img{
+    border:none;
+}
+
+svg{
+    display:block;
+}
+
+/*==================================================
+4. LAYOUT
+====================================================
+
+Responsabilidad
+
+Organizar el espacio y la distribución
+de los componentes.
+
+Incluye
+
+• Container
+• Section
+• Grid
+• Flow
+• Cluster
+• Stack
+• Reading
+• Two Column
+
+No debe
+
+• Definir colores.
+• Definir contenido.
+• Definir componentes.
+
+==================================================*/
+
+
+/*==================================================
+Container
+====================================================
+
+Responsabilidad
+
+Limitar el ancho del contenido.
+
+Debe
+
+• Centrar el contenido.
+• Definir el ancho máximo.
+
+No debe
+
+• Definir padding interno de componentes.
+• Crear columnas.
+
+==================================================*/
+
+.container{
+    width:min(
+        var(--container-width),
+        calc(100% - 40px)
+    );
+    margin-inline:auto;
+}
+
+/*==================================================
+Section
+====================================================
+
+Responsabilidad
+
+Separar bloques principales del sitio.
+
+Debe
+
+• Controlar el espacio entre secciones.
+
+No debe
+
+• Definir fondos.
+• Definir layouts internos.
+
+==================================================*/
+
+.section{
+    margin-block:var(--space-2xl);
+}
+
+.section:first-child{
+    margin-top:0;
+}
+
+.section:last-child{
+    margin-bottom:var(--space-lg);
+}
+
+/*==================================================
+Grid
+====================================================
+
+Responsabilidad
+
+Crear una cuadrícula reutilizable.
+
+Debe
+
+• Organizar elementos.
+
+No debe
+
+• Saber qué contiene.
+
+==================================================*/
+
+.grid{
+    display:grid;
+    gap:var(--space-lg);
+}
+
+/*==================================================
+Flow
+====================================================
+
+Responsabilidad
+
+Separar automáticamente elementos
+en dirección vertical.
+
+Debe
+
+• Crear ritmo vertical.
+
+No debe
+
+• Crear columnas.
+
+==================================================*/
+
+.flow > * + *{
+    margin-top:var(--space-md);
+}
+
+/*==================================================
+Cluster
+====================================================
+
+Responsabilidad
+
+Agrupar elementos en dirección horizontal.
+
+Debe
+
+• Alinear botones.
+• Alinear iconos.
+• Alinear etiquetas.
+
+No debe
+
+• Controlar el ancho.
+
+==================================================*/
+
+.cluster{
+    display:flex;
+    flex-wrap:wrap;
+    gap:var(--space-sm);
+    align-items:center;
+}
+
+/*==================================================
+Stack
+====================================================
+
+Responsabilidad
+
+Apilar bloques completos.
+
+Debe
+
+• Separar grupos grandes.
+
+No debe
+
+• Reemplazar Flow.
+
+==================================================*/
+
+.stack{
+    display:flex;
+    flex-direction:column;
+    gap:var(--space-xl);
+}
+
+/*==================================================
+Reading
+====================================================
+
+Responsabilidad
+
+Limitar el ancho de lectura.
+
+Debe
+
+• Mejorar la legibilidad.
+
+No debe
+
+• Centrar componentes completos.
+
+==================================================*/
+
+.reading{
+    max-width:var(--reading-width);
+}
+
+/*==================================================
+Two Column
+====================================================
+
+Responsabilidad
+
+Crear layouts de dos columnas.
+
+Debe
+
+• Organizar media + contenido.
+
+No debe
+
+• Definir el contenido.
+
+==================================================*/
+
+.two-column{
+    display:grid;
+    gap:var(--space-xl);
+    align-items:center;
+}
+
+
+/*==================================================
+5. TYPOGRAPHY
+====================================================
+
+Responsabilidad
+
+Definir la jerarquía tipográfica
+de todo el sistema.
+
+Incluye
+
+• H1
+• Hero Title
+• H2
+• H3
+• Body
+• Section Label
+• Section Intro
+
+No debe
+
+• Resolver layouts.
+• Controlar componentes.
+
+==================================================*/
+
+h1,
+h2,
+h3{
+    margin:0;
+    font-family:var(--font-heading);
+    color:var(--color-primary);
+    line-height:1.2;
+}
+
+/*==================================================
+H1
+====================================================
+
+Responsabilidad
+
+Título principal de la página.
+
+Uso
+
+• Solo uno por página.
+• Normalmente dentro del Hero.
+
+No debe
+
+• Utilizarse como título de sección.
+• Repetirse.
+
+==================================================*/
+
+h1{
+    font-size:var(--fs-h1);
+    font-weight:var(--fw-bold);
+}
+
+/*==================================================
+Hero Title
+====================================================
+
+Responsabilidad
+
+Variante de H1 utilizada
+dentro del Hero.
+
+Uso
+
+• Hero de casos de estudio.
+• Hero de páginas índice.
+
+No debe
+
+• Usarse fuera del Hero.
+
+==================================================*/
+
+.title-hero{}
+
+/*==================================================
+H2
+====================================================
+
+Responsabilidad
+
+Título principal
+de una sección.
+
+Uso
+
+• Encabeza un Section Header.
+• Puede repetirse.
+
+No debe
+
+• Sustituir un H1.
+
+==================================================*/
+
+h2{
+    font-size:var(--fs-h2);
+    font-weight:var(--fw-bold);
+}
+
+/*==================================================
+H3
+====================================================
+
+Responsabilidad
+
+Título de un componente.
+
+Uso
+
+• Cards
+• Testimoniales
+• Meta
+• Items
+
+No debe
+
+• Encabezar una página.
+
+==================================================*/
+
+h3{
+    font-size:var(--fs-h3);
+    font-weight:var(--fw-medium);
+}
+
+/*==================================================
+Body Text
+====================================================
+
+Responsabilidad
+
+Texto principal del sitio.
+
+Uso
+
+• Párrafos.
+• Descripciones.
+• Contenido.
+
+No debe
+
+• Utilizarse como título.
+
+==================================================*/
+
+p{
+    margin:0;
+}
+
+/*==================================================
+Section Label
+====================================================
+
+Responsabilidad
+
+Identificar visualmente
+una sección.
+
+Uso
+
+• Antes del H2.
+• Texto corto.
+• Mayúsculas.
+
+No debe
+
+• Sustituir un título.
+
+==================================================*/
+
+.section-label{}
+
+/*==================================================
+Section Intro
+====================================================
+
+Responsabilidad
+
+Introducir el contenido
+de una sección.
+
+Uso
+
+• Después del H2.
+• Antes del contenido.
+
+No debe
+
+• Convertirse en un bloque
+de lectura largo.
+
+==================================================*/
+
+.section-intro{}
+
+/*==================================================
+6. COMPONENTS
+====================================================
+
+Responsabilidad
+
+Construir piezas reutilizables
+a partir de Foundation + Layout.
+
+Incluye
+
+• Button
+• Card
+• Gallery
+• Section Header
+• Hero
+• Case Meta
+• Testimonial
+
+Los componentes
+
+• No conocen la página.
+• No dependen del contexto.
+• Deben poder reutilizarse.
+
+==================================================*/
+
+
+/*==================================================
+BUTTON
+====================================================
+
+Responsabilidad
+
+Ejecutar una acción del usuario.
+
+Variantes
+
+• Primary
+• Secondary
+• Prototype
+• Store
+
+Construido con
+
+• Typography
+• Tokens
+
+Uso
+
+• Call to Action
+• Navegación
+• Descarga
+• Prototipos
+
+No debe
+
+• Definir layouts.
+• Controlar alineaciones.
+• Cambiar según la página.
+
+==================================================*/
+
+.button{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:var(--space-xs);
+    padding:12px 24px;
+    border:none;
+    border-radius:var(--radius-md);
+    background:transparent;
+    font-family:var(--font-body);
+    font-size:var(--fs-body);
+    font-weight:var(--fw-semibold);
+    cursor:pointer;
+    transition:var(--transition);
+
+}
+
+.button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.button--primary{
+
+    background:var(--color-accent);
+    color:#FFF;
+
+}
+
+.button--primary:hover{
+
+    opacity:.9;
+
+}
+
+.button--secondary{
+
+    background:transparent;
+    border:2px solid var(--color-accent);
+    color:var(--color-accent);
+
+}
+
+.button--prototype{
+
+    background:var(--color-primary);
+    color:#FFF;
+
+}
+
+.button--store{
+
+    justify-content:flex-start;
+
+}
+
+/*==================================================
+CARD
+====================================================
+
+Responsabilidad
+
+Agrupar información relacionada
+en un bloque reutilizable.
+
+Variantes
+
+• Media Card
+• Stat Card
+• Info Card
+
+Construido con
+
+• Typography
+• Tokens
+
+Uso
+
+• Galerías
+• Resultados
+• Contribuciones
+• Sistemas visuales
+
+No debe
+
+• Definir columnas.
+• Definir grids.
+• Controlar el ancho de la página.
+
+==================================================*/
+
+.card{
+
+    display:flex;
+    flex-direction:column;
+    background:var(--color-bg);
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    box-shadow:var(--shadow-sm);
+
+}
+
+.card--media{
+
+}
+
+.card--stat{
+
+}
+
+.card--info{
+
+}
+
+/*==================================================
+SECTION HEADER
+====================================================
+
+Responsabilidad
+
+Presentar el contenido
+de una sección.
+
+Construido con
+
+• Section Label
+• H2
+• Section Intro
+
+Uso
+
+• Encabezar cualquier sección.
+
+No debe
+
+• Contener galerías.
+• Contener cards.
+• Contener grids.
+
+==================================================*/
+
+.section-header{
+
+    max-width:var(--content-width);
+    margin-inline:auto;
+    margin-bottom:var(--space-xl);
+    text-align:center;
+
+}
+
+/*==================================================
+CASE META
+====================================================
+
+Responsabilidad
+
+Mostrar información resumida
+de un proyecto.
+
+Incluye
+
+• Cliente
+• Plataforma
+• Rol
+• Duración
+• Tecnologías
+
+No debe
+
+• Sustituir la descripción
+del proyecto.
+
+==================================================*/
+
+.case-meta{}
+
+/*==================================================
+TESTIMONIAL
+====================================================
+
+Responsabilidad
+
+Mostrar la opinión
+de un participante.
+
+Incluye
+
+• Comentario
+• Nombre
+• Cargo
+
+No debe
+
+• Mostrar resultados.
+• Mostrar métricas.
+
+==================================================*/
+
+.testimonial{}
+
+
+/*==================================================
+HERO
+====================================================
+
+Responsabilidad
+
+Presentar una página
+o caso de estudio.
+
+Variantes
+
+• Listing Hero
+• Case Study Hero
+
+Construido con
+
+• Section Label
+• H1
+• Body
+• Button
+• Media
+
+No debe
+
+• Contener el contenido
+principal de la página.
+
+==================================================*/
+
+.hero{}
+
+.hero--listing{}
+
+.hero--case-study{}
+
+/*==================================================
+7. COMPOSITIONS
+====================================================
+
+/*==================================================
+Gallery
+====================================================
+
+Responsabilidad
+
+Mostrar una colección de Media Cards.
+
+Construido con
+
+• Section Header
+• Grid
+• Media Card
+
+Uso
+
+• Aplicaciones
+• Sitios
+• Identidad
+
+No debe
+
+• Definir columnas propias.
+• Duplicar Grid.
+
+==================================================*/
+
+.gallery{}
+
+/*==================================================
+Stats
+====================================================
+
+Responsabilidad
+
+Mostrar métricas o resultados.
+
+Construido con
+
+• Section Header
+• Grid
+• Stat Card
+
+Uso
+
+• Resultados
+• Investigación
+• Arquitectura
+
+No debe
+
+• Mostrar imágenes.
+
+==================================================*/
+
+.stats{}
+
+/*==================================================
+Testimonials
+====================================================
+
+Responsabilidad
+
+Mostrar comentarios de participantes.
+
+Construido con
+
+• Section Header
+• Grid
+• Testimonial
+
+Uso
+
+• Validaciones
+• Usabilidad
+
+No debe
+
+• Mostrar estadísticas.
+
+==================================================*/
+
+.testimonials{}
+
+/*==================================================
+App Case
+====================================================
+
+Responsabilidad
+
+Presentar un proyecto resumido.
+
+Construido con
+
+• Two Column
+• Case Meta
+• Button
+• Media
+
+Uso
+
+• Aplicaciones
+• Sitios
+
+No debe
+
+• Utilizarse como Hero.
+
+==================================================*/
+
+.app-case{}
+
+/*==================================================
+Results
+====================================================
+
+Responsabilidad
+
+Presentar los resultados
+de un caso de estudio.
+
+Construido con
+
+• Section Header
+• Stats
+
+Uso
+
+• Casos UX
+
+No debe
+
+• Mostrar procesos.
+
+==================================================*/
+
+.results{}
+
+.learnings{}
+
+/*==================================================
+Support
+====================================================
+
+Responsabilidad
+
+Mostrar recursos visuales
+de apoyo.
+
+Construido con
+
+• Section Header
+• Media Showcase
+
+Uso
+
+• Ecosistema
+• Responsive
+• Wireframes
+
+No debe
+
+• Sustituir una galería.
+
+==================================================*/
+
+.support{}
+
+/*==================================================
+Download
+====================================================
+
+Responsabilidad
+
+Presentar enlaces
+de descarga.
+
+Construido con
+
+• Section Header
+• Store Buttons
+
+Uso
+
+• Google Play
+• App Store
+• Sitios
+
+No debe
+
+• Contener información
+del proyecto.
+
+==================================================*/
+
+.download{}
+
+/*==================================================
+8. UTILITIES
+====================================================
+
+Responsabilidad
+
+Clases pequeñas de apoyo.
+
+Incluye
+
+• Divider
+• Text Center
+• Visually Hidden
+
+Las utilities
+
+• Hacen una sola cosa.
+• Nunca reemplazan componentes.
+
+==================================================*/
+
+.divider{
+
+    width:1px;
+    height:100%;
+    background:var(--color-border);
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.visually-hidden{
+
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+
+}
+
+/*==================================================
+9. RESPONSIVE
+==================================================*/
+
+/*==================================================
+Tablet
+====================================================
+
+Objetivo
+
+Adaptar el layout.
+
+Permite
+
+• Reducir columnas.
+• Ajustar espacios.
+
+No permite
+
+• Cambiar componentes.
+
+==================================================*/
+
+@media (max-width:992px){
+
+}
+
+/*==================================================
+Mobile
+====================================================
+
+Objetivo
+
+Priorizar la lectura.
+
+Permite
+
+• Colapsar grids.
+• Reducir tamaños.
+
+No permite
+
+• Cambiar la jerarquía.
+
+==================================================*/
+
+@media (max-width:768px){
+
+}
+
+/*==================================================
+Small Mobile
+====================================================
+
+Objetivo
+
+Optimizar pantallas pequeñas.
+
+Permite
+
+• Ajustes mínimos.
+
+No permite
+
+• Crear una versión distinta.
+
+==================================================*/
+
+@media (max-width:480px){
+
+}
+
+/*==================================================
+10. PRINCIPIOS
+====================================================
+
+Principios del Design System
+
+1.
+Un componente tiene una única responsabilidad.
+
+2.
+Las páginas se adaptan al sistema.
+
+3.
+No se crean excepciones sin una razón clara.
+
+4.
+La reutilización tiene prioridad sobre la duplicación.
+
+5.
+Los componentes se construyen a partir de Foundation.
+
+6.
+Las composiciones ensamblan componentes.
+
+7.
+El Responsive adapta el sistema,
+no crea uno nuevo.
+
+==================================================*/
