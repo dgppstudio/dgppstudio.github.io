@@ -59,6 +59,8 @@ No debe
 
     --color-bg:#FFFFFF;
     --color-surface:#F8FAFD;
+    --color-white:#FFFFFF;
+    --color-tag-bg:#EEF5FF;
 
     --color-border:#E4EAF2;
 
@@ -76,6 +78,12 @@ No debe
     --fs-body:16px;
     --fs-intro:18px;
     --fs-label:13px;
+
+    /*========== Iconografía ==========*/
+
+    --fs-icon-sm:22px;
+    --fs-icon-md:34px;
+    --fs-icon-lg:42px;
 
     /*========== Font Weight ==========*/
 
@@ -99,6 +107,10 @@ No debe
     --radius-sm:12px;
     --radius-md:20px;
     --radius-lg:28px;
+    --radius-full:999px;
+
+    --border-width-sm:1px;
+    --border-width-md:2px;
 
     /*========== Sombras ==========*/
 
@@ -109,8 +121,15 @@ No debe
 
     --container-width:1200px;
     --content-width:900px;
-    --reading-width:760px;
+    --reading-width:680px;
+    --case-media-width:280px;
+    --gallery-media-width:300px;
+    --container-gutter:40px;
+
+    --columns-1:1fr;
     --columns-2:repeat(2,minmax(0,1fr));
+    --columns-3:repeat(3,minmax(0,1fr));
+    --columns-4:repeat(4,minmax(0,1fr));
 
     /*========== Breakpoints ==========*/
 
@@ -126,6 +145,7 @@ No debe
     /* Transition */
 
     --transition:.3s ease;
+    --opacity-hover:.9;
 
     /* Z-index */
 
@@ -304,7 +324,7 @@ No debe
 .container{
     width:min(
         var(--container-width),
-        calc(100% - 40px)
+        calc(100% - var(--container-gutter))
     );
     margin-inline:auto;
 }
@@ -365,6 +385,31 @@ No debe
     gap:var(--space-lg);
 }
 
+/*
+Modificadores de columnas.
+Combinar con .grid en el HTML (ej. class="grid grid--3").
+Las Compositions (Gallery, Stats, Testimonials) consumen
+estos modificadores en lugar de definir columnas propias.
+
+Nota de arquitectura: .grid--2 produce el mismo número de
+columnas que .two-column, pero con responsabilidades
+distintas (Two Column = layout de media + contenido,
+Grid--2 = cuadrícula genérica de tarjetas). Se documenta
+como duplicación detectada, no se fusionan.
+*/
+
+.grid--2{
+    grid-template-columns:var(--columns-2);
+}
+
+.grid--3{
+    grid-template-columns:var(--columns-3);
+}
+
+.grid--4{
+    grid-template-columns:var(--columns-4);
+}
+
 /*==================================================
 Flow
 ====================================================
@@ -406,13 +451,20 @@ No debe
 
 • Controlar el ancho.
 
+Uso
+
+• Hero Highlights
+• Filas de acciones
+• Metadatos
+• Botones agrupados
+
 ==================================================*/
 
 .cluster{
     display:flex;
     flex-wrap:wrap;
-    gap:var(--space-sm);
-    align-items:center;
+    justify-content:center;
+    gap:var(--space-xl);
 }
 
 /*==================================================
@@ -530,7 +582,7 @@ h3{
     margin:0;
     font-family:var(--font-heading);
     color:var(--color-primary);
-    line-height:1.2;
+    line-height:var(--lh-title);
 }
 
 /*==================================================
@@ -698,9 +750,9 @@ No debe
 
 .section-label--tag{
 
-    padding:8px 16px;
-    border-radius:999px;
-    background:#EEF5FF;
+    padding:var(--space-xs) var(--space-sm);
+    border-radius:var(--radius-full);
+    background:var(--color-tag-bg);
 
 }
 
@@ -732,6 +784,19 @@ de lectura largo.
     font-size:var(--fs-intro);
     line-height:var(--lh-body);
     color:var(--color-text-light);
+
+}
+
+.contribution{
+
+    background:var(--color-surface);
+    padding-block:var(--section-space);
+
+}
+
+.contribution .grid{
+
+    margin-top:var(--space-lg);
 
 }
 
@@ -804,7 +869,7 @@ No debe
     align-items:center;
     justify-content:center;
     gap:var(--space-xs);
-    padding:12px 24px;
+    padding:12px var(--space-md);
     border:none;
     border-radius:var(--radius-md);
     background:transparent;
@@ -825,20 +890,20 @@ No debe
 .button--primary{
 
     background:var(--color-accent);
-    color:#FFF;
+    color:var(--color-white);
 
 }
 
 .button--primary:hover{
 
-    opacity:.9;
+    opacity:var(--opacity-hover);
 
 }
 
 .button--secondary{
 
     background:transparent;
-    border:2px solid var(--color-accent);
+    border:var(--border-width-md) solid var(--color-accent);
     color:var(--color-accent);
 
 }
@@ -846,13 +911,40 @@ No debe
 .button--prototype{
 
     background:var(--color-primary);
-    color:#FFF;
+    color:var(--color-white);
 
 }
 
 .button--store{
 
-    justify-content:flex-start;
+    width:320px;
+    height:92px;
+    background:var(--color-white);
+    border:var(--border-width-md) solid var(--color-border);
+    border-radius:var(--radius-md);
+    gap:18px;
+
+}
+
+.button--store:hover{
+
+    border-color:var(--color-accent);
+    box-shadow:var(--shadow-md);
+
+}
+
+.button--store img{
+
+    width:42px;
+    height:auto;
+
+}
+
+.button--store span{
+
+    font-size:var(--fs-intro);
+    font-weight:var(--fw-semibold);
+    color:var(--color-title);
 
 }
 
@@ -896,22 +988,113 @@ No debe
     display:flex;
     flex-direction:column;
     background:var(--color-bg);
-    border:1px solid var(--color-border);
+    border:var(--border-width-sm) solid var(--color-border);
     border-radius:var(--radius-lg);
     overflow:hidden;
     box-shadow:var(--shadow-sm);
+    transition:var(--transition);
 
 }
 
 .card--media{
 
+    overflow:hidden;
+    padding:0;
+    text-align:center;
+
+}
+
+.card--media img{
+
+    display:block;
+    width:100%;
+    max-width:var(--gallery-media-width);
+    margin-inline:auto;
+
+}
+
+.card--media h3{
+
+    padding:var(--space-lg);
+    margin:0;
+
+}
+
+.card--media h3::after{
+
+    content:"";
+    display:block;
+    width:48px;
+    height:2px;
+    margin:12px auto 0;
+    background:var(--color-accent);
+    opacity:.2;
+    border-radius:var(--radius-full);
+
+}
+
+.card--media h3 span{
+
+    display:block;
+    margin-top:var(--space-xs);
+    font-size:var(--fs-label);
+    font-weight:var(--fw-medium);
+    color:var(--color-text-muted);
+    letter-spacing:.08em;
+    text-transform:uppercase;
+
+}
+
+.card--media span{
+
+    display:block;
+    margin-top:var(--space-xs);
+    color:var(--color-text-muted);
+    font-size:var(--fs-label);
+
+}
+
+.card--media p{
+
+    padding-inline:var(--space-md);
+
 }
 
 .card--stat{
 
+    padding:var(--space-lg);
+    text-align:center;
+    align-items:center;
+
 }
 
 .card--info{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:var(--space-sm);
+    padding:var(--space-lg);
+
+}
+
+.card--info i{
+
+    font-size:var(--fs-icon-lg);
+    color:var(--color-accent);
+
+}
+
+.card--info h3{
+
+    margin:0;
+
+}
+
+.card--info p{
+
+    color:var(--color-text-muted);
 
 }
 
@@ -944,10 +1127,17 @@ No debe
 
 .section-header{
 
-    max-width:var(--content-width);
-    margin-inline:auto;
-    margin-bottom:var(--space-xl);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:var(--space-md);
     text-align:center;
+
+}
+
+.section-header + .grid{
+
+    margin-top:var(--space-xl);
 
 }
 
@@ -1001,7 +1191,7 @@ del proyecto.
 
 .meta-item i{
 
-    font-size:1.4rem;
+    font-size:var(--fs-icon-sm);
     color:var(--color-accent);
 
 }
@@ -1028,7 +1218,19 @@ No debe
 
 ==================================================*/
 
-.testimonial{}
+.testimonial{
+
+    display:flex;
+    flex-direction:column;
+    gap:var(--space-sm);
+
+}
+
+.testimonial p{
+
+    color:var(--color-text-light);
+
+}
 
 
 /*==================================================
@@ -1105,7 +1307,82 @@ No debe
 
 }
 
-.hero--case-study{}
+/*
+Case Study Hero: variante sin centrado, complementaria
+a Listing. Una disposición de dos columnas (texto + media
+lado a lado) requeriría un contenedor hijo dedicado que
+hoy no está declarado en el componente; no se agrega para
+no crear un componente nuevo fuera del alcance definido.
+*/
+
+.hero--case-study{
+
+    text-align:left;
+
+}
+
+/*==================================================
+Case
+====================================================
+
+Responsabilidad
+
+Presentar un proyecto resumido.
+
+Construido con
+
+• Two Column
+• Case Media
+• Case Content
+
+Uso
+
+• Aplicaciones
+• Sitios
+
+No debe
+
+• Definir el layout.
+• Definir tipografía.
+
+Implementación
+
+Composición sin CSS propio.
+
+Se construye combinando:
+
+• .two-column
+• .case-media
+• .case-content
+
+==================================================*/
+
+.case{}
+
+.case-links{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:var(--space-xl);
+
+}
+
+.case-links a{
+
+    display:inline-flex;
+    align-items:center;
+    gap:var(--space-xs);
+    color:var(--color-accent);
+    font-weight:var(--fw-semibold);
+    transition:var(--transition);
+
+}
+
+.case-links a:hover{
+
+    opacity:var(--opacity-hover);
+
+}
 
 .case-media{
 
@@ -1117,7 +1394,7 @@ No debe
 
     display:block;
     width:100%;
-    max-width:280px;
+    max-width:var(--case-media-width);
     height:auto;
     margin-inline:auto;
 
@@ -1154,6 +1431,12 @@ No debe
 
 ==================================================*/
 
+/*
+Composición sin reglas propias: combina .grid + un
+modificador de columnas (.grid--3 / .grid--4) + .card--media
+directamente en el HTML. Definir columnas aquí duplicaría Grid.
+*/
+
 .gallery{}
 
 /*==================================================
@@ -1162,27 +1445,65 @@ Stats
 
 Responsabilidad
 
-Mostrar métricas o resultados.
+Agrupar elementos estadísticos o destacados.
 
 Construido con
 
-• Section Header
-• Grid
-• Stat Card
+• Cluster
+• Stat
 
 Uso
 
+• Hero Highlights
 • Resultados
 • Investigación
 • Arquitectura
 
 No debe
 
+• Definir el layout.
 • Mostrar imágenes.
+
+Implementación
+
+Composición sin CSS propio.
+
+Se construye combinando:
+
+• .cluster
+• .stat
+• .vertical-divider (opcional)
 
 ==================================================*/
 
 .stats{}
+
+.stat{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:var(--space-sm);
+}
+
+.stat i{
+
+    font-size:var(--fs-icon-md);
+    color:var(--color-accent);
+    margin-bottom:14px;
+
+}
+
+.stat h3{
+
+    font-size:16px;
+    font-weight:var(--fw-semibold);
+    line-height:1.4;
+    color:var(--color-text-muted);
+    margin:0;
+
+}
 
 /*==================================================
 Testimonials
@@ -1208,6 +1529,11 @@ No debe
 • Mostrar estadísticas.
 
 ==================================================*/
+
+/*
+Composición sin reglas propias: combina .grid + modificador
+de columnas + .testimonial en el HTML.
+*/
 
 .testimonials{}
 
@@ -1236,6 +1562,11 @@ No debe
 • Utilizarse como Hero.
 
 ==================================================*/
+
+/*
+Composición sin reglas propias: Two Column ya resuelve el
+layout; Case Meta, Button y Media aportan el contenido.
+*/
 
 .app-case{}
 
@@ -1293,7 +1624,35 @@ No debe
 
 ==================================================*/
 
-.support{}
+.support{
+
+    background:var(--color-surface);
+    padding-block:var(--section-space);
+
+}
+
+.section-header + .support-media{
+
+    margin-top:var(--space-xl);
+
+}
+
+.support-media img{
+
+    width:100%;
+    max-width:1200px;
+    display:block;
+    margin-inline:auto;
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-sm);
+
+}
+
+.support-media{
+
+    margin-top:var(--space-2xl);
+
+}
 
 /*==================================================
 Download
@@ -1322,7 +1681,28 @@ del proyecto.
 
 ==================================================*/
 
-.download{}
+/*
+Composición sin reglas propias: la fila de Store Buttons
+se resuelve combinando .cluster con instancias de
+.button--store en el HTML.
+*/
+
+.download{
+
+    margin-top:var(--space-xl);
+    text-align:center;
+
+}
+
+.project-actions{
+
+    display:flex;
+    justify-content:center;
+    gap:var(--space-lg);
+    flex-wrap:wrap;
+    margin-top:var(--space-xl);
+
+}
 
 /*==================================================
 8. UTILITIES
@@ -1353,6 +1733,15 @@ Las utilities
 
 }
 
+.vertical-divider{
+
+    width:1px;
+    height:40px;
+    background:var(--color-border);
+    align-self:center;
+
+}
+
 .text-center{
 
     text-align:center;
@@ -1378,6 +1767,32 @@ Las utilities
 ==================================================*/
 
 /*==================================================
+Tablet Horizontal
+===================================================*/
+
+@media (max-width:1024px){
+
+    :root{
+
+        --space-xl:var(--space-lg);
+
+    }
+
+    .grid{
+
+        gap:var(--space-md);
+
+    }
+
+    .card--info{
+
+    padding:var(--space-md);
+
+    }
+
+}
+
+/*==================================================
 Tablet
 ====================================================
 
@@ -1396,15 +1811,25 @@ No permite
 
 ==================================================*/
 
-@media (max-width:var(--bp-tablet)){
+/* Breakpoint literal: las Custom Properties no pueden
+   usarse dentro de la condición de un @media. El valor
+   corresponde a --bp-tablet. */
+@media (max-width:992px){
+
+    /*========== Tokens ==========*/
+
+    :root{
+
+        --container-gutter:32px;
+
+        --fs-h1:40px;
+        --fs-h2:30px;
+        --fs-h3:18px;
+        --fs-intro:17px;
+
+    }
 
     /*========== Layout ==========*/
-
-    .container{
-
-        width:min(var(--container-width), calc(100% - 32px));
-        
-    }
 
     .two-column{
 
@@ -1412,36 +1837,11 @@ No permite
 
     }
 
-    .section{
+    .grid--3,
+    .grid--4{
 
-        margin-bottom:var(--space-xl);
+        grid-template-columns:var(--columns-2);
 
-    }
-
-    /*========== Typography ==========*/
-
-    h1{
-
-        font-size:40px;
-
-    }
-
-    h2{
-
-        font-size:30px;
-
-    }
-
-    h3{
-
-        font-size:18px;
-
-    }
-
-    .section-intro{
-
-        font-size:17px;
-        
     }
 
     /*========== Hero ==========*/
@@ -1462,14 +1862,6 @@ No permite
 
         max-width:100%;
 
-    }
-
-    /*========== Case ==========*/
-
-    .case-media img{
-
-        max-width:240px;
-    
     }
 
 }
@@ -1493,47 +1885,50 @@ No permite
 
 ==================================================*/
 
-@media (max-width:var(--bp-mobile)){
+/* Breakpoint literal: corresponde a --bp-mobile. */
+@media (max-width:768px){
+
+    /*========== Tokens ==========*/
+
+    :root{
+
+        --container-gutter:24px;
+        --section-space:var(--space-lg);
+        --case-media-width:240px;
+
+        --fs-h1:34px;
+        --fs-h2:28px;
+        --fs-intro:16px;
+
+        --space-xl:40px;
+
+    }
 
     /*========== Layout ==========*/
 
-    .container{
+    .grid--2,
+    .grid--3,
+    .grid--4{
 
-        width:calc(100% - 24px);
-        
-    }
-
-    /*========== Typography ==========*/
-
-    h1{
-
-        font-size:34px;
+        grid-template-columns:var(--columns-2);
 
     }
 
-    h2{
+    .grid{
 
-        font-size:28px;
-
-    }
-
-    h3{
-
-        font-size:18px;
+        gap:var(--space-md);
 
     }
 
-    .section-intro{
+    .card--info{
 
-        font-size:16px;
+    padding:var(--space-lg);
 
     }
 
-    /*========== Espaciados ==========*/
+    .cluster{
 
-    .section{
-
-        margin-bottom:var(--space-lg);
+        flex-wrap:balance;
 
     }
 
@@ -1545,17 +1940,12 @@ No permite
 
     }
 
-    .hero .container{
-
-        gap:var(--space-sm);
-
-    }
-
     /*========== Case ==========*/
 
     .case-content{
 
-        gap:var(--space-sm);
+        max-width:600px;
+        margin-inline:auto;
 
     }
 
@@ -1579,8 +1969,60 @@ No permite
 
 ==================================================*/
 
-@media (max-width:var(--bp-mobile-sm)){
+/* Breakpoint literal: corresponde a --bp-mobile-sm. */
+@media (max-width:480px){
 
+    :root{
+
+        --fs-icon-lg:28px;
+        --case-media-width:220px;
+
+    }
+    
+    .cluster{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+    .stat i{
+
+    font-size:var(--fs-icon-lg);
+
+    }
+
+    .vertical-divider{
+
+        display:none;
+
+    }
+
+    .grid--4{
+
+        grid-template-columns:var(--columns-1);
+
+    }
+
+    .grid--2{
+
+        grid-template-columns:var(--columns-1);
+
+    }
+
+    .button--store{
+
+        height:76px;
+        width:100%;
+        max-width:280px;
+
+    }
+
+    .button--store img{
+
+        width:34px;
+
+    }
 
 }
 

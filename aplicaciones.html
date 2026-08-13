@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/iconos/apple-touch-icon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/system.css">
+<link rel="stylesheet" href="css/design-system.css">
 <link rel="stylesheet" href="components/header/header.css">
 <link rel="stylesheet" href="components/footer/footer.css">
 <link rel="stylesheet" href="components/floating-menu/menu.css">
@@ -35,92 +35,97 @@
 <div id="header-container" data-component="header"></div>
 
 <!-- HERO -->
-<section class="apps-hero" id="top">
+<section class="hero hero--listing" id="top">
     <div class="container">
-        <span class="section-label">APLICACIONES</span>
-        <h1 class="apps-title">
+        <p class="section-label">APLICACIONES</p>
+        <h1 class="title-hero">
             Apps publicadas
         </h1>
-        <p class="apps-description">
+        <p class="section-intro">
             A lo largo de mi trayectoria profesional participé en el diseño de aplicaciones móviles para programas de lealtad y experiencias digitales. Esta selección reúne algunos de los proyectos publicados para distintas marcas.
         </p>
-        <div class="apps-hero-image">
+        <div class="hero-media">
             <img src="assets/img/apps.webp"
                  alt="Aplicaciones móviles desarrolladas">
         </div>
     </div>
-    <section class="apps-highlights">
-    <div class="container">
-        <div class="highlights-grid">
-            <div class="highlight-item">
-                <i class="ph ph-device-mobile" aria-hidden="true"></i>
-                <h2>Apps móviles</h2>
-            </div>
-            <div class="highlight-divider"></div>
-            <div class="highlight-item">
-                <i class="ph ph-gift" aria-hidden="true"></i>
-                <h2>Programas de lealtad</h2>
-            </div>
-            <div class="highlight-divider"></div>
-            <div class="highlight-item">
-                <i class="ph ph-user-switch" aria-hidden="true"></i>
-                <h2>Cliente final y profesional</h2>
-            </div>
-            <div class="highlight-divider"></div>
-            <div class="highlight-item">
-                <i class="ph ph-buildings" aria-hidden="true"></i>
-                <h2>Múltiples industrias</h2>
+
+    <div class="hero-highlights">
+        <div class="container">
+            <div class="cluster stats">
+                <div class="stat">
+                    <i class="ph ph-device-mobile" aria-hidden="true"></i>
+                    <h3>Apps móviles</h3>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="stat">
+                    <i class="ph ph-gift" aria-hidden="true"></i>
+                    <h3>Programas de lealtad</h3>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="stat">
+                    <i class="ph ph-user-switch" aria-hidden="true"></i>
+                    <h3>Cliente final y profesional</h3>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="stat">
+                    <i class="ph ph-buildings" aria-hidden="true"></i>
+                    <h3>Múltiples industrias</h3>
+                </div>
             </div>
         </div>
     </div>
-</section>
 </section>
 
 <!-- =========================================================
      GRILL UP
 ========================================================= -->
-<section class="app-case" id="grillup">
+<section class="section case">
     <div class="container">
-        <div class="app-grid">
-            <!-- Imagen -->
-            <div class="app-image">
-                <img src="assets/img/navegacionSG.webp" alt="Navegación Grill Up" loading="lazy" decoding="async">
+        <div class="two-column">
+            <!-- Media -->
+            <div class="case-media">
+                <img
+                    src="assets/img/navegacionSG.webp"
+                    alt="Navegación Grill Up"
+                    loading="lazy"
+                    decoding="async">
             </div>
-            <!-- Información -->
-            <div class="app-content">
-                <span class="case-tag">
+            <!-- Content -->
+            <div class="case-content">
+                <p class="section-label section-label--tag">
                     Sonora Grill Group
-                </span>
+                </p>
                 <h2>Grill Up</h2>
                 <p class="case-description">
                     Aplicación móvil diseñada para fortalecer el programa de lealtad de Sonora Grill Group, permitiendo acumular Grill Points, realizar pagos, acceder a beneficios exclusivos y conectar la experiencia del restaurante con servicios digitales.
                 </p>
-                <div class="case-data">
-                    <div class="data-item">
-                        <i class="ph ph-calendar" aria-hidden="true"></i>
+                <div class="case-meta">
+                    <div class="meta-item">
+                        <i class="ph ph-calendar"></i>
                         <span>Programa de lealtad</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
-                        <i class="ph ph-users-three" aria-hidden="true"></i>
+                    <div class="vertical-divider"></div>
+                    <div class="meta-item">
+                        <i class="ph ph-users-three"></i>
                         <span>Cliente final</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
-                        <i class="ph ph-device-mobile" aria-hidden="true"></i>
+                    <div class="vertical-divider"></div>
+                    <div class="meta-item">
+                        <i class="ph ph-device-mobile"></i>
                         <span>iOS & Android</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
-                        <i class="ph ph-download-simple" aria-hidden="true"></i>
+                    <div class="vertical-divider"></div>
+                    <div class="meta-item">
+                        <i class="ph ph-download-simple"></i>
                         <span>50 mil+ descargas</span>
                     </div>
                 </div>
                 <div class="case-links">
-                    <a href="https://play.google.com/store/apps/details?id=com.lmsla.sonoragrillup&hl=es_MX" target="_blank" rel="noopener"> 
+                    <a href="...">
                         Ver en Google Play →
                     </a>
-                    <a href="https://apps.apple.com/mx/app/grill-up/id1480436366" target="_blank" rel="noopener">
+                    <a href="...">
                         Ver en App Store →
                     </a>
                 </div>
@@ -129,7 +134,7 @@
     </div>
 </section>
 
-<section class="contribution">
+<section class="section contribution">
     <div class="container">
         <div class="section-header">
             <span class="section-label">MI PARTICIPACIÓN</span>
@@ -139,29 +144,29 @@
                 de materiales que apoyaron su lanzamiento y adopción dentro de los restaurantes.
             </p>
         </div>
-        <div class="contribution-grid">
-            <article class="contribution-card">
+        <div class="grid grid--4">
+            <article class="card card--info">
                 <i class="ph ph-layout" aria-hidden="true"></i>
                 <h3>Diseño<br>UX / UI</h3>
                 <p>
                     Interfaces intuitivas y componentes visuales.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-gift" aria-hidden="true"></i>
                 <h3>Programa<br>de lealtad</h3>
                 <p>
                     Beneficios, Grill Points y promociones.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-storefront" aria-hidden="true"></i>
                 <h3>Material<br>POP</h3>
                 <p>
                     Tent Cards, menús y piezas promocionales.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-device-mobile-camera" aria-hidden="true"></i>
                 <h3>Ecosistema<br>digital</h3>
                 <p>
@@ -172,7 +177,7 @@
     </div>
 </section>
 
-<section class="app-gallery">
+<section class="section gallery">
     <div class="container">
         <div class="section-header">
             <span class="section-label">
@@ -183,29 +188,29 @@
                 Una selección de pantallas que muestran algunas de las funciones más representativas de la aplicación.
             </p>
         </div>
-        <div class="gallery-grid">
-            <div class="gallery-card">
+        <div class="grid grid--2">
+            <div class="card card--media">
                 <h3>
                     Inicio
                     <span>HOME</span>
                 </h3>
                 <img src="assets/img/inicioSG.webp" alt="Pantalla Principal de Grill Up" loading="lazy" decoding="async">
             </div>
-            <div class="gallery-card">
+            <div class="card card--media">
                 <h3>
                     Restaurantes
                     <span>LOCATIONS</span>
                 </h3>
                 <img src="assets/img/sucursalesSG.webp" alt="Pantalla de Sucursales de Grill Up" loading="lazy" decoding="async">
             </div>
-            <div class="gallery-card">
+            <div class="card card--media">
                 <h3>
                     Promociones
                     <span>OFFERS</span>
                 </h3>
                 <img src="assets/img/promocionesSG.webp" alt="Pantalla de Promociones de Grill Up" loading="lazy" decoding="async">
             </div>
-            <div class="gallery-card">
+            <div class="card card--media">
                 <h3>
                     Reservaciones
                     <span>BOOKING</span>
@@ -216,7 +221,7 @@
     </div>
 </section>
 
-<section class="app-support">
+<section class="section support">
     <div class="container">
         <div class="section-header">
             <span class="section-label">
@@ -227,35 +232,27 @@
                 Además del diseño de la aplicación, desarrollé propuestas para comunicar el programa de lealtad e integrarlo en distintos puntos de contacto dentro del restaurante.
             </p>
         </div>
-        <div class="support-image">
+        <div class="support-media">
             <img src="assets/img/materialesGrillUP.webp"
                  alt="Propuestas de comunicación para Grill Up" loading="lazy" decoding="async">
         </div>
-    </div>
-</section>
-
-<section class="app-download">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">
-                DESCARGA
-            </span>
-            <h2>Disponible en</h2>
+        <div class="download">
+            <h3>Disponible en</h3>
             <p class="section-intro">
                 Consulta la aplicación publicada en las tiendas oficiales.
             </p>
-        </div>
-        <div class="store-buttons">
-            <a href="https://play.google.com/store/apps/details?id=com.lmsla.sonoragrillup&hl=es_MX" target="_blank" rel="noopener" class="store-card">
-                <img src="assets/img/GooglePlay.webp"
-                     alt="">
-                <span>Google Play</span>
-            </a>
-            <a href="https://apps.apple.com/mx/app/grill-up/id1480436366" target="_blank" rel="noopener" class="store-card">
-                <img src="assets/img/AppleStore.webp"
-                     alt="">
-                <span>App Store</span>
-            </a>
+            <div class="project-actions">
+                <a href="https://play.google.com/store/apps/details?id=com.lmsla.sonoragrillup&hl=es_MX" target="_blank" rel="noopener" class="button button--store">
+                    <img src="assets/img/GooglePlay.webp"
+                        alt="">
+                    <span>Google Play</span>
+                </a>
+                <a href="https://apps.apple.com/mx/app/grill-up/id1480436366" target="_blank" rel="noopener" class="button button--store">
+                    <img src="assets/img/AppleStore.webp"
+                        alt="">
+                    <span>App Store</span>
+                </a>
+            </div>
         </div>
     </div>
 </section>
