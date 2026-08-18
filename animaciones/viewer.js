@@ -60,17 +60,17 @@ animations.forEach((anim,index)=>{
 
     const card = document.createElement("div");
 
-    card.className = "card";
+    card.className = "motion-card";
 
     card.innerHTML = `
 
-        <div class="viewer" id="viewer${index}">
+        <div class="motion-viewer" id="viewer${index}">
 
-        <div class="stage" id="stage${index}"></div>
+        <div class="motion-stage" id="stage${index}"></div>
 
         </div>
 
-        <div class="title">${anim.name}</div>
+        <div class="motion-title">${anim.name}</div>
         
 
     `;

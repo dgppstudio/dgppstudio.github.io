@@ -16,48 +16,6 @@ GRILL UP
 
 
 
-.app-download{
-    padding:0 30px 50px;
-    background:#F8FAFD;
-}
-
-.store-buttons{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin-top:70px;
-    flex-wrap:wrap;
-}
-
-.store-card{
-    width:320px;
-    height:92px;
-    border:2px solid #E3E8EF;
-    border-radius:22px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:18px;
-    text-decoration:none;
-    transition:.3s;
-    background:#FFF;
-}
-
-.store-card:hover{
-    transform:translateY(-5px);
-    border-color:#0077DD;
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-}
-
-.store-card img{
-    width:42px;
-}
-
-.store-card span{
-    font-size:1.8rem;
-    font-weight:600;
-    color:#111;
-}
 
 /* ==========================================
    RESPONSIVE - APP PROJECT

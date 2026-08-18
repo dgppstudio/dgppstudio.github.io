@@ -19,11 +19,10 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/iconos/apple-touch-icon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/design-system.css">
 <link rel="stylesheet" href="components/header/header.css">
 <link rel="stylesheet" href="components/footer/footer.css">
 <link rel="stylesheet" href="components/floating-menu/menu.css">
-<link rel="stylesheet" href="css/sitios.css">
 
 <script defer src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
 
@@ -36,39 +35,39 @@
 <div id="header-container" data-component="header"></div> 
 
 <!-- HERO -->
-<section class="sitios-hero" id="top">
+<section class="hero hero--listing" id="top">
     <div class="container">
         <span class="section-label">SITIOS WEB</span>
         <h1 class="sitios-title">
             Experiencias web
         </h1>
-        <p class="sitios-description">
+        <p class="section-intro">
             A lo largo de mi trayectoria profesional participé en el diseño y desarrollo de sitios web para programas de lealtad y productos digitales. Esta selección reúne algunos proyectos desarrollados para distintas marcas y audiencias.
         </p>
-        <div class="sitios-hero-image">
+        <div class="hero-media">
             <img src="assets/img/sitiosWeb.webp"
                  alt="Sitios web desarrollados">
         </div>
     </div>
-    <section class="sitios-highlights">
+    <section class="hero-highlights">
     <div class="container">
-        <div class="highlights-grid">
-            <div class="highlight-item">
+        <div class="cluster stats">
+            <div class="stat">
                 <i class="ph ph-devices" aria-hidden="true"></i>
                 <h3>Sitios responsive</h3>
             </div>
-            <div class="highlight-divider"></div>
-            <div class="highlight-item">
+            <div class="vertical-divider"></div>
+            <div class="stat">
                 <i class="ph ph-gift" aria-hidden="true"></i>
                 <h3>Programas de lealtad</h3>
             </div>
-            <div class="highlight-divider"></div>
-            <div class="highlight-item" aria-hidden="true">
+            <div class="vertical-divider"></div>
+            <div class="stat" aria-hidden="true">
                 <i class="ph ph-user-switch"></i>
                 <h3>B2B y B2C</h3>
             </div>
-            <div class="highlight-divider"></div>
-            <div class="highlight-item">
+            <div class="vertical-divider"></div>
+            <div class="stat">
                 <i class="ph ph-buildings" aria-hidden="true"></i>
                 <h3>Múltiples industrias</h3>
             </div>
@@ -80,39 +79,39 @@
 <!-- =========================================================
      RECOMPENSAS COCA-COLA
 ========================================================= -->
-<section class="sitios-case" id="recompensas">
+<section class="section case" id="recompensas">
     <div class="container">
-        <div class="sitios-grid">
-            <!-- Imagen -->
-            <div class="sitios-image">
+        <div class="two-column">
+            <!-- Media -->
+            <div class="case-media--wide">
                 <img src="assets/img/recompensasCCplata.webp" alt="Sitio Recompensas Coca-Cola" loading="lazy" decoding="async">
             </div>
-            <!-- Información -->
-            <div class="sitios-content">
-                <span class="case-tag">
+            <!-- Content -->
+            <div class="case-content">
+                <span class="section-label section-label--tag">
                     Programa de lealtad B2B
                 </span>
-                <h2>Recompensas <span>Coca-Cola</span></h2>
+                <h2>Recompensas Coca-Cola</h2>
                 <p class="case-description">
                     Diseño y desarrollo front-end del portal responsive de Recompensas Coca-Cola, un programa de lealtad para detallistas con tres niveles de participación. La plataforma integraba mecánica de acumulación, progreso, estado de cuenta, catálogo de premios y beneficios.
                 </p>
-                <div class="case-data">
-                    <div class="data-item">
+                <div class="case-meta">
+                    <div class="meta-item">
                         <i class="ph ph-storefront" aria-hidden="true"></i>
                         <span>Programa B2B</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
+                    <div class="vertical-divider"></div>
+                    <div class="meta-item">
                         <i class="ph ph-devices" aria-hidden="true"></i>
                         <span>Portal responsive</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
+                    <div class="vertical-divider"></div>
+                    <div class="meta-item">
                         <i class="ph ph-medal" aria-hidden="true"></i>
                         <span>3 niveles</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
+                    <div class="vertical-divider"></div>
+                    <div class="meta-item">
                         <i class="ph ph-gift" aria-hidden="true"></i>
                         <span>Catálogo de recompensas</span>
                     </div>
@@ -122,8 +121,8 @@
     </div>
 </section>
 
-<!-- MI PARTICIPACIÓN -->
-<section class="contribution">
+<!-- CONTRIBUTION -->
+<section class="section contribution">
     <div class="container">
         <div class="section-header">
             <span class="section-label">MI PARTICIPACIÓN</span>
@@ -132,29 +131,29 @@
                 Participé principalmente en el diseño y desarrollo front-end del portal, además de colaborar en piezas gráficas y materiales de comunicación del programa.
             </p>
         </div>
-        <div class="contribution-grid">
-            <article class="contribution-card">
+        <div class="grid grid--4">
+            <article class="card card--info">
                 <i class="ph ph-layout" aria-hidden="true"></i>
                 <h3>Diseño<br>de interfaces</h3>
                 <p>
                     Propuesta visual y organización de la experiencia del portal.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-code" aria-hidden="true"></i>
                 <h3>Desarrollo<br>front-end</h3>
                 <p>
                     Maquetación responsive e implementación de la interfaz y sus interacciones.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-cursor-click" aria-hidden="true"></i>
                 <h3>Interacciones<br>dinámicas</h3>
                 <p>
                     Filtros animados, acordeones, tarjetas, sliders y visualización del progreso.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-stack" aria-hidden="true"></i>
                 <h3>Sistema<br>por niveles</h3>
                 <p>
@@ -165,8 +164,8 @@
     </div>
 </section>
 
-<!-- GALERÍA -->
-<section class="sitios-gallery">
+<!-- GALLERY -->
+<section class="section gallery">
     <div class="container">
         <div class="section-header">
             <span class="section-label">
@@ -177,41 +176,41 @@
                 Una selección de pantallas que muestran algunas de las funciones más representativas del portal.
             </p>
         </div>
-        <div class="gallery-grid">
-            <div class="gallery-card">
+        <div class="grid grid--2">
+            <article class="card card--media">
                 <h3>
                     Progreso y niveles
                     <span>LEVEL PROGRESS</span>
                 </h3>
                 <img src="assets/img/nivelesCC.webp" alt="Pantalla de niveles de Recompensas Coca-Cola" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media">
                 <h3>
                     Acumulación de puntos
                     <span>POINTS</span>
                 </h3>
                 <img src="assets/img/puntosCC.webp" alt="Pantalla de Acumulación de Puntos de Recompensas Coca-Cola" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card gallery-image-wide">
+            </article>
+            <article class="card card--media card--media--wide">
                 <h3>
                     Catálogo de premios
                     <span>REWARDS</span>
                 </h3>
                 <img src="assets/img/premiosCC.webp" alt="Pantalla de Catálogo de Premios de Recompensas Coca-Cola" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card gallery-image-wide">
+            </article>
+            <article class="card card--media card--media--wide">
                 <h3>
                     Estado de cuenta
                     <span>ACCOUNT</span>
                 </h3>
                 <img src="assets/img/edoctaCC.webp" alt="Pantalla de Estado de Cuenta de Recompensas Coca-Cola" loading="lazy" decoding="async">
-            </div>
+            </article>
         </div>
     </div>
 </section>
 
-<!-- IMPRESOS -->
-<section class="sitios-support">
+<!-- SUPPORT -->
+<section class="section support">
     <div class="container">
         <div class="section-header">
             <span class="section-label">
@@ -222,7 +221,7 @@
                 Además del portal web, el programa incluía distintos puntos de contacto digitales e impresos para acompañar la experiencia del usuario durante todo su recorrido.
             </p>
         </div>
-        <div class="support-image">
+        <div class="support-media">
             <img src="assets/img/impresosCC.webp"
                  alt="Propuestas de materiales para Recompensas Coca-Cola" loading="lazy" decoding="async">
         </div>
@@ -232,39 +231,39 @@
 <!-- =========================================================
      ABBOTT MÁS POR TÍ 
 ========================================================= -->
-<section class="sitios-case" id="mas-por-ti">
+<section class="section case" id="mas-por-ti">
     <div class="container">
-        <div class="sitios-grid">
-            <!-- Imagen -->
-            <div class="sitios-image">
+        <div class="two-column">
+            <!-- Media -->
+            <div class="case-media--wide">
                 <img src="assets/img/inicioAbbott.webp" alt="Sitio Abbott Más por Tí" loading="lazy" decoding="async">
             </div>
-            <!-- Información -->
-            <div class="sitios-content">
-                <span class="case-tag">
+            <!-- Content -->
+            <div class="case-content">
+                <span class="section-label section-label--tag">
                     Programa de soporte al paciente
                 </span>
                 <h2>Más por Ti</h2>
                 <p class="case-description">
                     Más por Ti fue un programa de soporte al paciente desarrollado por Abbott para facilitar el acceso al tratamiento y acompañar a personas con enfermedades crónicas mediante beneficios, educación en salud y herramientas digitales que favorecían la adherencia terapéutica.
                 </p>
-                <div class="case-data">
-                    <div class="data-item">
+                <div class="case-meta">
+                    <div class="meta-item">
                         <i class="ph ph-stethoscope" aria-hidden="true"></i>
                         <span>Programa de soporte</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
+                    <div class="vertical-divider"></div>
+                    <div class="meta-item">
                         <i class="ph ph-devices" aria-hidden="true"></i>
                         <span>Portal responsive</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
+                    <div class="vertical-divider"></div>
+                    <div class="meta-item">
                         <i class="ph ph-book-open" aria-hidden="true"></i>
                         <span>Contenido médico</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
+                    <div class="vertical-divider"></div>
+                    <div class="meta-item">
                         <i class="ph ph-envelope-simple" aria-hidden="true"></i>
                         <span>Comunicación por email</span>
                     </div>
@@ -274,8 +273,8 @@
     </div>
 </section>
 
-<!-- MI PARTICIPACIÓN -->
-<section class="contribution">
+<!-- CONTRIBUTION -->
+<section class="section contribution">
     <div class="container">
         <div class="section-header">
             <span class="section-label">MI PARTICIPACIÓN</span>
@@ -284,29 +283,29 @@
                 Participé en el diseño y desarrollo del portal, así como en la creación de contenidos y materiales de comunicación para mejorar la experiencia del paciente.
             </p>
         </div>
-        <div class="contribution-grid">
-            <article class="contribution-card">
+        <div class="grid grid--4">
+            <article class="card card--info">
                 <i class="ph ph-layout" aria-hidden="true"></i>
                 <h3>Diseño<br>de interfaces</h3>
                 <p>
                     Propuesta visual y organización de la experiencia del portal.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-code" aria-hidden="true"></i>
                 <h3>Desarrollo<br>front-end</h3>
                 <p>
                     Maquetación responsive e implementación con HTML, CSS y JavaScript.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-book-open-text" aria-hidden="true"></i>
                 <h3>Contenido<br>médico</h3>
                 <p>
                     Integración de fichas informativas y recursos educativos para distintas especialidades.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-envelope-simple" aria-hidden="true"></i>
                 <h3>Comunicación<br>digital</h3>
                 <p>
@@ -317,8 +316,8 @@
     </div>
 </section>
 
-<!-- GALERÍA -->
-<section class="sitios-gallery">
+<!-- GALLERY -->
+<section class="section gallery">
     <div class="container">
         <div class="section-header">
             <span class="section-label">
@@ -329,41 +328,41 @@
                 Una selección de pantallas que muestran la estructura del portal, el contenido educativo y las principales herramientas disponibles para acompañar la experiencia del paciente.
             </p>
         </div>
-        <div class="gallery-grid">
-            <div class="gallery-card gallery-image-wide">
+        <div class="grid grid--2">
+            <article class="card card--media card--media--wide">
                 <h3>
                     Inicio del programa
                     <span>HOME</span>
                 </h3>
                 <img src="assets/img/inicio2Abbott.webp" alt="Pantalla de inicio de Abbott Más por Tí" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card gallery-image-wide">
+            </article>
+            <article class="card card--media card--media--wide">
                 <h3>
                     Vida saludable
                     <span>HEALTH PROGRAM</span>
                 </h3>
                 <img src="assets/img/dolorAbbott.webp" alt="Pantalla de Padecimientos de Abbott Más por Tí" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media">
                 <h3>
                     Contenido por especialidad
                     <span>MEDICAL SPECIALTIES</span>
                 </h3>
                 <img src="assets/img/femeninaAbbott.webp" alt="Pantalla de Especialidades de Abbott Más por Tí" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media">
                 <h3>
                     Mi vida saludable
                     <span>MY HEALTH</span>
                 </h3>
                 <img src="assets/img/miSaludAbbott.webp" alt="Pantalla de Mi Vida Saludable de Abbott Más por Tí" loading="lazy" decoding="async">
-            </div>
+            </article>
         </div>
     </div>
 </section>
 
-<!-- ECOSISTEMA -->
-<section class="sitios-support">
+<!-- SUPPORT -->
+<section class="section support">
     <div class="container">
         <div class="section-header">
             <span class="section-label">
@@ -374,7 +373,7 @@
                 El portal integraba diferentes módulos para acompañar al paciente durante todo su tratamiento, desde el registro y acceso hasta la consulta de contenido médico y la gestión de su información.
             </p>
         </div>
-        <div class="support-image">
+        <div class="support-media">
             <img src="assets/img/ecosistemaAbbott.webp"
                  alt="Propuestas de materiales para Abbott Más por Tí" loading="lazy" decoding="async">
         </div>
@@ -384,39 +383,39 @@
 <!-- =========================================================
      INSTALA Y GANA INTERCERAMIC 
 ========================================================= -->
-<section class="sitios-case" id="instala-y-gana">
+<section class="section case" id="instala-y-gana">
     <div class="container">
-        <div class="sitios-grid">
-            <!-- Imagen -->
-            <div class="sitios-image">
+        <div class="two-column">
+            <!-- Media -->
+            <div class="case-media--wide">
                 <img src="assets/img/loginInterceramic.webp" alt="Login Instala y Gana Interceramic" loading="lazy" decoding="async">
             </div>
-            <!-- Información -->
-            <div class="sitios-content">
-                <span class="case-tag">
+            <!-- Content -->
+            <div class="case-content">
+                <span class="section-label section-label--tag">
                     PROGRAMA DE LEALTAD E INCENTIVOS
                 </span>
                 <h2>Instala y Gana</h2>
                 <p class="case-description">
                     Plataforma de lealtad para instaladores y profesionales de la construcción, diseñada para registrar compras, acumular puntos y canjear recompensas mediante una experiencia digital centralizada.
                 </p>
-                <div class="case-data">
-                    <div class="data-item">
+                <div class="case-meta">
+                    <div class="meta-item">
                         <i class="ph ph-barcode" aria-hidden="true"></i>
                         <span>Registro de folios</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
+                    <div class="vertical-divider"></div>
+                    <div class="meta-item">
                         <i class="ph ph-gift" aria-hidden="true"></i>
                         <span>Canje de premios</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
+                    <div class="vertical-divider"></div>
+                    <div class="meta-item">
                         <i class="ph ph-chart-bar" aria-hidden="true"></i>
                         <span>Consulta de movimientos</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
+                    <div class="vertical-divider"></div>
+                    <div class="meta-item">
                         <i class="ph ph-devices" aria-hidden="true"></i>
                         <span>Portal responsive</span>
                     </div>
@@ -431,8 +430,8 @@
     </div>
 </section>
 
-<!-- MI PARTICIPACIÓN -->
-<section class="contribution">
+<!-- CONTRIBUTION -->
+<section class="section contribution">
     <div class="container">
         <div class="section-header">
             <span class="section-label">MI PARTICIPACIÓN</span>
@@ -441,29 +440,29 @@
                 Participé en el diseño, desarrollo e implementación del portal de lealtad, creando una experiencia digital para el registro de compras, acumulación de puntos y canje de recompensas para instaladores y profesionales de la construcción.
             </p>
         </div>
-        <div class="contribution-grid">
-            <article class="contribution-card">
+        <div class="grid grid--4">
+            <article class="card card--info">
                 <i class="ph ph-layout" aria-hidden="true"></i>
                 <h3>Diseño<br>de interfaces</h3>
                 <p>
                     Diseño visual de la plataforma y organización de la experiencia para facilitar el registro de productos y la navegación del programa.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-code" aria-hidden="true"></i>
                 <h3>Desarrollo<br>front-end</h3>
                 <p>
                     Maquetación responsive e implementación con HTML, CSS y JavaScript para ofrecer una experiencia consistente en distintos dispositivos.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-gift" aria-hidden="true"></i>
                 <h3>Programa<br>de recompensas</h3>
                 <p>
                     Desarrollo de módulos para registro de folios, consulta de movimientos, acumulación de puntos y catálogo de premios.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-megaphone" aria-hidden="true"></i>
                 <h3>Comunicación<br>digital</h3>
                 <p>
@@ -474,8 +473,8 @@
     </div>
 </section>
 
-<!-- GALERÍA -->
-<section class="sitios-gallery">
+<!-- GALLERY -->
+<section class="section gallery">
     <div class="container">
         <div class="section-header">
             <span class="section-label">
@@ -486,41 +485,41 @@
                 Una selección de pantallas que muestran las principales funcionalidades del portal de lealtad para el registro de folios, consulta de movimientos y canje de recompensas.
             </p>
         </div>
-        <div class="gallery-grid">
-            <div class="gallery-card gallery-image-wide">
+        <div class="grid grid--2">
+            <article class="card card--media card--media--wide">
                 <h3>
                     Inicio del programa
                     <span>HOME</span>
                 </h3>
                 <img src="assets/img/inicioInterceramic.webp" alt="Pantalla de inicio de Instala y Gana Interceramic" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card gallery-image-wide">
+            </article>
+            <article class="card card--media card--media--wide">
                 <h3>
                     Mecánica del programa
                     <span>PROGRAM MECHANICS</span>
                 </h3>
                 <img src="assets/img/mecanicaInterceramic.webp" alt="Pantalla de la mecánica de Instala y Gana Interceramic" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media">
                 <h3>
                     Catálogo de premios
                     <span>REWARDS CATALOG</span>
                 </h3>
                 <img src="assets/img/premiosInterceramic.webp" alt="Pantalla de catálogo de premios de Instala y Gana Interceramic" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media">
                 <h3>
                     Movimientos y puntos
                     <span>POINT HISTORY</span>
                 </h3>
                 <img src="assets/img/movimientosInterceramic.webp" alt="Pantalla de movimientos y puntos de Instala y Gana Interceramic" loading="lazy" decoding="async">
-            </div>
+            </article>
         </div>
     </div>
 </section>
 
-<!-- ECOSISTEMA -->
-<section class="sitios-support">
+<!-- SUPPORT -->
+<section class="section support">
     <div class="container">
         <div class="section-header">
             <span class="section-label">
@@ -531,30 +530,22 @@
                 El portal integraba diferentes módulos para facilitar el registro de folios, la consulta de puntos, la gestión de recompensas y la interacción con los participantes desde una única plataforma.
             </p>
         </div>
-        <div class="support-image">
+        <div class="support-media">
             <img src="assets/img/ecosistemaInterceramic.webp"
                  alt="Secciones complementarias para Instala y Gana Interceramic" loading="lazy" decoding="async">
         </div>
-    </div>
-</section>
-
-<section class="sitios-download">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">
-                ACCESO
-            </span>
-            <h2>Explora el portal</h2>
-            <p>
+        <div class="download">
+            <h3>Explora el portal</h3>
+            <p class="section-intro">
                 Conoce el portal en funcionamiento y explora sus principales módulos y funcionalidades.
             </p>
-        </div>
-        <div class="store-buttons">
-            <a href="https://instalaygana.com/" target="_blank" rel="noopener" class="store-card">
-                <img src="assets/img/globe.webp"
-                     alt="">
-                <span>Ver portal</span>
-            </a>
+            <div class="project-actions">
+                <a href="https://instalaygana.com/" target="_blank" rel="noopener" class="button button--store">
+                    <img src="assets/img/globe.webp"
+                        alt="">
+                    <span>Ver portal</span>
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -562,39 +553,39 @@
 <!-- =========================================================
      PUNTO ABORDO ESTRELLA ROJA 
 ========================================================= -->
-<section class="sitios-case" id="punto-abordo">
+<section class="section case" id="punto-abordo">
     <div class="container">
-        <div class="sitios-grid">
-            <!-- Imagen -->
-            <div class="sitios-image">
+        <div class="two-column">
+            <!-- Media -->
+            <div class="case-media--wide">
                 <img src="assets/img/loginPuntoAbordo.webp" alt="Login Punto Abordo Estrella Roja" loading="lazy" decoding="async">
             </div>
-            <!-- Información -->
-            <div class="sitios-content">
-                <span class="case-tag">
+            <!-- Content -->
+            <div class="case-content">
+                <span class="section-label section-label--tag">
                     PROGRAMA DE LEALTAD
                 </span>
                 <h2>Punto Abordo</h2>
                 <p class="case-description">
                     Portal de lealtad para viajeros frecuentes de Estrella Roja, diseñado para acumular puntos en cada viaje, consultar el saldo disponible y canjear recompensas mediante una experiencia digital integrada.
                 </p>
-                <div class="case-data">
-                    <div class="data-item">
+                <div class="case-meta">
+                    <div class="meta-item">
                         <i class="ph ph-ticket" aria-hidden="true"></i>
                         <span>Compra y acumulación de puntos</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
+                    <div class="ertical-divider"></div>
+                    <div class="meta-item">
                         <i class="ph ph-gift" aria-hidden="true"></i>
                         <span>Canje de recompensas</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
+                    <div class="ertical-divider"></div>
+                    <div class="meta-item">
                         <i class="ph ph-chart-bar" aria-hidden="true"></i>
                         <span>Consulta de movimientos</span>
                     </div>
-                    <div class="divider"></div>
-                    <div class="data-item">
+                    <div class="ertical-divider"></div>
+                    <div class="meta-item">
                         <i class="ph ph-devices" aria-hidden="true"></i>
                         <span>Portal responsive</span>
                     </div>
@@ -609,8 +600,8 @@
     </div>
 </section>
 
-<!-- MI PARTICIPACIÓN -->
-<section class="contribution">
+<!-- CONTRIBUTION -->
+<section class="section contribution">
     <div class="container">
         <div class="section-header">
             <span class="section-label">MI PARTICIPACIÓN</span>
@@ -619,29 +610,29 @@
                 Participé en el diseño y desarrollo del portal de lealtad, creando una experiencia digital para la acumulación y consulta de puntos de los viajeros frecuentes.
             </p>
         </div>
-        <div class="contribution-grid">
-            <article class="contribution-card">
+        <div class="grid grid--4">
+            <article class="card card--info">
                 <i class="ph ph-layout" aria-hidden="true"></i>
                 <h3>Diseño<br>UI</h3>
                 <p>
                     Diseño de pantallas y componentes para el portal de lealtad, manteniendo una experiencia visual consistente.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-brackets-curly" aria-hidden="true"></i>
                 <h3>Maquetación<br>front-end</h3>
                 <p>
                     Implementación de interfaces web responsivas con HTML, CSS, JavaScript y Bootstrap.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-megaphone" aria-hidden="true"></i>
                 <h3>Comunicación<br>digital</h3>
                 <p>
                     Diseño de campañas de email y materiales digitales para apoyar la comunicación con los afiliados.
                 </p>
             </article>
-            <article class="contribution-card">
+            <article class="card card--info">
                 <i class="ph ph-handshake" aria-hidden="true"></i>
                 <h3>Colaboración<br>multidisciplinaria</h3>
                 <p>
@@ -652,8 +643,8 @@
     </div>
 </section>
 
-<!-- GALERÍA -->
-<section class="sitios-gallery">
+<!-- GALLERY -->
+<section class="section gallery">
     <div class="container">
         <div class="section-header">
             <span class="section-label">
@@ -664,41 +655,41 @@
                 Una selección de pantallas que muestran las principales funcionalidades del portal de lealtad, desde el registro de usuarios y la consulta de movimientos hasta la acumulación y canje de puntos.
             </p>
         </div>
-        <div class="gallery-grid">
-            <div class="gallery-card gallery-image-wide">
+        <div class="grid grid--2">
+            <article class="card card--media card--media--wide">
                 <h3>
                     Inicio del programa
                     <span>HOME</span>
                 </h3>
                 <img src="assets/img/inicioPuntoAbordo.webp" alt="Pantalla de inicio de Punto Abordo" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card gallery-image-wide">
+            </article>
+            <article class="card card--media card--media--wide">
                 <h3>
                     Mecánica del programa
                     <span>PROGRAM MECHANICS</span>
                 </h3>
                 <img src="assets/img/mecanicaPuntoAbordo.webp" alt="Pantalla de la mecánica de Punto Abordo" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media">
                 <h3>
                     Registro de usuarios
                     <span>USER REGISTRATION</span>
                 </h3>
                 <img src="assets/img/registroPuntoAbordo.webp" alt="Pantalla de registro de usuarios de Punto Abordo" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media">
                 <h3>
                     Movimientos y puntos
                     <span>POINT HISTORY</span>
                 </h3>
                 <img src="assets/img/movimientosPuntoAbordo.webp" alt="Pantalla de movimientos y puntos de Punto Abordo" loading="lazy" decoding="async">
-            </div>
+            </article>
         </div>
     </div>
 </section>
 
-<!-- ECOSISTEMA -->
-<section class="sitios-support">
+<!-- SUPPORT -->
+<section class="section support">
     <div class="container">
         <div class="section-header">
             <span class="section-label">
@@ -709,34 +700,25 @@
                 El programa de lealtad también incluía piezas de comunicación y materiales digitales para acompañar la experiencia del afiliado antes, durante y después del registro.
             </p>
         </div>
-        <div class="support-image">
+        <div class="support-media">
             <img src="assets/img/ecosistemaPuntoAbordo.webp"
                  alt="Secciones complementarias para Punto Abordo de estrella Roja" loading="lazy" decoding="async">
         </div>
-    </div>
-</section>
-
-<section class="sitios-download">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">
-                ACCESO
-            </span>
-            <h2>Explora el portal</h2>
+        <div class="download">
+            <h3>Explora el portal</h3>
             <p class="section-intro">
                 Conoce el portal en funcionamiento y explora sus principales módulos y funcionalidades.
             </p>
-        </div>
-        <div class="store-buttons">
-            <a href="https://www.puntoabordo.com.mx/Login?ReturnUrl=%2f" target="_blank" rel="noopener" class="store-card">
-                <img src="assets/img/globe.webp"
-                     alt="">
-                <span>Ver portal</span>
-            </a>
+            <div class="project-actions">
+                <a href="https://www.puntoabordo.com.mx/Login?ReturnUrl=%2f" target="_blank" rel="noopener" class="button button--store">
+                    <img src="assets/img/globe.webp"
+                        alt="">
+                    <span>Ver portal</span>
+                </a>
+            </div>
         </div>
     </div>
 </section>
-
 </main>
 
 <!-- FOOTER -->

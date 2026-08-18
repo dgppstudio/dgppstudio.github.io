@@ -1,4 +1,4 @@
-.grid{
+.motion-grid{
 
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -6,7 +6,7 @@
 
 }
 
-.card{
+.motion-card{
 
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
 
 }
 
-.viewer{
+.motion-viewer{
 
     position:relative;
     width:220px;
@@ -29,7 +29,7 @@
 
 }
 
-.title{
+.motion-title{
 
     margin-top: 24px;
     text-align: center;
@@ -40,7 +40,7 @@
 
 }
 
-.stage{
+.motion-stage{
 
     position:absolute;
     left:50%;
@@ -55,27 +55,27 @@
 
 @media (max-width:1024px){
 
-    .grid{
+    .motion-grid{
 
     gap:20px;
 
     }
 
-    .card{
+    .motion-card{
 
         max-width:260px;
         margin:auto;
 
     }
 
-    .viewer{
+    .motion-viewer{
 
         transform:scale(.85);
         transform-origin:center;
 
     }
 
-    .title {
+    .motion-title {
     margin-top: 16px;
     }
 
@@ -84,13 +84,13 @@
 
 @media (max-width:768px){
 
-    .grid{
+    .motion-grid{
 
         gap:16px;
 
     }
 
-    .card{
+    .motion-card{
 
         max-width:200px;
         margin:auto;
@@ -98,19 +98,19 @@
 
     }
 
-    .viewer{
+    .motion-viewer{
 
         transform:scale(.75);
 
     }
 
-    .card h3{
+    .motion-card h3{
 
         font-size:0.9rem;
 
     }
 
-    .title {
+    .motion-title {
     margin-top: 8px;
     }
 
@@ -118,20 +118,20 @@
 
 @media (max-width:500px){
     
-    .grid{
+    .motion-grid{
 
     grid-template-columns:repeat(2,1fr);
     gap:8px;
 
     }
 
-    .viewer{
+    .motion-viewer{
 
         transform:scale(.7);
 
     }
 
-    .card {
+    .motion-card {
         max-width: 180px;
         padding: 8px;
     }
@@ -139,13 +139,13 @@
 
 @media (max-width:375px){
     
-    .grid{
+    .motion-grid{
 
     grid-template-columns:1fr;
 
     }
 
-    .viewer{
+    .motion-viewer{
 
         transform:scale(.9);
 

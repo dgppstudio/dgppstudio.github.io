@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/iconos/apple-touch-icon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/design-system.css">
 <link rel="stylesheet" href="components/header/header.css">
 <link rel="stylesheet" href="components/footer/footer.css">
 <link rel="stylesheet" href="components/floating-menu/menu.css">
@@ -36,241 +36,363 @@
 <div id="header-container" data-component="header"></div>
 
 <!-- HERO --> 
-<section class="hero" id="top">
-  <div class="hero-content">
-    <div class="hero-text">
-      <img src="assets/img/logoCamPack.webp" alt="logotipo CamPack" class="hero-logo">
-      <div class="hero-meta-block">
-        <div class="hero-avatar">
-          <img src="assets/img/avatarPP.webp" alt="José Vázquez">
+<section class="hero hero--case-study" id="top">
+  <div class="container">
+    <div class="two-column">
+      <!-- CONTENIDO -->
+      <div class="case-content">
+        <img src="assets/img/logoCamPack.webp" alt="logotipo CamPack" class="hero-logo">
+        <div class="hero-meta-block">
+          <div class="hero-avatar">
+            <img src="assets/img/avatarPP.webp" alt="José Vázquez">
+          </div>
+          <div class="hero-meta">
+            <p><strong>José Vázquez</strong> — UX Designer</p>
+            <p>Jun 2025 – Abr 2026<br>Proyecto conceptual</p>
+          </div>
         </div>
-        <div class="hero-meta">
-          <p><strong>José Vázquez</strong> — UX Designer</p>
-          <p>Jun 2025 – Abr 2026 · Proyecto conceptual</p>
-        </div>
+        <a href="#proceso" class="button button--primary">Ver cómo se resolvió</a>
       </div>
-      <a href="#proceso" class="btn">Ver cómo se resolvió</a>
-    </div>
-    <div class="hero-visual">
-      <img src="assets/img/inicioApp.webp" alt="Vista previa app CamPack">
+      <!-- MEDIA -->
+      <div class="case-media">
+        <img src="assets/img/inicioApp.webp" alt="Vista previa app CamPack">
+      </div>
     </div>
   </div>
 </section>
 
-<div class="container">
-
 <!-- PRODUCTO -->
-<section class="section" id="producto">
-<h1>CamPack — Diseño UX para mejorar la decisión de compra en eCommerce</h1>
-<p class="meta">Diseño UX enfocado en facilitar la búsqueda, comparación y compra de productos de camping.</p>
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">EL PROYECTO</span>
+            <h1>CamPack — Diseño UX para mejorar la decisión de compra en eCommerce</h1>
+            <p class="section-intro reading-width-none">
+                Diseño UX enfocado en facilitar la búsqueda, comparación y compra de productos de camping.
+            </p>
+        </div>
+    </div>
 </section>
 
-<!-- PROBLEMA -->
-<section class="section" id="problema">
-<h2>Problema</h2>
-<p>Los usuarios tienen dificultades para encontrar productos adecuados a sus necesidades, lo que genera confusión y dificulta la decisión de compra.</p>
-</section>
-
-<!-- OBJETIVO -->
-<section class="section" id="objetivo">
-<h2>Objetivo</h2>
-<p>Diseñar una experiencia más clara y simple que facilite la búsqueda, comparación y selección de productos.</p>
-</section>
-
-<!-- INSIGHT -->
-<section class="section" id="insight">
-<h2>Insight</h2>
-<p>Cada tipo de usuario busca cosas distintas, por lo que un catálogo genérico no facilita la decisión de compra.</p>
+<section class="section section--surface">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">CONTEXTO</span>
+            <h2>El reto de la experiencia</h2>
+        </div>
+        <div class="grid grid--3 context-grid">
+            <article class="card card--info">
+                <h3>Problema</h3>
+                <p>
+                    Los usuarios tienen dificultades para encontrar productos adecuados
+                    a sus necesidades, lo que genera confusión y dificulta la decisión de compra.
+                </p>
+            </article>
+            <article class="card card--info">
+                <h3>Objetivo</h3>
+                <p>
+                    Diseñar una experiencia más clara y simple que facilite la búsqueda,
+                    comparación y selección de productos.
+                </p>
+            </article>
+            <article class="card card--info">
+                <h3>Insight</h3>
+                <p>
+                    Cada tipo de usuario busca cosas distintas, por lo que un catálogo
+                    genérico no facilita la decisión de compra.
+                </p>
+            </article>
+        </div>
+    </div>
 </section>
 
 <!-- INVESTIGACIÓN -->
 <section class="section" id="investigacion">
-<h2>Investigación</h2>
-<p>Se identificaron 4 perfiles principales con diferentes necesidades de espacio, comodidad y portabilidad.</p>
-<div class="personas">
-  <div class="persona">
-    <img src="assets/img/familia.webp" alt="" loading="lazy" decoding="async" width="100" height="100">
-    <h3>Familias</h3>
-  </div>
-  <div class="persona">
-    <img src="assets/img/pareja.webp" alt="" loading="lazy" decoding="async" width="100" height="100">
-    <h3>Parejas</h3>
-  </div>
-  <div class="persona">
-    <img src="assets/img/amigos.webp" alt="" loading="lazy" decoding="async" width="100" height="100">
-    <h3>Grupos</h3>
-  </div>
-  <div class="persona">
-    <img src="assets/img/solo.webp" alt="" loading="lazy" decoding="async" width="100" height="100">
-    <h3>Individual</h3>
-  </div>
-</div>
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">INVESTIGACIÓN</span>
+            <h2>Conociendo a los usuarios</h2>
+            <p class="section-intro">
+                Se identificaron 4 perfiles principales con diferentes necesidades
+                de espacio, comodidad y portabilidad.
+            </p>
+        </div>
+        <div class="grid grid--4 grid--profiles">
+            <div class="card card--media card--media--gallery card--media--profile">
+              <h3>Familias</h3>
+                <img src="assets/img/familia.webp" alt="Familia">
+            </div>
+            <div class="card card--media card--media--gallery card--media--profile">
+                <h3>Parejas</h3>
+                <img src="assets/img/pareja.webp" alt="Pareja">
+            </div>
+            <div class="card card--media card--media--gallery card--media--profile">
+                <h3>Grupos</h3>
+                <img src="assets/img/amigos.webp" alt="Grupo de amigos">
+            </div>
+            <div class="card card--media card--media--gallery card--media--profile">
+                <h3>Individual</h3>
+                <img src="assets/img/solo.webp" alt="Persona acampando">
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- DECISIÓN -->
-<section class="section" id="decision-diseno">
-<h2>Decisión de diseño</h2>
-<p>Se creó un sistema de filtros por tipo de usuario para facilitar la búsqueda y mostrar productos más relevantes.</p>
-  <div class="filtros-box">
-    <img src="assets/img/filtros.webp" alt="Filtros por tipo de usuario" loading="lazy" decoding="async">
-  </div>
+<section class="section section--surface" id="decision-diseno">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">DECISIÓN DE DISEÑO</span>
+            <h2>Diseñando para cada usuario</h2>
+            <p class="section-intro">
+                Se creó un sistema de filtros por tipo de usuario para facilitar
+                la búsqueda y mostrar productos más relevantes.
+            </p>
+        </div>
+        <div class="media media-width--portrait media-center space-top-xl">
+            <img
+                src="assets/img/filtros.webp"
+                alt="Filtros por tipo de usuario"
+                loading="lazy"
+                decoding="async">
+        </div>
+    </div>
 </section>
 
 <!-- DECISIÓN CLAVE -->
 <section class="section" id="decision-clave">
-<h2>Decisión clave</h2>
-<p>Segmentar la experiencia por tipo de usuario en lugar de mantener un catálogo genérico.</p>
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">DECISIÓN CLAVE</span>
+            <h2>Una experiencia basada en el usuario</h2>
+            <p class="section-intro reading-width-none">
+                Segmentar la experiencia por tipo de usuario en lugar de mantener
+                un catálogo genérico.
+            </p>
+        </div>
+    </div>
 </section>
 
 <!-- WIREFRAME VS HIFI -->
-<section class="section" id="evolucion-visual">
-  <h2>Evolución visual</h2>
-<p class="media-caption">Wireframe → Interfaz final</p>
-  <div class="compare-slider"> 
-  <img src="assets/img/appHi.webp" alt="App Hi-Fi" class="img-base" loading="lazy" decoding="async">
-  <div class="img-after-wrapper">
-    <img src="assets/img/appLow.webp" alt="App Low-Fi" loading="lazy" decoding="async">
+<section class="section section--surface" id="evolucion-visual">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">EVOLUCIÓN VISUAL</span>
+      <h2>Wireframe → Interfaz final</h2>
+    </div>
+    <div class="compare-slider"> 
+      <img src="assets/img/appHi.webp" alt="App Hi-Fi" class="img-base" loading="lazy" decoding="async">
+      <div class="img-after-wrapper">
+        <img src="assets/img/appLow.webp" alt="App Low-Fi" loading="lazy" decoding="async">
+      </div>
+      <div class="slider-handle"></div>
+    </div>
+    <p class="text-center">
+      Proceso visual desde la estructura inicial hasta la interfaz final.
+    </p>
   </div>
-  <div class="slider-handle"></div>
-</div>
-  <p class="media-caption">
-Proceso visual desde la estructura inicial hasta la interfaz final.
-</p>
 </section>
 
 <!-- PROCESO -->
 <section class="section" id="proceso">
-<h2>Proceso</h2>
-<p><strong>Flujo principal:</strong> explorar → filtrar → comparar → comprar</p>
-  <div class="media-bleed">
-  <div class="media-inner">
-    <video autoplay loop muted playsinline class="demo-video">
-      <source src="assets/videos/wireframeCamPack.mp4" type="video/mp4">
-    </video>
-    <p class="media-caption">El flujo fue diseñado para facilitar la exploración de productos y ayudar al usuario a decidir más rápido.</p>
-    <a href="https://www.figma.com/proto/Qp21cQG1PS6846lM8apmVx/Wireframes-UX-Ok?page-id=0:1&node-id=1-3&viewport=546,181,0.35&t=xhRyOJPojU0aNHPi-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1:3" target="_blank" class="btn" rel="noopener">Ver prototipo de baja fidelidad</a>
-  </div>
-</div>
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">PROCESO</span>
+            <h2>Proceso</h2>
+            <p class="section-intro reading-width-none">
+                <strong>Flujo principal:</strong>
+                explorar → filtrar → comparar → comprar
+            </p>
+        </div>
+        <div class="media media-center space-top-xl">
+            <video class="media-width--portrait media-center"
+                autoplay
+                loop
+                muted
+                playsinline>
+                <source src="assets/videos/wireframeCamPack.mp4" type="video/mp4">
+            </video>
+            <p class="media-caption reading-width-none text-center">
+                El flujo fue diseñado para facilitar la exploración de productos
+                y ayudar al usuario a decidir más rápido.
+            </p>
+            <a href="..." class="button button--primary space-top-md">
+                Ver prototipo de baja fidelidad
+            </a>
+        </div>
+    </div>
 </section>
 
 <!-- USABILIDAD -->
-<section class="section" id="usabilidad">
-<h2>Hallazgos de usabilidad</h2>
-<p>Las pruebas mostraron confusión al comparar productos, dificultad con los filtros y problemas de navegación. Se simplificó la interfaz y se mejoró la organización del contenido.</p>
-<div class="usabilidad-box">
+<section class="section section--surface" id="usabilidad">
+  <div class="container">
+    <div class="section-header">
+        <span class="section-label">USABILIDAD</span>
+        <h2>Hallazgos de usabilidad</h2>
+        <p class="section-intro">
+            Las pruebas mostraron confusión al comparar productos, dificultad con los filtros y problemas de navegación. Simplificamos la interfaz y reorganizamos el contenido.
+        </p>
+    </div>
+    <div class="media media-width--double media-center space-top-xl">
       <img src="assets/img/antes-despues.webp" alt="Comparación antes y después" loading="lazy" decoding="async">
-</div>
- <ul>
-  <li>Confusión entre comparar y comprar</li>
-  <li>Dificultad para usar filtros</li>
-  <li>Problemas de navegación</li>
-</ul> 
+    </div>
+    <ul class="list--findings">
+      <li>Confusión entre comparar y comprar</li>
+      <li>Dificultad para usar filtros</li>
+      <li>Problemas de navegación</li>
+    </ul>
+  </div>
 </section>
 
 <!-- SOLUCIÓN -->
 <section class="section" id="solucion">
-<h2>Solución</h2>
-  <p>Se mejoró la navegación, los filtros y la organización de la información para facilitar la elección de productos.</p>
-<div class="media-bleed">
-  <div class="media-inner">
-    <video autoplay loop muted playsinline class="demo-video">
-      <source src="assets/videos/hifiCamPack.mp4" type="video/mp4">
-    </video>
-    <p class="media-caption">La interfaz facilita la búsqueda y comparación de productos mostrando primero la información más importante.</p>
-    <a href="https://www.figma.com/proto/ByoJIeD93FeVfUErXVToRA/Prototipo-Camping-2?node-id=4048-25&t=vOU64THNp6nZLXVH-1" target="_blank" class="btn" rel="noopener">Ver prototipo de alta fidelidad</a>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">SOLUCIÓN</span>
+        <h2>Una experiencia más clara para decidir</h2>
+      <p class="section-intro reading-width-none">Se mejoró la navegación, los filtros y la organización de la información para facilitar la elección de productos.</p>
+    </div>
+    <div class="media media-center space-top-xl">
+      <video class="media-width--portrait media-center" autoplay loop muted playsinline>
+        <source src="assets/videos/hifiCamPack.mp4" type="video/mp4">
+      </video>
+      <p class="media-caption reading-width-none text-center">La interfaz facilita la búsqueda y comparación de productos mostrando primero la información más importante.</p>
+      <a href="https://www.figma.com/proto/ByoJIeD93FeVfUErXVToRA/Prototipo-Camping-2?node-id=4048-25&t=vOU64THNp6nZLXVH-1" target="_blank" class="button button--primary space-top-md" rel="noopener">Ver prototipo de alta fidelidad</a>
+    </div>
   </div>
-</div>
 </section>
 
-  <!-- COMPARAR -->
-  <section class="section" id="comparacion">
-  <div class="compare-block">
-    <div class="compare-text">
+<!-- COMPARAR -->
+<section class="section section--surface" id="comparacion">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">COMPARACIÓN</span>
       <h2>Comparación de productos</h2>
-      <p>Se diseñó una herramienta para comparar productos de forma clara y facilitar la toma de decisiones.</p>
-      <ul>
-        <li>Visualización clara de diferencias</li>
-        <li>Facilita decisiones informadas</li>
-        <li>Reduce la incertidumbre en la compra</li>
-      </ul>
+      <p class="section-intro reading-width-none">
+          Se diseñó una herramienta para comparar productos de forma clara
+          y facilitar la toma de decisiones.
+      </p>
     </div>
-    <div class="compare-image">
-      <p class="caption">Facilitando la toma de decisiones</p>
-      <img src="assets/img/comparar.webp" alt="Pantalla de comparación de productos" loading="lazy" decoding="async">
+    <div class="two-column compare-layout space-top-xl">
+      <div class="compare-list">
+        <ul class="list--findings">
+          <li>Visualización clara de diferencias</li>
+          <li>Facilita decisiones informadas</li>
+          <li>Reduce la incertidumbre en la compra</li>
+        </ul>
+      </div>
+      <div class="media media-center">
+        <img class="media-width--portrait" src="assets/img/comparar.webp" alt="Pantalla de comparación de productos" loading="lazy" decoding="async">
+        <p class="media-caption">Facilitando la toma de decisiones</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- REWARDS -->
 <section class="section" id="recompensas">
-  <h2>Incentivo a la recompra</h2>
-  <p>Se agregó un sistema de puntos para incentivar futuras compras y mejorar la experiencia después de la compra.</p>
-  <div class="reward-box">
-    <p class="caption">Este enfoque retoma principios de programas de lealtad aplicados al eCommerce.</p>
-    <img src="assets/img/recompensa.webp" alt="Modal de recompensas" loading="lazy" decoding="async">
-    <p class="caption">El sistema de puntos refuerza la satisfacción post-compra y fomenta la lealtad.</p>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">RECOMPRA</span>
+      <h2>Incentivo a la recompra</h2>
+      <p class="section-intro reading-width-none">Se agregó un sistema de puntos para incentivar futuras compras y mejorar la experiencia después de la compra.</p>
+    </div>
+    <div class="media media-center space-top-xl">
+      <p class="media-caption reading-width-none text-center">Este enfoque retoma principios de programas de lealtad aplicados al eCommerce.</p>
+      <img class="media-width--portrait media-center space-top-md" src="assets/img/recompensa.webp" alt="Modal de recompensas" loading="lazy" decoding="async">
+      <p class="media-caption reading-width-none text-center">El sistema de puntos refuerza la satisfacción post-compra y fomenta la lealtad.</p>
+    </div>
   </div>
 </section>
 
 <!-- RESULTADO -->
-<section class="section" id="resultado">
-<h2>Resultado</h2>
-<p>La solución convirtió un catálogo genérico en una experiencia más clara y fácil de usar.</p>
-<p>Los usuarios pueden buscar, filtrar y comparar productos de forma más rápida y sencilla.</p>
-<ul>
-  <li>Búsqueda más clara</li>
-  <li>Comparación más sencilla</li>
-  <li>Menor esfuerzo para decidir</li>
-</ul>
-<p class="media-caption">La propuesta fue ajustada a partir de pruebas de usabilidad.</p>
+<section class="section section--surface" id="resultado">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">RESULTADO</span>
+      <h2>Una experiencia más clara para decidir</h2>
+      <p class="section-intro">
+        La solución transformó un catálogo genérico en una experiencia orientada a las necesidades de cada usuario.
+      </p>
+    </div>
+    <div class="reading-width">
+      <p class="space-top-md text-center">
+        Ahora puede explorar productos, aplicar filtros y comparar opciones con menor esfuerzo.
+      </p>
+      <ul class="list--findings">
+        <li>Búsqueda más clara</li>
+        <li>Comparación más sencilla</li>
+        <li>Menor esfuerzo para decidir</li>
+      </ul>
+      <p class="media-note space-top-md">
+        La propuesta fue refinada a partir de las pruebas de usabilidad.
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- APRENDIZAJES -->
 <section class="section" id="aprendizajes">
-<h2>Aprendizajes</h2>
-<p>Entender las necesidades reales de los usuarios ayudó a crear una experiencia más clara, simple y fácil de usar.</p>
+  <div class="container">
+    <div class="section-header">
+        <span class="section-label">APRENDIZAJES</span>
+        <h2>Aprendizajes</h2>
+        <p class="section-intro">
+            Entender las necesidades reales de los usuarios ayudó a crear
+            una experiencia más clara, simple y fácil de usar.
+        </p>
+    </div>
+  </div>
 </section>
 
 <!-- AGRADECIMIENTO -->
-<section class="thanks-section" id="participantes">
-    <div class="thanks-container">
-        <div class="section-heading">
-            <h2>Agradecimientos</h2>
-            <p class="section-intro">
-                Este proyecto fue posible gracias a las personas que participaron en las entrevistas y pruebas de usabilidad. Su retroalimentación ayudó a mejorar la experiencia en cada iteración.
-            </p>
-            <p class="note">
-                Para proteger la privacidad de las personas participantes, sus nombres se presentan mediante alias.
-            </p>
-        </div>
-        <div class="participants-grid">
-            <div class="testimonial-card">
-              <p class="testimonial-text">
-                  Participar en las pruebas de usabilidad fue una gran experiencia. Me gustó ver cómo cada iteración mejoró la aplicación y la hizo más intuitiva. Se nota el cuidado que hubo para escuchar la retroalimentación y convertirla en mejoras reales.
-              </p>
-              <h3>Participante A</h3>
-              <p class="testimonial-role">
-                  Participó en: Wireframes · Usabilidad
-              </p>
-            </div>
-            <div class="testimonial-card">
-              <p class="testimonial-text">
-                  Me sorprendió descubrir todo lo que eres capaz de hacer. Gracias por invitarme a formar parte de este proyecto. Fue muy interesante conocer el proceso y ver cómo una idea se convirtió en una aplicación bien pensada y fácil de usar.
-              </p>
-              <h3>Participante B</h3>
-              <p class="testimonial-role">
-                  Participó en: Wireframes · Usabilidad
-              </p>
-            </div>
-        </div>
-        <div class="thanks-message">
-            <p>
-                Gracias por dedicar su tiempo y ayudar a construir una mejor experiencia.
-            </p>
-        </div>
+<section class="section section--surface" id="participantes">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">AGRADECIMIENTOS</span>
+      <h2>Gracias a quienes participaron</h2>
+      <p class="section-intro">
+          Este proyecto fue posible gracias a las personas que
+          participaron en las entrevistas y pruebas de usabilidad.
+          Su retroalimentación ayudó a mejorar la experiencia
+          en cada iteración.
+      </p>
+      <p class="media-caption reading-width-none">
+          Para proteger la privacidad de las personas participantes,
+          sus nombres se presentan mediante alias.
+      </p>
     </div>
+    <div class="grid grid--2 testimonial-grid space-top-xl">
+      <article class="testimonial">
+        <p class="testimonial-text">
+            Participar en las pruebas de usabilidad fue una gran experiencia.
+            Me gustó ver cómo cada iteración mejoró la aplicación y la hizo
+            más intuitiva. Se nota el cuidado que hubo para escuchar la
+            retroalimentación y convertirla en mejoras reales.
+        </p>
+        <h3>Participante A</h3>
+        <p class="testimonial-meta">
+            Wireframes · Usabilidad
+        </p>
+      </article>
+      <article class="testimonial">
+        <p class="testimonial-text">
+            Me sorprendió descubrir todo lo que eres capaz de hacer.
+            Gracias por invitarme a formar parte de este proyecto. Fue muy
+            interesante conocer el proceso y ver cómo una idea se convirtió
+            en una aplicación bien pensada y fácil de usar.
+        </p>
+        <h3>Participante B</h3>
+        <p class="testimonial-meta">
+            Wireframes · Usabilidad
+        </p>
+      </article>
+    </div>
+    <p class="section-intro space-top-xl thanks-message text-center">
+        Gracias por dedicar su tiempo y ayudar a construir una mejor experiencia.
+    </p>
+  </div>
 </section>
-</div>
 </main>
 
 <!-- FOOTER -->

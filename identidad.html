@@ -19,11 +19,10 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/iconos/apple-touch-icon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/design-system.css">
 <link rel="stylesheet" href="components/header/header.css">
 <link rel="stylesheet" href="components/footer/footer.css">
 <link rel="stylesheet" href="components/floating-menu/menu.css">
-<link rel="stylesheet" href="css/identidad.css">
 <link rel="stylesheet" href="animaciones/motion.css">
 
 <script defer src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
@@ -40,53 +39,47 @@
 <div id="header-container" data-component="header"></div> 
 
 <!-- HERO -->
-<section class="identidad-hero" id="top">
+<section class="hero hero--listing" id="top">
     <div class="container">
-        <div class="section-header">
-        <p class="section-label">
-            IDENTIDAD VISUAL
-        </p>
-        <h1 class="identidad-title">
+        <span class="section-label">IDENTIDAD VISUAL</span>
+        <h1 class="title-hero">
             Identidad visual
         </h1>
-        <p class="section identidad-description">
+        <p class="section-intro">
             Proyectos de branding, comunicación visual, motion design y experiencias digitales desarrollados para fortalecer la identidad de diferentes marcas y productos.
         </p>
+        <div class="hero-media">
+            <img src="assets/img/identidadVisual.webp"
+                 alt="Identidad Visual">
+        </div>
     </div>
-    </div>
-    <div class="identidad-hero-image">
-        <img src="assets/img/identidadVisual.webp"
-            alt="Identidad Visual">
-    </div>
-    <section class="identidad-highlights">
-    <div class="container">
-        <div class="highlights-grid">
-            <div class="highlight-item">
-                <i class="ph ph-megaphone" aria-hidden="true"></i>
-                <h3>Comunicación Visual</h3>
-                <p>Material editorial, campañas y piezas impresas.</p>
-            </div>
-            <div class="highlight-divider"></div>
-             <div class="highlight-item">
-                <i class="ph ph-sparkle" aria-hidden="true"></i>
-                <h3>Motion Design</h3>
-                <p>Animaciones SVG y recursos interactivos.</p>
-            </div>
-            <div class="highlight-divider"></div>
-           <div class="highlight-item">
-                <i class="ph ph-book-open-text" aria-hidden="true"></i>
-                <h3>Experiencias Digitales</h3>
-                <p>Conceptos para sitios web, apps y programas de lealtad.</p>
+
+    <div class="hero-highlights">
+        <div class="container">
+            <div class="cluster stats">
+                <div class="stat">
+                    <i class="ph ph-megaphone" aria-hidden="true"></i>
+                    <h3>Comunicación Visual</h3>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="stat">
+                    <i class="ph ph-sparkle" aria-hidden="true"></i>
+                    <h3>Motion Design</h3>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="stat">
+                    <i class="ph ph-book-open-text" aria-hidden="true"></i>
+                    <h3>Experiencias Digitales</h3>
+                </div>
             </div>
         </div>
     </div>
-</section>
 </section>
 
  <!--=====================================
 =         COMUNICACIÓN VISUAL
 ======================================-->
-<section class="section visual-gallery" id="comunicacion-visual">
+<section class="section gallery" id="comunicacion-visual">
     <div class="container">
         <div class="section-header">
             <span class="section-label">
@@ -99,63 +92,63 @@
             visuales consistentes en múltiples puntos de contacto.
             </p>
         </div>
-        <div class="gallery-grid">
-            <div class="gallery-card">
+        <div class="grid grid--2 gallery--single-tablet">
+            <article class="card card--media card--media--gallery">
                 <h3>
                     Revista
                     <span>SOCIOS COCA-COLA</span>
                 </h3>
                 <img src="assets/img/revistaSocios.webp" alt="Revista Socios CC" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media card--media--gallery">
                 <h3>
                     Cuaderno 
                     <span>SOCIO DISTINGUIDO</span>
                 </h3>
                 <img src="assets/img/cuadernoSD.webp" alt="Cuaderno Socio Distinguido CC" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media card--media--gallery">
                 <h3>
                     Pósters
                     <span>SUPER ALIADOS • OLX • SAMSUNG PLUS</span>
                 </h3>
                 <img src="assets/img/posters.webp" alt="Posters Varios" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media card--media--gallery">
                 <h3>
                     Take One • Díptico
                     <span>NEOSALUD • PUNTO ABORDO</span>
                 </h3>
                 <img src="assets/img/folletos.webp" alt="Folletos" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media card--media--gallery">
                 <h3>
                     Colgantes
                     <span>BRIDGESTONE REWARDS • SAMSUNG RETAIL ACADEMY</span>
                 </h3>
                 <img src="assets/img/colgantes.webp" alt="Colgantes" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media card--media--gallery">
                 <h3>
                     eMails
                     <span>Xperts Rewards • Beneficios Inmediatos Banamex</span>
                 </h3>
                 <img src="assets/img/mailings.webp" alt="Mailings" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media card--media--gallery">
                 <h3>
                     Kit • Table tent
                     <span>CÍRCULO REAL • AVANZA MEDIX</span>
                 </h3>
                 <img src="assets/img/kits.webp" alt="Kits" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
+            </article>
+            <article class="card card--media card--media--gallery">
                 <h3>
                     Banners
                     <span>SAMSUNG PLUS • CLUB CARDIF PARIBAS</span>
                 </h3>
                 <img src="assets/img/banners.webp" alt="Banners" loading="lazy" decoding="async">
-            </div>
+            </article>
         </div>
     </div>
 </section>
@@ -163,135 +156,89 @@
  <!--=====================================
 =         MOTION GRAPHICS E INTERACCIÓN
 ======================================-->
-<section class="section motion-design" id="motion-graphics">
-
+<section class="section gallery" id="motion-graphics">
     <div class="container">
-
         <div class="section-header">
             <span  class="section-label">MOTION DESIGN</span>
             <h2>Motion Design e interacción</h2>
-
             <p class="section-intro">
                 Desarrollo de animaciones SVG optimizadas para programas de lealtad, sitios web e interfaces digitales. Estas piezas se
                 utilizaron para comunicar beneficios, categorías, procesos e identidad visual con un alto rendimiento y un peso mínimo.
             </p>
-
         </div>
-
-
-        <div class="grid" id="grid"></div>
-
+        <div class="motion-grid space-top-xl" id="grid"></div>
     </div>
-
 </section>
 
  <!--=====================================
 =         EXPERIENCIAS DIGITALES
 ======================================-->
-<section class="section identity-gallery"  id="experiencias-digitales">
-
+<section class="section gallery"  id="experiencias-digitales">
     <div class="container">
-
         <div class="section-header">
-
             <span class="section-label">
                 EXPERIENCIAS DIGITALES
             </span>
-
             <h2>
                 Conceptos para programas de lealtad
             </h2>
-
             <p class="section-intro">
                 A lo largo de mi trayectoria diseñé cientos de propuestas de productos digitales para programas de lealtad,
                 desde sitios web y aplicaciones móviles hasta campañas promocionales, mecánicas de gamificación y experiencias para diferentes perfiles de usuario.
             </p>
-
         </div>
-
-        <div class="identity-grid">
-
-            <article class="identity-card phone">
-                <img src="assets/img/02-TNF.webp" alt="The North Face" loading="lazy" decoding="async">
-                <h3>Premios</h3>
-                <span>The North Face</span>
+        <div class="grid grid--4">
+            <article class="ccard card--media card--media--gallery card--media--gallery--portrait">
+                <h3>Premios <span>The North Face</span></h3>
+                    <img src="assets/img/02-TNF.webp" alt="The North Face" loading="lazy" decoding="async">
             </article>
-            
-            <article class="identity-card tablet">
-                <img src="assets/img/01-Thermomix.webp" alt="Thermomix" loading="lazy" decoding="async">
-                <h3>Inicio</h3>
-                <span>Thermomix Rewards</span>
+            <article class="card card--media card--media--gallery card--media--gallery--landscape">
+                <h3>Inicio <span>Thermomix Rewards</span></h3>
+                    <img src="assets/img/01-Thermomix.webp" alt="Thermomix" loading="lazy" decoding="async">
             </article>
-
-            <article class="identity-card phone">
-                <img src="assets/img/04-Colgate.webp" alt="Colgate" loading="lazy" decoding="async">
-                <h3>Ranking</h3>
-                <span>Colgate</span>
+            <article class="card card--media card--media--gallery card--media--gallery--portrait">
+                <h3>Ranking <span>Colgate</span></h3>              
+                    <img src="assets/img/04-Colgate.webp" alt="Colgate" loading="lazy" decoding="async">
             </article>
-
-            <article class="identity-card tablet">
-                <img src="assets/img/06-CaminoReal.webp" alt="Camino Real" loading="lazy" decoding="async">
-                <h3>Dashboard</h3>
-                <span>Camino Real</span>
+            <article class="card card--media card--media--gallery card--media--gallery--landscape">
+                <h3>Dashboard <span>Camino Real</span></h3>              
+                    <img src="assets/img/06-CaminoReal.webp" alt="Camino Real" loading="lazy" decoding="async">
             </article>
-
-             <article class="identity-card tablet">
-                <img src="assets/img/03-Pacalli.webp" alt="Pacalli" loading="lazy" decoding="async">
-                <h3>Tarjeta virtual</h3>
-                <span>Pacalli</span>
+             <article class="card card--media card--media--gallery card--media--gallery--landscape">
+                <h3>Tarjeta virtual <span>Pacalli</span></h3>              
+                    <img src="assets/img/03-Pacalli.webp" alt="Pacalli" loading="lazy" decoding="async">
             </article>
-
-            <article class="identity-card phone">
-                <img src="assets/img/05-Motul.webp" alt="Motul" loading="lazy" decoding="async">
-                <h3>Perfil</h3>
-                <span>Motul Racing</span>
+            <article class="card card--media card--media--gallery card--media--gallery--portrait">
+                <h3>Perfil <span>Motul Racing</span></h3>               
+                    <img src="assets/img/05-Motul.webp" alt="Motul" loading="lazy" decoding="async">
             </article>
-
-            <article class="identity-card tablet">
-                <img src="assets/img/07-HDI.webp" alt="HDI" loading="lazy" decoding="async">
-                <h3>Ruta</h3>
-                <span>HDI Rewards</span>
+            <article class="card card--media card--media--gallery card--media--gallery--landscape">
+                <h3>Ruta <span>HDI Rewards</span></h3>               
+                    <img src="assets/img/07-HDI.webp" alt="HDI" loading="lazy" decoding="async">
             </article>
-
-            <article class="identity-card phone">
-                <img src="assets/img/08-Carters.webp" alt="Carters" loading="lazy" decoding="async">
-                <h3>Estado de cuenta</h3>
-                <span>Carters</span>
+            <article class="card card--media card--media--gallery card--media--gallery--portrait">
+                <h3>Estado de cuenta <span>Carters</span></h3>               
+                    <img src="assets/img/08-Carters.webp" alt="Carters" loading="lazy" decoding="async">
             </article>
-
-
-            <article class="identity-card phone">
-                <img src="assets/img/09-American.webp" alt="American" loading="lazy" decoding="async">
-                <h3>Perfil</h3>
-                <span>American Standard Rewards</span>
+            <article class="card card--media card--media--gallery card--media--gallery--portrait">
+                <h3>Perfil <span>AS Rewards</span></h3>               
+                    <img src="assets/img/09-American.webp" alt="American" loading="lazy" decoding="async">
             </article>
-
-            <article class="identity-card tablet">
-                <img src="assets/img/12-ZF.webp" alt="ZF" loading="lazy" decoding="async">
-                <h3>Objetivos</h3>
-                <span>ZF Champions Team</span>
+            <article class="card card--media card--media--gallery card--media--gallery--landscape">
+                <h3>Objetivos <span>ZF Champions Team</span></h3>            
+                    <img src="assets/img/12-ZF.webp" alt="ZF" loading="lazy" decoding="async">
             </article>
-
-            <article class="identity-card phone">
-                <img src="assets/img/10-LifeMiles.webp" alt="LifeMiles" loading="lazy" decoding="async">
-                <h3>Gamificación</h3>
-                <span>LifeMiles</span>
+            <article class="card card--media card--media--gallery card--media--gallery--portrait">
+                <h3>Gamificación <span>LifeMiles</span></h3>               
+                    <img src="assets/img/10-LifeMiles.webp" alt="LifeMiles" loading="lazy" decoding="async">
             </article>
-
-            <article class="identity-card tablet">
-                <img src="assets/img/11-Eccomerce.webp" alt="Eccomerce" loading="lazy" decoding="async">
-                <h3>Eccomerce</h3>
-                <span>Entre Amigos</span>
+            <article class="card card--media card--media--gallery card--media--gallery--landscape">
+                <h3>Eccomerce <span>Entre Amigos</span></h3>                
+                    <img src="assets/img/11-Eccomerce.webp" alt="Eccomerce" loading="lazy" decoding="async">
             </article>
-
         </div>
-
     </div>
-
 </section>
-
-
-
 </main>
 
 <!-- FOOTER -->
