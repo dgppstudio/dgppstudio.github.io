@@ -122,10 +122,6 @@ label:"Producto",
 id:"producto"
 },
 {
-label:"Objetivo",
-id:"objetivo"
-},
-{
 label:"Investigación",
 id:"investigacion"
 },
@@ -148,6 +144,10 @@ id:"usabilidad"
 {
 label:"Solución",
 id:"solucion"
+},
+{
+label:"Comparación",
+id:"comparacion"
 },
 {
 label:"Resultados",

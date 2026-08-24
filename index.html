@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/iconos/apple-touch-icon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/design-system.css">
 <link rel="stylesheet" href="components/header/header.css">
 <link rel="stylesheet" href="components/footer/footer.css">
 <link rel="stylesheet" href="components/floating-menu/menu.css">
@@ -36,167 +36,171 @@
 <div id="header-container" data-component="header"></div> 
 
 <!-- HERO -->
-<section class="hero-index" id="top">
-  <div class="hero-index-content">
-
-    <div class="hero-text">
-      <h1>Diseño UX enfocado en resultados</h1>
-      <p>
-        Curiosidad, estrategia y experiencia para diseñar soluciones centradas en las personas.
-      </p>
-      <a href="#casos" class="btn">Ver casos de estudio</a>
+<section class="hero hero--site section--surface">
+  <div class="container">
+    <div class="two-column">
+      <div class="case-content">
+        <h1>Diseño UX enfocado en resultados</h1>
+        <p>Curiosidad, estrategia y experiencia para diseñar soluciones centradas en las personas.</p>
+        <a href="#casos" class="button button--primary">Ver casos de estudio</a>
+      </div>
+      <div class="case-media">
+        <img src="assets/img/officeUX.webp" alt="DGPP Studio workspace">
+      </div>
     </div>
-
-    <div class="hero-image">
-      <img src="assets/img/officeUX.webp" alt="DGPP Studio workspace">
-    </div>
-
   </div>
 </section>
 
 <!-- CASOS -->
-<section id="casos" class="cases-section">
-  <div class="section-heading">
-    <p class="section-label">Casos de estudio</p>
-    <h2>Experiencias diseñadas para resolver problemas reales</h2>
-    <p class="section-intro">
-      Casos UX enfocados en eCommerce, toma de decisiones y diseño centrado en el usuario.
-    </p>
-  </div>
-  <div class="cases">
-  <a href="reinicio50.html" class="case-card">
-    <div style="position:relative;">
-    <span class="badge">UX Research</span>
-    <img src="assets/img/inicioR50.webp" alt="Caso de estudio Reinicio 50+" loading="lazy" decoding="async">
-  </div>
-    <div class="case-content">
-      <h3>Reinicio 50+</h3>
-      <p>Acompañamiento integral para mayores de 50 años en transición laboral.</p>
-      <span class="case-link">Ver caso →</span>
+<section id="casos" class="section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Casos de estudio</p>
+      <h2>Experiencias diseñadas para resolver problemas reales</h2>
+      <p class="section-intro reading-width-none">
+        Casos UX enfocados en eCommerce, toma de decisiones y diseño centrado en el usuario.
+      </p>
     </div>
-  </a>
-
-  <a href="sitiocampack.html" class="case-card">
-    <div class="case-image">
-    <span class="badge">Web UX</span>
-    <img src="assets/img/sitioAntesyDespues.webp" alt="Wireframe vs interfaz final" loading="lazy" decoding="async">
-  </div>
-    <div class="case-content">
-      <h3>Sitio CamPack</h3>
-      <p>Estructura y navegación adaptada a distintos dispositivos</p>
-      <span class="case-link">Ver caso →</span>
+    <div class="grid grid--3 space-top-xl">
+      <a href="reinicio50.html" class="card card--media card--interactive card--media--gallery--portrait">
+        <div class="card-media">
+          <span class="badge">UX Research</span>
+          <img src="assets/img/inicioR50.webp" alt="Caso de estudio Reinicio 50+" loading="lazy" decoding="async">
+        </div>
+        <div class="case-content">
+          <h3>Reinicio 50+</h3>
+          <p>Acompañamiento para mayores de 50 años en transición laboral.</p>
+          <span class="case-link">Ver caso →</span>
+        </div>
+      </a>
+      <a href="sitiocampack.html" class="card card--media card--interactive card--media--landscape">
+        <div class="card-media">
+          <span class="badge">Web UX</span>
+          <img src="assets/img/sitioAntesyDespues.webp" alt="Wireframe vs interfaz final" loading="lazy" decoding="async">
+        </div>
+        <div class="case-content">
+          <h3>Sitio CamPack</h3>
+          <p>Estructura y navegación adaptada a distintos dispositivos.</p>
+          <span class="case-link">Ver caso →</span>
+        </div>
+      </a>
+      <a href="appcampack.html" class="card card--media card--interactive card--media--gallery--portrait">
+        <div class="card-media">
+        <span class="badge">Mobile UX</span>
+        <img src="assets/img/appAntesyDespues.webp" alt="Wireframe vs interfaz final" loading="lazy" decoding="async">
+      </div>
+        <div class="case-content">
+          <h3>App CamPack</h3>
+          <p>Optimización de búsqueda y decisión en eCommerce.</p>
+          <span class="case-link">Ver caso →</span>
+        </div>
+      </a>
     </div>
-  </a>
-    
-  <a href="appcampack.html" class="case-card">
-    <div style="position:relative;">
-    <span class="badge">Mobile UX</span>
-    <img src="assets/img/appAntesyDespues.webp" alt="Wireframe vs interfaz final" loading="lazy" decoding="async">
   </div>
-    <div class="case-content">
-      <h3>App CamPack</h3>
-      <p>Optimización de búsqueda y decisión en eCommerce</p>
-      <span class="case-link">Ver caso →</span>
-    </div>
-  </a>
-</div>
 </section>
 
 <!-- Experiencia profesional -->
-<section id="experiencia" class="experiencia-section">
-  <div class="section-heading">
-    <p class="section-label">Experiencia profesional</p>
-    <h2>Productos digitales creados para distintas marcas</h2>
-    <p class="section-intro">
-      Aplicaciones, sitios web e identidad visual para programas de lealtad y experiencias digitales.
-    </p>
-  </div>
-  <div class="cases">
-  <a href="aplicaciones.html" class="case-card">
-    <div style="position:relative;">
-    <img src="assets/img/grillUp.webp" alt="Aplicaciones" loading="lazy" decoding="async">
-  </div>
-    <div class="case-content">
-      <h3>Aplicaciones</h3>
-      <span class="case-link">Explorar →</span>
+<section id="experiencia" class="section section--surface">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Experiencia profesional</p>
+      <h2>Productos digitales creados para distintas marcas</h2>
+      <p class="section-intro reading-width-none">
+        Aplicaciones, sitios web e identidad visual para programas de lealtad y experiencias digitales.
+      </p>
     </div>
-  </a>
-
-  <a href="sitios.html" class="case-card">
-    <div class="case-image">
-    <img src="assets/img/recompensasCC.webp" alt="Sitios Web" loading="lazy" decoding="async">
-  </div>
-    <div class="case-content">
-      <h3>Sitios Web</h3>
-      <span class="case-link">Explorar →</span>
+    <div class="grid grid--3 space-top-xl">
+    <a href="aplicaciones.html" class="card card--media card--interactive card--media--portrait">
+      <div class="card-media">
+      <img src="assets/img/grillUp.webp" alt="Aplicaciones" loading="lazy" decoding="async">
     </div>
-  </a>
-    
-  <a href="identidad.html" class="case-card">
-    <div style="position:relative;">
-    <img src="assets/img/bannerSamsungPlus.webp" alt="Identidad Visual" loading="lazy" decoding="async">
-  </div>
-    <div class="case-content">
-      <h3>Identidad Visual</h3>
-      <span class="case-link">Explorar →</span>
+      <div class="case-content">
+        <h3>Aplicaciones</h3>
+        <span class="case-link">Explorar →</span>
+      </div>
+    </a>
+    <a href="sitios.html" class="card card--media card--interactive card--media--landscape">
+      <div class="card-media">
+      <img src="assets/img/recompensasCC.webp" alt="Sitios Web" loading="lazy" decoding="async">
     </div>
-  </a>
+      <div class="case-content">
+        <h3>Sitios Web</h3>
+        <span class="case-link">Explorar →</span>
+      </div>
+    </a>
+    <a href="identidad.html" class="card card--media card--interactive card--identity">
+      <div class="card-media">
+      <img src="assets/img/bannerSamsungPlus.webp" alt="Identidad Visual" loading="lazy" decoding="async">
+    </div>
+      <div class="case-content">
+        <h3>Identidad Visual</h3>
+        <span class="case-link">Explorar →</span>
+      </div>
+    </a>
+  </div>
 </div>
 </section>
     
 
 <!-- SOBRE MÍ -->
-<section class="about-section" id="sobre-mi">
-  <div class="about-container">
-    <div class="about-image">
-      <img src="assets/img/joseVazquez.webp" alt="José Vázquez" loading="lazy">
-      <p class="photo-quote">
-        Siempre aprendiendo. Siempre construyendo.
-    </p>
-    </div>
-    <div class="about-content">
-      <p class="section-label">Sobre mí</p>
-      <h2>
-        Diseño experiencias digitales que equilibran usuarios y negocio.
-      </h2>
-      <p class="about-text">
-        De la producción gráfica al diseño de experiencias digitales, mi trayectoria ha estado impulsada por la curiosidad y la mejora continua.
-      </p>
-      <p class="about-text">
-        Transformo procesos complejos en experiencias claras, funcionales y alineadas con las necesidades de usuarios y negocio.
-      </p>
-      <div class="about-highlights">
-        <div class="highlight">
-          <h3>30+</h3>
-          <p>Años de evolución digital</p>
-        </div>
-        <div class="highlight">
-          <h3>UX/UI</h3>
-          <p>eCommerce & Loyalty</p>
-        </div>
+<section class="section" id="sobre-mi">
+  <div class="container">
+    <div class="two-column about-layout">
+      <div class="about-media">
+        <img 
+          src="assets/img/joseVazquez.webp" 
+          alt="José Vázquez" 
+          loading="lazy">
+        <p class="photo-quote">
+          Siempre aprendiendo. Siempre construyendo.
+        </p>
       </div>
-      <div class="tools">
-        <span>Figma</span>
-        <span>HTML/CSS</span>
-        <span>UX End-to-End</span>
-        <span>eCommerce</span>
-        <span>Loyalty</span>
+      <div class="about-content">
+        <p class="section-label">
+          Sobre mí
+        </p>
+        <h2>
+          Diseño experiencias digitales que equilibran usuarios y negocio.
+        </h2>
+        <p>
+          De la producción gráfica al diseño de experiencias digitales, mi trayectoria ha estado impulsada por la curiosidad y la mejora continua.
+        </p>
+        <p>
+          Transformo procesos complejos en experiencias claras, funcionales y alineadas con las necesidades de usuarios y negocio.
+        </p>
+        <div class="grid grid--2 about-highlights">
+          <div class="stat">
+            <h3>30+</h3>
+            <p>Años de evolución digital</p>
+          </div>
+          <div class="stat">
+            <h3>UX/UI</h3>
+            <p>eCommerce & Loyalty</p>
+          </div>
+        </div>
+        <div class="cluster tools">
+          <span>Figma</span>
+          <span>HTML/CSS</span>
+          <span>UX End-to-End</span>
+          <span>eCommerce</span>
+          <span>Loyalty</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CONTACTO -->
-<section class="contact-section" id="contacto">
-  <div class="contact-container">
+<section class="section section--surface" id="contacto">
+  <div class="container contact-content">
     <p class="section-label">Contacto</p>
     <h2>
       ¿Buscas mejorar la experiencia de tus productos digitales?
     </h2>
-    <p class="contact-text">
+    <p class="reading">
       Estoy disponible para colaborar en proyectos de UX/UI, eCommerce y experiencias digitales centradas en el usuario.
     </p>
-    <div class="contact-links">
+    <div class="cluster contact-links">
       <a href="mailto:dgppstudio@gmail.com"><i class="ph ph-envelope-simple" aria-hidden="true"></i>dgppstudio@gmail.com</a>
       <a href="https://www.linkedin.com/in/dgppstudio/" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo" aria-hidden="true"></i>LinkedIn</a>
     </div>

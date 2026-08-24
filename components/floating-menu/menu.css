@@ -77,6 +77,9 @@
     color: #0077DD;
 }
 
+.menu-title{
+    margin-bottom: 16px;
+}
 
 /* Laptop */
 @media (max-width:1439px){

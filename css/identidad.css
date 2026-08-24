@@ -1,486 +1,53 @@
-/*=====================================
-=     IDENTIDAD VISUAL
-=====================================*/
+/* ==================================================
+   IDENTIDAD VISUAL SPECIFIC STYLES (identidad.css)
+   ================================================== */
 
-.identidad-hero{
-    padding:70px 30px;
-    background:#fff;
+   /* CSS de la página de identidad */
+.gallery .card--media--gallery--landscape {
+  grid-column: span 2;
 }
 
-.identidad-hero .container{
-    max-width:1200px;
-    margin:auto;
-    text-align:center;
-    padding:0 30px;
+.gallery .card--media--gallery--landscape img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
 }
 
-.identidad-title{
-    margin:0;
-    font-family:'Poppins',sans-serif;
-    font-size:64px;
-    font-weight:700;
-    color:#004488;
-}
-
-.identidad-description{
-    max-width:800px;
-    margin:50px auto;
-    font-family:'Open Sans',sans-serif;
-    font-size:20px;
-    line-height:1.5;
-    color:#666;
-}
-
-.identidad-hero-image{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.identidad-hero-image img{
-    width:100%;
-    max-width:1000px;
-    height:auto;
-}
-
-/*=====================================
-=         IDENTIDAD HIGHLIGHTS             =
-=====================================*/
-
-.identidad-highlights{
-    padding:50px 30px 20px;
-}
-
-.highlights-grid{
-    display:flex;
-    justify-content:center;
-    gap:60px;
-    flex-wrap:wrap;
-}
-
-.highlight-item{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-    max-width: 250px;
-}
-
-.highlight-item i{
-   font-size:34px;
-    color:#0077DD;
-    margin-bottom:14px;
-}
-
-.highlight-item h3{
-    font-size:16px;
-    font-weight:600;
-    line-height:1.4;
-    color:#004488;
-    margin:0;
-}
-
-.highlight-divider{
-    width:1px;
-    height:55px;
-    background:#ECECEC;
-    align-self:center;
-}
-
-/*=====================================
-=     EXPERIENCIAS DIGITALES
-=====================================*/
-
-.identity-gallery{
-
-    padding:70px 30px;
-    background:#fff;
-
-}
-
-.identity-gallery .container{
-
-    width:min(1200px, calc(100% - 32px));
-    margin:0 auto;
-
-}
-
-.identity-grid{
-
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:8px 24px;
-    margin-top:70px;
-    align-items:center;
-
-}
-
-.identity-card{
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    padding:16px 24px;
-    background:#fff;
-    border-radius:22px;
-    transition:.25s ease;
-
-}
-
-.identity-card:hover{
-
-    transform:translateY(-4px);
-
-}
-
-.identity-card img{
-
-    display:block;
-    width:100%;
-    max-width:220px;
-    margin:auto;
-    margin-bottom:12px;
-    transition:.35s;
-
-}
-
-.identity-card h3{
-
-    margin:10px 0 2px;
-    text-align:center;
-    color:#004488;
-    letter-spacing:.6px;
-    font-size:.8rem;
-
-}
-
-.identity-card span{
-
-    display:block;
-    text-align:center;
-    font-size:.75rem;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    color:#8A8F98;
-
-}
-
-.phone img{
-    width:120px;
-    max-width:100%;
-    height:auto;
-}
-
-.tablet img{
-    width:240px;
-    max-width:100%;
-    height:auto;
-}
-
-/*=====================================
-=       GRAPHIC DESIGN
-=====================================*/
-
-.visual-gallery{
-    padding:70px 30px;
-}
-
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:35px;
-    margin-top:50px;
-}
-
-.gallery-card{
-    background:#FFF;
-    border-radius:22px;
-    overflow:hidden;
-    transition:.3s;
-    padding: 30px 0 10px;
-}
-
-.gallery-card:hover{
-    transform:translateY(-6px);
-}
-
-.gallery-card img{
-    display:block;
-    width:100%;
-    margin: auto;
-}
-
-.gallery-card figcaption{
-    padding:20px;
-    text-align:center;
-    font-weight:600;
-    color:#004488;
-}
-
-.gallery-card h3{
-    font-size:1.45rem;
-    font-weight:600;
-    color:#004488;
-    text-align:center;
-    margin-bottom:18px;
-    position:relative;
-}
-
-.gallery-card h3::after{
-    content:"";
-    display:block;
-    width:48px;
-    height:2px;
-    background:#0077DD;
-    opacity:.20;
-    margin:12px auto 0;
-    border-radius:2px;
-}
-
-.gallery-card span{
-    display:block;
-    margin-top:6px;
-    font-size:.75rem;
-    letter-spacing:2px;
-    color:#8A8F98;
-    text-transform:uppercase;
-}
-
-/*=====================================
-=       MOTION DESIGN
-=====================================*/
-.motion-design{
-    padding:70px 30px;
-}
-
-/*=====================================
-=       RESPONSIVE 1024PX
-=====================================*/
-@media (max-width:1024px){
-
-.identidad-image{
-    justify-content:center;
-}
-
-.identidad-image img{
-    max-width:650px;
-}
-
-.visual-gallery{
-    padding:50px 30px;
-}
-
-.motion-design{
-    padding:50px 30px;
-}
-
-.gallery-grid{
-
-    gap:24px;
-    margin-top:30px;
-}
-
-.identity-gallery{
-
-    padding:50px 30px;
-
-}
+/* RESPONSIVE ESPECÍFICO DE IDENTIDAD VISUAL */
+@media (max-width: 1024px) {
+    #experiencias-digitales .grid--4 {
+        grid-template-columns: var(--columns-3);
+    }
 
-.identity-grid{
-
-    grid-template-columns:repeat(3,1fr);
-
-}
-
-}
-
-/*=====================================
-=       RESPONSIVE 768PX
-=====================================*/
-
-@media (max-width:768px){
-
-.identidad-hero{
-    padding:50px 0 30px;
-}
-
-.identidad-hero .container{
-    padding:0;
-}
-
-.identidad-image{
-    order:1;
-}
-
-.identidad-image img{
-    max-width:580px;
-}
-
-.identidad-title{
-    font-size:42px;
-    line-height:1.15;
-}
-
-.identidad-description{
-    margin:30px auto;
-    font-size:18px;
-}
-
-/*=     Highlights     =*/
-.highlights-grid{
-    gap:35px;
-}
-
-.highlight-divider{
-    display:none;
-}
-
-.highlight-item{
-    width:calc(50% - 20px);
-}
-
-.visual-gallery{
-    padding:40px 24px;
-}
-
-.motion-design{
-    padding:40px 24px;
-}
-
-.gallery-grid{
-
-    gap:24px;
-    margin-top:30px;
-}
-
-.identity-gallery{
-
-    padding:40px 24px;
-
-}
-
-.identity-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-.renders-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-/*=====================================
-=       RESPONSIVE 500PX
-=====================================*/
-@media (max-width:500px){
-
-.identidad-image img{
-    max-width:360px;
-}
-
-.highlights-grid{
-    gap:40px 20px;
-}
-
-.highlight-item i{
-    font-size:28px;
-    margin-bottom:10px;
-}
-
-.highlight-item h3{
-    font-size:15px;
-    line-height:1.3;
-}
-
-.identidad-highlights{
-    margin-top:20px;
-    padding:0 20px 10px;
-}
-
-.highlight-divider{
-    display:none;
-}
-
-.visual-gallery{
-    padding:30px 0;
-}
-
-.motion-design{
-    padding:30px 0;
-}
-
-.gallery-grid{
-
-    grid-template-columns:1fr;
-    gap:8px;
-    margin-top:20px;
-}
-
-.identity-gallery{
-
-    padding:30px 0;
-
-}
-
-.identity-grid{
-
-    grid-template-columns:1fr;
-    margin-top: 50px;
-
-}
-
-.identity-card img{
-
-    max-width:240px;
-
-}
-
-h2 {
-    font-size: 30px;
-}
-
-p {
-    font-size: 14px;
-}
-}
-
-/*=====================================
-=       RESPONSIVE 375PX
-=====================================*/
-@media (max-width:375px){
-
-.visual-gallery{
-    padding:24px 0;
-}
-
-.motion-design{
-    padding:24px 0;
-}
-
-.gallery-grid{
-
-    grid-template-columns:1fr;
-}
-
-.identity-gallery{
-
-    padding:24px 0;
-
+    .gallery .card--media--gallery:last-child {
+        display: none;
+    }
 }
 
-.identity-grid{
+@media (max-width: 768px) {
+    .gallery--single-tablet {
+        grid-template-columns: var(--columns-1);
+    }
 
-    grid-template-columns:1fr;
+    #experiencias-digitales .grid--4 {
+        grid-template-columns: var(--columns-2);
+    }
 
+    .gallery .card--media--gallery--landscape {
+        grid-column: span 1;
+    }
 }
 
-.identity-card img{
+@media (max-width: 480px) {
+    #experiencias-digitales .grid--4 {
+        grid-template-columns: var(--columns-1);
+    }
 
-    max-width:240px;
+    .card--media--gallery--portrait img {
+        max-width: var(--gallery-portrait-width);
+    }
 
-}
+    .gallery .card--media--gallery:last-child {
+        display: block;
+    }
 }

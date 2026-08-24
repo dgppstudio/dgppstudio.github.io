@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/iconos/apple-touch-icon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/design-system.css">
 <link rel="stylesheet" href="components/header/header.css">
 <link rel="stylesheet" href="components/footer/footer.css">
 <link rel="stylesheet" href="components/floating-menu/menu.css">
@@ -36,401 +36,339 @@
 <div id="header-container" data-component="header"></div>
 
 <!-- HERO -->  
-<section class="site-hero" id="top">
-  <div class="site-hero-content">
-    <div class="site-hero-text">
-      <p class="site-label">
-        UX/UI Case Study
-      </p>
-      <h1>
-        CamPack<br>Sitio Web
-      </h1>
-      <p class="site-intro">
-        Diseño UX/UI de una experiencia eCommerce responsive enfocada en claridad y consistencia entre dispositivos.
-      </p>
-      <div class="site-meta">
-        <div class="site-author">
-          <img src="assets/img/avatarPP.webp" alt="José Vázquez">
+<section class="hero hero--case-study hero--site" id="top">
+  <div class="container">
+    <div class="two-column">
+      <!-- CONTENIDO -->
+      <div class="case-content">
+        <span class="section-label">UX/UI CASE STUDY</span>
+        <h1>Sitio Web CamPack</h1>
+        <p class="hero-intro">
+          Diseño de una experiencia eCommerce responsive con enfoque en claridad, 
+          comparación de productos y consistencia multiplataforma.
+        </p>
+        <div class="case-meta case-meta--hero">
+          <div class="avatar">
+            <img src="assets/img/avatarPP.webp" alt="José Vázquez">
+          </div>
+          <div class="meta-item">
+            <p><strong>José Vázquez</strong> — UX/UI Designer</p>
+            <p>Feb 2026 – Mar 2026<br>Proyecto conceptual</p>
+          </div>
         </div>
-        <div>
-          <p><strong>José Vázquez</strong> — UX/UI Designer</p>
-          <p>Feb 2026 – Mar 2026 · Proyecto conceptual</p>
-        </div>
+        <a href="#estrategia" class="button button--primary">
+          Ver proceso
+        </a>
       </div>
-      <a href="#estrategia" class="btn">
-        Ver proceso
-      </a>
-    </div>
-    <div class="site-hero-devices">
-      <img src="assets/img/imageHero3.webp" alt="CamPack responsive experience">
+      <!-- MEDIA -->
+      <div class="case-media">
+        <img
+          src="assets/img/imageHero3.webp" alt="CamPack responsive experience">
+      </div>
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCIA MULTIDISPOSITIVOS -->
-<section class="multi-device-section" id="multidispositivo">
-  <div class="multi-device-header">
-    <p class="site-label">
-      Experiencia multidispositivo
-    </p>
-    <h2>
-      Una experiencia adaptada al contexto de cada dispositivo
-    </h2>
-    <p class="multi-device-intro">
-      La navegación y organización del contenido fueron adaptadas para funcionar de forma clara y consistente en desktop, tablet y mobile.
-    </p>
-  </div>
-  <div class="device-grid">
-    <!-- DESKTOP -->
-    <div class="device-card">
-      <img src="assets/img/iMacSitio.webp" alt="Versión desktop CamPack" loading="lazy" decoding="async">
-      <h3>Desktop</h3>
-      <p>
-        Exploración simultánea y comparación visual para facilitar descubrimiento y evaluación de productos.
-      </p>
+<!-- EXPERIENCIA MULTIDISPOSITIVO -->
+<section class="section" id="multidispositivo">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Experiencia multidispositivo</p>
+      <h2>Una experiencia adaptada al contexto de cada dispositivo</h2>
+      <p class="section-intro">La navegación y organización del contenido fueron adaptadas para funcionar de forma clara y consistente en desktop, tablet y mobile.</p>
     </div>
-    <!-- TABLET -->
-    <div class="device-card">
-      <img src="assets/img/iPadSitio.webp" alt="Versión tablet CamPack" loading="lazy" decoding="async">
-      <h3>Tablet</h3>
-      <p>
-        Balance entre claridad y navegación táctil para mejorar lectura y exploración de contenido.
-      </p>
-    </div>
-    <!-- MOBILE -->
-    <div class="device-card">
-      <img src="assets/img/iPhoneSitio.webp" alt="Versión mobile CamPack" loading="lazy" decoding="async">
-      <h3>Mobile</h3>
-      <p>
-        Acciones rápidas, filtros simplificados y navegación enfocada en claridad y velocidad.
-      </p>
+    <div class="grid grid--3 device-grid space-top-xl">
+      <article class="device-card">
+        <img src="assets/img/iMacSitio.webp" alt="Versión desktop CamPack" loading="lazy" decoding="async">
+        <h3>Desktop</h3>
+        <p>Exploración simultánea y comparación visual para facilitar descubrimiento y evaluación de productos.</p>
+      </article>
+      <article class="device-card">
+        <img src="assets/img/iPadSitio.webp" alt="Versión tablet CamPack" loading="lazy" decoding="async">
+        <h3>Tablet</h3>
+        <p>Balance entre claridad y navegación táctil para mejorar lectura y exploración de contenido.</p>
+      </article>
+      <article class="device-card">
+        <img src="assets/img/iPhoneSitio.webp" alt="Versión mobile CamPack" loading="lazy" decoding="async">
+        <h3>Mobile</h3>
+        <p>Acciones rápidas, filtros simplificados y navegación enfocada en claridad y velocidad.</p>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- ESTRATEGIA RESPONSIVE -->
-<section class="responsive-strategy" id="estrategia">
-  <div class="responsive-grid">
-    <div class="responsive-text">
-      <p class="site-label">
-        Estrategia UX
-      </p>
-      <h2>
-        Diseñando para distintos contextos de uso
-      </h2>
-      <p>
-        La experiencia fue adaptada para responder a diferentes formas de navegación e interacción según el dispositivo utilizado.
-      </p>
-      <p>
-        En desktop se priorizó la exploración y comparación de productos. En tablet se buscó equilibrio entre claridad y navegación táctil. En mobile se simplificó la experiencia para facilitar acciones rápidas.
-      </p>
-    </div>
-    <div class="responsive-points">
-      <div class="point-card">
-        <div class="point-top">
-          <i class="ph ph-desktop point-icon" aria-hidden="true"></i>
-          <h3>Desktop</h3>
-        </div>
-        <p>
-          Mayor exploración simultánea, navegación expandida y comparación visual de productos.
-        </p>
+<section class="section section--surface" id="estrategia">
+  <div class="container">
+    <div class="grid grid--2 strategy-grid">
+      <div class="case-content">
+        <p class="section-label">Estrategia UX</p>
+        <h2>Diseñando para distintos contextos de uso</h2>
+        <p>La experiencia fue adaptada para responder a diferentes formas de navegación e interacción según el dispositivo utilizado.</p>
+        <p>En desktop se priorizó la exploración y comparación de productos. En tablet se buscó equilibrio entre claridad y navegación táctil. En mobile se simplificó la experiencia para facilitar acciones rápidas.</p>
       </div>
-      <div class="point-card">
-        <div class="point-top">
-          <i class="ph ph-device-tablet point-icon" aria-hidden="true"></i>
-          <h3>Tablet</h3>
-        </div>
-        <p>
-          Optimización táctil y reorganización de módulos para mejorar lectura y navegación.
-        </p>
-      </div>
-     <div class="point-card">
-        <div class="point-top">
-          <i class="ph ph-device-mobile point-icon" aria-hidden="true"></i>
-          <h3>Mobile</h3>
-        </div>
-        <p>
-          Priorización de acciones rápidas, filtros simplificados y reducción de fricción.
-        </p>
+      <div class="strategy-points">
+        <article class="card card--info card--strategy">
+          <div class="meta-item">
+            <i class="ph ph-desktop" aria-hidden="true"></i>
+            <h3>Desktop</h3>
+          </div>
+          <p>Mayor exploración simultánea, navegación expandida y comparación visual de productos.</p>
+        </article>
+        <article class="card card--info card--strategy">
+          <div class="meta-item">
+            <i class="ph ph-device-tablet" aria-hidden="true"></i>
+            <h3>Tablet</h3>
+          </div>
+          <p>Optimización táctil y reorganización de módulos para mejorar lectura y navegación.</p>
+        </article>
+        <article class="card card--info card--strategy">
+          <div class="meta-item">
+            <i class="ph ph-device-mobile" aria-hidden="true"></i>
+            <h3>Mobile</h3>
+          </div>
+          <p>Priorización de acciones rápidas, filtros simplificados y reducción de fricción.</p>
+        </article>
       </div>
     </div>
   </div>
 </section>
 
 <!-- WIREFRAMES -->
-<section class="wireframe-section" id="wireframes">
-  <div class="wireframe-grid">
-    <div class="wireframe-text">
-      <p class="site-label">
-        Wireframes
-      </p>
-      <h2>
-        Estructurando una experiencia flexible y escalable
-      </h2>
-      <p>
-        Los wireframes ayudaron a definir la estructura, navegación y distribución del contenido antes de diseñar la interfaz final.
-      </p>
-      <p>
-        Se diseñó una estructura flexible para mantener claridad y consistencia entre dispositivos.
-      </p>
-       <p class="prototype-label">
-      Explorar wireframes:
-    </p>
-    <div class="prototype-links">
-      <a href="https://www.figma.com/proto/YZzlwE79QlArWmtG33ux0M/Website-Camping?node-id=0-1&p=f&viewport=300,389,0.29&t=1cnN3ViTMDQduz3b-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1:2&show-proto-sidebar=1" target="_blank" class="btn" rel="noopener">Escritorio</a>
-      <a href="https://www.figma.com/proto/YZzlwE79QlArWmtG33ux0M/Website-Camping?node-id=0-1&p=f&viewport=300,-1073,0.29&t=1cnN3ViTMDQduz3b-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=9:30&show-proto-sidebar=1" target="_blank" class="btn" rel="noopener">Tableta</a>
-      <a href="https://www.figma.com/proto/YZzlwE79QlArWmtG33ux0M/Website-Camping?node-id=0-1&p=f&viewport=300,-2717,0.29&t=1cnN3ViTMDQduz3b-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=10:5&show-proto-sidebar=1" target="_blank" class="btn" rel="noopener">Teléfono</a>
-    </div>
-    </div>
-    <div class="wireframe-visual">
-      <img src="assets/img/wireframesResponsive.webp" alt="Wireframes responsive CamPack" loading="lazy" decoding="async">
+<section class="section" id="wireframes">
+  <div class="container">
+    <div class="two-column">
+      <!-- CONTENIDO -->
+      <div class="case-content">
+        <p class="section-label">Wireframes</p>
+        <h2>Estructurando una experiencia flexible y escalable</h2>
+        <p>Los wireframes ayudaron a definir la estructura, navegación y distribución del contenido antes de diseñar la interfaz final.</p>
+        <p>Se diseñó una estructura flexible para mantener claridad y consistencia entre dispositivos.</p>
+        <p class="section-label">Explorar wireframes</p>
+        <div class="cluster wireframe-links">
+          <a href="https://www.figma.com/proto/YZzlwE79QlArWmtG33ux0M/Website-Camping?node-id=0-1&p=f&viewport=300,389,0.29&t=1cnN3ViTMDQduz3b-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1:2&show-proto-sidebar=1"
+              target="_blank" class="button button--primary" rel="noopener">Escritorio</a>
+          <a href="https://www.figma.com/proto/YZzlwE79QlArWmtG33ux0M/Website-Camping?node-id=0-1&p=f&viewport=300,-1073,0.29&t=1cnN3ViTMDQduz3b-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=9:30&show-proto-sidebar=1"
+              target="_blank" class="button button--primary" rel="noopener">Tableta</a>
+          <a href="https://www.figma.com/proto/YZzlwE79QlArWmtG33ux0M/Website-Camping?node-id=0-1&p=f&viewport=300,-2717,0.29&t=1cnN3ViTMDQduz3b-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=10:5&show-proto-sidebar=1"
+              target="_blank" class="button button--primary" rel="noopener">Teléfono</a>
+        </div>
+      </div>
+      <!-- VISUAL -->
+      <div class="media media-center">
+        <img src="assets/img/wireframesResponsive.webp" alt="Wireframes responsive CamPack" loading="lazy" decoding="async">
+      </div>
     </div>
   </div>
 </section>
 
 <!-- NAVEGACIÓN -->
-<section class="ux-decision" id="decision-ux">
-  <div class="ux-decision-content">
-    <p class="site-label">
-      Decisión UX
-    </p>
-    <h2>
-      Navegación simplificada para priorizar tareas clave
-    </h2>
-    <div class="menu-icons-row">
-      <img src="assets/iconos/icon-menu.svg" alt="icono menu">
-      <img src="assets/iconos/icon-user.svg" alt="icono usuario">
-      <img src="assets/iconos/icon-cart.svg" alt="icono carrito">
-      <img src="assets/iconos/icon-heart.svg" alt="icono corazón">
-      <img src="assets/iconos/icon-bell.svg" alt="icono campana">
-    </div>
-    <p>
-      Se utilizó un menú colapsable incluso en desktop para reducir ruido visual y mantener el enfoque en búsqueda, categorías y descubrimiento de productos.
-    </p>
-    <p>
-      Se redujeron elementos secundarios para dar mayor prioridad a la búsqueda y exploración de productos.
-    </p>
-  </div>
-</section>
-
-<!-- SISTEMA VISUAL -->
-<section class="design-system-section" id="sistema-visual">
-  <div class="design-system-header">
-    <p class="site-label">
-      Sistema visual
-    </p>
-    <h2>
-      Un sistema visual consistente entre dispositivos
-    </h2>
-    <p class="design-system-intro">
-      Se desarrolló un sistema visual adaptable para mantener coherencia, legibilidad y consistencia entre desktop, tablet y mobile.
-    </p>
-  </div>
-  <div class="design-system-grid">
-    <!-- COLORS -->
-    <div class="system-card">
-      <img src="assets/img/sitioColor.webp" alt="Sistema de colores" loading="lazy" decoding="async">
-      <h3>Color</h3>
-      <p>
-        Se definió una paleta enfocada en contraste, claridad visual y consistencia de marca.
+<section class="section section--surface" id="decision-ux">
+  <div class="container">
+    <div class="case-content">
+      <p class="section-label">
+        Decisión UX
       </p>
-    </div>
-    <!-- TYPOGRAPHY -->
-    <div class="system-card">
-      <img src="assets/img/sitioTypo.webp" alt="Sistema tipográfico" loading="lazy" decoding="async">
-      <h3>Tipografía</h3>
-      <p>
-        Jerarquías tipográficas adaptables para mejorar lectura y escaneo de contenido.
+      <h2 class="text-center">
+        Navegación simplificada para priorizar tareas clave
+      </h2>
+      <div class="cluster menu-icons">
+        <img src="assets/iconos/icon-menu.svg" alt="Menú">
+        <img src="assets/iconos/icon-user.svg" alt="Usuario">
+        <img src="assets/iconos/icon-cart.svg" alt="Carrito">
+        <img src="assets/iconos/icon-heart.svg" alt="Favoritos">
+        <img src="assets/iconos/icon-bell.svg" alt="Notificaciones">
+      </div>
+      <p class="reading text-center">
+        Se utilizó un menú colapsable incluso en desktop para reducir ruido visual y mantener el enfoque en búsqueda, categorías y descubrimiento de productos.
       </p>
-    </div>
-    <!-- COMPONENTS -->
-    <div class="system-card">
-      <img src="assets/img/sitioComponents.webp" alt="Componentes UI" loading="lazy" decoding="async">
-      <h3>Componentes</h3>
-      <p>
-        Componentes reutilizables para mantener consistencia visual y escalabilidad.
+      <p class="reading text-center">
+        Se redujeron elementos secundarios para dar mayor prioridad a la búsqueda y exploración de productos.
       </p>
     </div>
   </div>
 </section>
 
-<!-- HALLAZGOS -->  
-<section class="usability-section" id="hallazgos">
-  <div class="usability-header">
-    <p class="site-label">
-      Hallazgos de usabilidad
-    </p>
-    <h2>
-      Identificando fricción y oportunidades de mejora
-    </h2>
-    <p class="usability-intro">
-      Las pruebas ayudaron a detectar problemas de navegación, organización visual y claridad en acciones importantes.
-    </p>
-  </div>
-  <div class="usability-grid">
-    <div class="usability-findings">
-      <div class="finding-item">
-        <h3>Navegación secundaria confusa</h3>
-        <p>Menús competían con acciones principales.</p>
-      </div>
-      <div class="finding-item">
-        <h3>Exceso de elementos en desktop</h3>
-        <p>La jerarquía visual dificultaba escaneo rápido.</p>
-      </div>
-      <div class="finding-item">
-        <h3>Jerarquía inconsistente en mobile</h3>
-        <p>Algunas acciones importantes perdían visibilidad.</p>
-      </div>
+<!-- SISTEMA VISUAL -->
+<section class="section" id="sistema-visual">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Sistema visual</p>
+      <h2>Un sistema visual consistente entre dispositivos</h2>
+      <p class="section-intro">Se desarrolló un sistema visual adaptable para mantener coherencia, legibilidad y consistencia entre desktop, tablet y mobile.</p>
     </div>
-    <div class="usability-visual">
-      <p class="diagram-caption">
-        Insights organizados mediante diagrama de afinidad.
-      </p>
-      <img src="assets/img/diagramaAfinidad.webp" alt="Diagrama de afinidad UX" loading="lazy" decoding="async"> 
+    <div class="grid grid--3 device-grid space-top-xl">
+      <article class="card card--info card--visual">
+        <img src="assets/img/sitioColor.webp" alt="Sistema de colores" loading="lazy" decoding="async">
+        <h3>Color</h3>
+        <p>Se definió una paleta enfocada en contraste, claridad visual y consistencia de marca.</p>
+      </article>
+      <article class="card card--info card--visual">
+        <img src="assets/img/sitioTypo.webp" alt="Sistema tipográfico" loading="lazy" decoding="async">
+        <h3>Tipografía</h3>
+        <p>Jerarquías tipográficas adaptables para mejorar lectura y escaneo de contenido.</p>
+      </article>
+      <article class="card card--info card--visual">
+        <img src="assets/img/sitioComponents.webp" alt="Componentes UI" loading="lazy" decoding="async">
+        <h3>Componentes</h3>
+        <p>Componentes reutilizables para mantener consistencia visual y escalabilidad.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HALLAZGOS -->
+<section class="section section--surface" id="hallazgos">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Hallazgos de usabilidad</p>
+      <h2>Identificando fricción y oportunidades de mejora</h2>
+      <p class="section-intro">Las pruebas ayudaron a detectar problemas de navegación, organización visual y claridad en acciones importantes.</p>
+    </div>
+    <div class="grid grid--2 findings-grid space-top-xl">
+      <div class="findings-list">
+        <article class="finding-item">
+            <h3>Navegación secundaria confusa</h3>
+            <p>Menús competían con acciones principales.</p>
+        </article>
+        <article class="finding-item">
+            <h3>Exceso de elementos en desktop</h3>
+            <p>La jerarquía visual dificultaba escaneo rápido.</p>
+        </article>
+        <article class="finding-item">
+            <h3>Jerarquía inconsistente en mobile</h3>
+            <p>Algunas acciones importantes perdían visibilidad.</p>
+        </article>
+      </div>
+      <div class="media">
+        <img src="assets/img/diagramaAfinidad.webp" alt="Diagrama de afinidad UX" loading="lazy" decoding="async">
+        <p class="media-caption">Insights organizados mediante diagrama de afinidad.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- SOLUCIÓN FINAL -->
-<section class="final-solution-section" id="solucion-final">
-  <div class="final-solution-header">
-    <p class="site-label">
-      Solución final
-    </p>
-    <h2>
-      Una experiencia más clara, flexible y enfocada en la decisión
-    </h2>
-    <p class="final-intro">
-      La solución final facilita la navegación, comparación y exploración de productos de forma clara y consistente entre dispositivos.
-    </p>
-     <p class="prototype-label">
-    Explorar prototipos:
-  </p>
-  <div class="prototype-links">
-    <a href="https://www.figma.com/proto/z36iAqhoP7YFU9JvD5VEYy/Hi-Fi-Website?node-id=0-1&p=f&viewport=165,136,0.13&t=yFN6H1Q5yMwqybcM-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1:2&show-proto-sidebar=1" target="_blank" class="btn" rel="noopener">Escritorio</a>
-    <a href="https://www.figma.com/proto/z36iAqhoP7YFU9JvD5VEYy/Hi-Fi-Website?node-id=0-1&p=f&viewport=165,136,0.13&t=yFN6H1Q5yMwqybcM-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=95:1286&show-proto-sidebar=1" target="_blank" class="btn" rel="noopener">Tableta</a>
-    <a href="https://www.figma.com/proto/z36iAqhoP7YFU9JvD5VEYy/Hi-Fi-Website?node-id=0-1&p=f&viewport=165,136,0.13&t=yFN6H1Q5yMwqybcM-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=106:5409&show-proto-sidebar=1" target="_blank" class="btn" rel="noopener">Teléfono</a>
-  </div>
-  </div>
-  <div class="final-showcase">
-    <img src="assets/img/sitioResponsive.webp" alt="Interfaz final responsive" loading="lazy" decoding="async">
-  </div>
-</section>
-
-<!-- RESULTADOS -->
-<section class="results-section" id="resultados">
-  <div class="results-container">
-    <p class="site-label">
-      Resultados
-    </p>
-    <h2>
-      Una experiencia más clara y consistente entre dispositivos
-    </h2>
-    <p class="results-intro">
-      La propuesta mejoró la organización de la navegación y facilitó la exploración y comparación de productos.
-    </p>
-    <div class="results-stats">
-      <div class="stat-item">
-        <span>↓</span>
-        <h3>Menor fricción</h3>
-        <p>
-          Flujos simplificados y navegación más intuitiva.
-        </p>
+<section class="section" id="solucion-final">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Solución final</p>
+      <h2>Una experiencia más clara, flexible y enfocada en la decisión</h2>
+      <p class="section-intro">La solución final facilita la navegación, comparación y exploración de productos de forma clara y consistente entre dispositivos.</p>
+      <p class="section-label">Explorar prototipos:</p>
+      <div class="cluster cluster--buttons space-top-sm">
+        <a href="#" class="button button--primary" target="_blank" rel="noopener">Escritorio</a>
+        <a href="#" class="button button--primary" target="_blank" rel="noopener">Tableta</a>
+        <a href="#" class="button button--primary" target="_blank" rel="noopener">Teléfono</a>
       </div>
-      <div class="stat-item">
-        <span>◎</span>
-        <h3>Mayor claridad</h3>
-        <p>
-          Mejor jerarquía visual y organización responsive.
-        </p>
-      </div>
-      <div class="stat-item">
-        <span>▣</span>
-        <h3>Consistencia visual</h3>
-        <p>
-          Experiencia unificada entre desktop, tablet y mobile.
-        </p>
-      </div>
+    </div>
+    <div class="media media-center solution-showcase space-top-xl">
+      <img src="assets/img/sitioResponsive.webp" alt="Interfaz final responsive" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
 
-<!-- APRENDIZAJE -->
-<section class="learnings-section" id="aprendizajes">
-  <div class="learnings-container">
-    <p class="site-label">
-      Aprendizajes
-    </p>
-    <h2>
-      Diseñar responsive va más allá de adaptar layouts
-    </h2>
-    <p class="learnings-intro">
-      Este proyecto reforzó la importancia de adaptar la experiencia según el dispositivo y las necesidades de uso.
-    </p>
-    <div class="learnings-grid">
-      <div class="learning-item">
+<!-- RESULTADOS -->
+<section class="section section--surface" id="resultados">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Resultados</p>
+      <h2>Una experiencia más clara y consistente entre dispositivos</h2>
+      <p class="section-intro">La propuesta mejoró la organización de la navegación y facilitó la exploración y comparación de productos.</p>
+    </div>
+    <div class="grid grid--3 device-grid space-top-xl">
+      <article class="card card--info">
+        <i class="ph ph-arrow-down" aria-hidden="true"></i>
+        <h3>Menor fricción</h3>
+        <p>Flujos simplificados y navegación más intuitiva.</p>
+      </article>
+      <article class="card card--info">
+        <i class="ph ph-eye" aria-hidden="true"></i>
+        <h3>Mayor claridad</h3>
+        <p>Mejor jerarquía visual y organización responsive.</p>
+      </article>
+      <article class="card card--info">
+        <i class="ph ph-squares-four" aria-hidden="true"></i>
+        <h3>Consistencia visual</h3>
+        <p>Experiencia unificada entre desktop, tablet y mobile.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- APRENDIZAJES -->
+<section class="section" id="aprendizajes">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Aprendizajes</p>
+      <h2>Diseñar responsive va más allá de adaptar layouts</h2>
+      <p class="section-intro">Este proyecto reforzó la importancia de adaptar la experiencia según el dispositivo y las necesidades de uso.</p>
+    </div>
+    <div class="grid grid--3 device-grid space-top-xl">
+      <article class="learning-item">
         <span>01</span>
         <h3>Priorizar sobre agregar</h3>
-        <p>
-          Reducir elementos visibles permitió mejorar claridad y enfoque en tareas principales.
-        </p>
-      </div>
-      <div class="learning-item">
+        <p>Reducir elementos visibles permitió mejorar claridad y enfoque en tareas principales.</p>
+      </article>
+      <article class="learning-item">
         <span>02</span>
         <h3>Responsive también es UX</h3>
-        <p>
-          Adaptar experiencias implica entender comportamiento y atención según el contexto.
-        </p>
-      </div>
-      <div class="learning-item">
+        <p>Adaptar experiencias implica entender comportamiento y atención según el contexto.</p>
+      </article>
+      <article class="learning-item">
         <span>03</span>
         <h3>Iterar mejora decisiones</h3>
-        <p>
-          Las pruebas permitieron detectar fricción temprana y refinar la experiencia.
-        </p>
-      </div>
+          <p>Las pruebas permitieron detectar fricción temprana y refinar la experiencia.</p>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- AGRADECIMIENTO -->
-<section class="thanks-section" id="participantes">
-    <div class="thanks-container">
-        <div class="section-heading">
-            <h2>Agradecimientos</h2>
-            <p class="section-intro">
-                Este proyecto fue posible gracias a las personas que participaron en las entrevistas y pruebas de usabilidad. Su retroalimentación ayudó a mejorar la experiencia en cada iteración.
-            </p>
-            <p class="note">
-                Para proteger la privacidad de las personas participantes, sus nombres se presentan mediante alias.
-            </p>
-        </div>
-        <div class="participants-grid">
-            <div class="testimonial-card">
-              <p class="testimonial-text">
-                  Las ideas iniciales siempre fueron buenas, pero contar con la opinión real de quienes usarán el sitio ayuda a mejorar el resultado final. Gracias por tomar en cuenta mis comentarios.
-              </p>
-              <h3>Participante A</h3>
-              <p class="testimonial-role">
-                  Participó en: Investigación · Wireframes · Usabilidad
-              </p>
-            </div>
-            <div class="testimonial-card">
-              <p class="testimonial-text">
-                  Eliminar las etiquetas redundantes dio mayor protagonismo a las imágenes y la navegación se siente más fluida. No sabría decir exactamente qué cambió, pero ahora es más sencilla de recorrer.
-              </p>
-              <h3>Participante B</h3>
-              <p class="testimonial-role">
-                  Participó en: Wireframes · Usabilidad
-              </p>
-            </div>
-        </div>
-        <div class="thanks-message">
-            <p>
-                Gracias por dedicar su tiempo y ayudar a construir una mejor experiencia.
-            </p>
-        </div>
+<section class="section section--surface" id="participantes">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">AGRADECIMIENTOS</span>
+      <h2>Gracias a quienes participaron</h2>
+      <p class="section-intro">
+        Este proyecto fue posible gracias a las personas que
+        participaron en las entrevistas y pruebas de usabilidad.
+        Su retroalimentación ayudó a mejorar la experiencia
+        en cada iteración.
+      </p>
+      <p class="media-caption reading-width-none">
+        Para proteger la privacidad de las personas participantes,
+        sus nombres se presentan mediante alias.
+      </p>
     </div>
+    <div class="grid grid--2 testimonial-grid space-top-xl">
+      <article class="testimonial">
+        <p class="testimonial-text">
+          Las ideas iniciales siempre fueron buenas, pero contar con la opinión real 
+          de quienes usarán el sitio ayuda a mejorar el resultado final. 
+          Gracias por tomar en cuenta mis comentarios.
+        </p>
+        <h3>Participante A</h3>
+        <p class="testimonial-meta">
+          Investigación · Wireframes · Usabilidad
+        </p>
+      </article>
+      <article class="testimonial">
+        <p class="testimonial-text">
+          Eliminar las etiquetas redundantes dio mayor protagonismo a las imágenes 
+          y la navegación se siente más fluida. No sabría decir exactamente qué cambió, 
+          pero ahora es más sencilla de recorrer.
+        </p>
+        <h3>Participante B</h3>
+        <p class="testimonial-meta">
+          Wireframes · Usabilidad
+        </p>
+      </article>
+    </div>
+      <p class="section-intro space-top-xl thanks-message text-center">
+          Gracias por dedicar su tiempo y ayudar a construir una mejor experiencia.
+      </p>
+  </div>
 </section>
 </main>
 

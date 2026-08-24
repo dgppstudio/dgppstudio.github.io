@@ -3,6 +3,8 @@
     min-height:80px;
     background-color:#ffffff;
     border-bottom:1px solid #e5e7eb;
+    position:relative;
+    z-index:var(--z-header);
 }
 
 .header-container{
@@ -55,6 +57,8 @@
     cursor:pointer;
     justify-content:center;
     gap:5px;
+    position:relative;
+    z-index:var(--z-menu);
 }
 
 .menu-toggle span{
@@ -75,6 +79,7 @@
         background:#FFFFFF;
         border-top:1px solid #E5E7EB;
         box-shadow:0 8px 20px rgba(0,0,0,.08);
+        z-index:var(--z-menu);
     }
 
     .main-navigation.open{

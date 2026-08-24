@@ -1,26 +1,9 @@
-.hero-logo{
-max-width:300px;
-}
+/* ==================================================
+   APP CAMPACK SPECIFIC STYLES (appcampack.css)
+   ================================================== */
 
-.hero-meta-block{
-display:flex;
-align-items:center;
-gap:15px;
-margin-top:15px;
-}
-
-.hero-meta{
-font-size:14px;
-}
-
-.hero-meta strong{
-color:var(--color-accent);
-}
-
-.hero-avatar img{
-width:100px;
-border-radius:50%;
-border:3px solid white;
+.hero-logo {
+    max-width: 280px;
 }
 
 /* Comparador */
@@ -112,8 +95,102 @@ border:3px solid white;
     -webkit-user-select:none;
 }
 
+/* PERFILES DE USUARIO (.grid--profiles) */
+.card--media--profile img {
+    width: 100%;
+    max-width: var(--card-media-profile-width);
+    margin-inline: auto;
+    border-radius: var(--radius-md);
+}
+
+/* FORMATOS Y ANCHOS DE MEDIA */
+.media-width--portrait {
+    width: 100%;
+    max-width: var(--card-media-portrait-width);
+}
+
+.media-width--double {
+    max-width: calc(var(--card-media-portrait-width) * 2);
+}
+
+.media-note {
+    margin-top: var(--space-lg);
+    font-size: var(--fs-label);
+    color: var(--color-primary);
+    text-align: center;
+}
+
+/* LISTAS DE HALLAZGOS Y RESULTADOS */
+.list--findings {
+    max-width: var(--reading-width);
+    margin: var(--space-lg) auto 0;
+    padding-left: 1.25rem;
+    list-style: disc;
+}
+
+.list--findings li {
+    margin-bottom: var(--space-sm);
+}
+
+.result-content {
+    max-width: var(--reading-width);
+    margin-inline: auto;
+    text-align: center;
+}
+
+.result-content > p:first-child {
+    text-align: center;
+}
+
+.result-content .list--findings {
+    margin-top: var(--space-lg);
+}
+
+/* COMPARACIÓN DE PRODUCTOS (#comparacion) */
+.compare-layout {
+    max-width: 800px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+/* RESPONSIVE ESPECÍFICO DE APP CAMPACK */
 @media (max-width: 768px) {
-  .hero-logo {
-    max-width: 250px;
-  }
+    .context-grid > :last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 50%;
+    }
+
+    .grid--profiles {
+        grid-template-columns: var(--columns-2);
+    }
+
+    .compare-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .list--findings {
+        margin: var(--space-xs) auto 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-logo {
+      max-width: 250px;
+    }
+
+    .context-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .context-grid > :last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 100%;
+    }
 }
