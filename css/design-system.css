@@ -1185,7 +1185,6 @@ del proyecto.
     display:flex;
     flex-wrap:wrap;
     gap:var(--space-md);
-    justify-content: center;
 }
 
 .case-content{
@@ -2021,6 +2020,10 @@ No permite
 
     .case-content{
         max-width:700px;
+    }
+
+    .case-meta{
+        justify-content: center;
     }
 
     .gallery--single-tablet{
