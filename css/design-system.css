@@ -1397,8 +1397,6 @@ Se construye combinando:
 
 ==================================================*/
 
-.case{}
-
 .case-links{
     display:flex;
     flex-wrap:wrap;
@@ -1468,41 +1466,6 @@ Se construye combinando:
 ====================================================
 
 /*==================================================
-Gallery
-====================================================
-
-Responsabilidad
-
-Mostrar una colección de Media Cards.
-
-Construido con
-
-• Section Header
-• Grid
-• Media Card
-
-Uso
-
-• Aplicaciones
-• Sitios
-• Identidad
-
-No debe
-
-• Definir columnas propias.
-• Duplicar Grid.
-
-==================================================*/
-
-/*
-Composición sin reglas propias: combina .grid + un
-modificador de columnas (.grid--3 / .grid--4) + .card--media
-directamente en el HTML. Definir columnas aquí duplicaría Grid.
-*/
-
-.gallery{}
-
-/*==================================================
 Stats
 ====================================================
 
@@ -1539,8 +1502,6 @@ Se construye combinando:
 
 ==================================================*/
 
-.stats{}
-
 .stat{
     display:flex;
     flex-direction:column;
@@ -1562,99 +1523,6 @@ Se construye combinando:
     color:var(--color-text-muted);
     margin:0;
 }
-
-/*==================================================
-Testimonials
-====================================================
-
-Responsabilidad
-
-Mostrar comentarios de participantes.
-
-Construido con
-
-• Section Header
-• Grid
-• Testimonial
-
-Uso
-
-• Validaciones
-• Usabilidad
-
-No debe
-
-• Mostrar estadísticas.
-
-==================================================*/
-
-/*
-Composición sin reglas propias: combina .grid + modificador
-de columnas + .testimonial en el HTML.
-*/
-
-.testimonials{}
-
-/*==================================================
-App Case
-====================================================
-
-Responsabilidad
-
-Presentar un proyecto resumido.
-
-Construido con
-
-• Two Column
-• Case Meta
-• Button
-• Media
-
-Uso
-
-• Aplicaciones
-• Sitios
-
-No debe
-
-• Utilizarse como Hero.
-
-==================================================*/
-
-/*
-Composición sin reglas propias: Two Column ya resuelve el
-layout; Case Meta, Button y Media aportan el contenido.
-*/
-
-.app-case{}
-
-/*==================================================
-Results
-====================================================
-
-Responsabilidad
-
-Presentar los resultados
-de un caso de estudio.
-
-Construido con
-
-• Section Header
-• Stats
-
-Uso
-
-• Casos UX
-
-No debe
-
-• Mostrar procesos.
-
-==================================================*/
-
-.results{}
-
-.learnings{}
 
 /*==================================================
 Support
