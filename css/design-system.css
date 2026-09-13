@@ -1348,7 +1348,7 @@ no crear un componente nuevo fuera del alcance definido.
 }
 
 .hero--site .case-content {
-    max-width: 500px;
+    max-width: 510px;
 }
 
 .hero--site .case-media img {
@@ -1451,6 +1451,7 @@ Se construye combinando:
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-xs);
+    justify-content: center;
 }
 
 .case-meta--hero p {

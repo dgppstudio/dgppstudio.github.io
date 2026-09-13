@@ -57,10 +57,6 @@
     color: var(--color-primary);
 }
 
-.about-highlights {
-    margin-top: var(--space-md);
-}
-
 .tools span {
     padding: var(--space-xs) var(--space-sm);
     border-radius: var(--radius-full);
