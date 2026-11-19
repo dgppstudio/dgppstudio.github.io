@@ -32,6 +32,11 @@
     max-width: 260px;
 }
 
+.wireframe-links {
+    justify-content: flex-start;
+    gap: var(--space-md);
+}
+
 /* SECCIÓN SOBRE MÍ (#sobre-mi) */
 .about-layout {
     grid-template-columns: minmax(280px, 40%) minmax(0, 60%);
